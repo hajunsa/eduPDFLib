@@ -1,4 +1,5 @@
 # eduPDFLib
+
 - Description
     - 문서 파일을 열람하는 뷰어 입니다.
     - 지원하는 문서 형식은 PDF(eduPDF), ZIP(이미지)을 지원 합니다.
@@ -23,6 +24,7 @@
     - eduPDFPlayerS.framework폴더안에 'CMap', 'fonts'를 프로젝트로 드레그하여 Create folder references로 추가합니다.
 
 - Project settings(iOS 7.0, Cocoapods)
+    - API 설명서 및 샘플예제는 'https://github.com/hajunsa/eduPDFLib"에 공개하였습니다.
     - 프로젝트 'Podfile' 파일을 만들고 아래와같은 내용을 넣습니다.
 target "Project Target" do
 pod 'eduPDFLib'
@@ -40,19 +42,40 @@ end
     - 샘플 예제를 제공합니다.
 
 - Feature
-    - PDF 열람
-        - 단면, 여러면 보기. 다양한 페이지 정렬. 읽기 방향. 스크롤/페이징 보기
-        - 페이지 네비게이션.
-        - 다양한 형태 열람.
-            - 로컬 파일
-            - 랜덤 액세스 제공자(EDDataProvider)
-            - 원격 빠른 열람(HTTP)
-        - 서식 입력 기능.(텍스트, 체크, 라디오, 콤보, 리스트)
-        - 내장 문서 팝업
-        - PDF
-        - 동영상
-        - 이미지
-    - eduPDF 열람
+    - View Settings
+        - Continous/Paging
+        - Scroll Direction
+        - Read Direction
+        - Display Fitting
+    - Documents Open
+        - Open Method
+            - Local File
+            - User Random Access Provider(EDDataProvider)
+            - Remote Random Access Streaming(HTTP Fast Open or Byte Serving)
+        - Open Format 
+            - PDF, eduPDF
+            - ZIP(Imaged)
+    - View Function
+        - Page Navication/Callback
+        - Page Thumbnails Get
+        - Scroll Callback 
+    - Event Trigger
+        - Animation Start/Completion Event
+        - Page Visible/Invisible Event
+        - Page Open/Close Event
+        - Touch Up Event
+    - PDF Function
+        - Form Field
+            - Text
+            - Check
+            - Radio 
+            - Combo 
+            - List
+        - Popup Embeded Documents 
+            - PDF
+            - Movie
+            - Image
+    - eduPDF Function
         - Knowledge Tap
         - Quiz
             - 단답형(Radio, Combo, Text)
@@ -69,75 +92,58 @@ end
             - Animation
             - Drag And Drop Box
 
+- 0.9.4 Version Release Notes
+    - Cocoapods 설치 지원합니다.
+    - Github API 설명서 및 샘플 예제를 공개합니다.
+    - 추가 기능
+        - 자막 오디오 페이지 자동 재생 구현하였습니다.
+        - 스크롤 관련 콜백 API를 추가하였습니다.
+    - 개선 사항
+        - 스크롤시 스레드 안정성 개선하였습니다.
+    - 오류 수정
+        - 페이지 바로가기나 회전, 화면 분할시 페이지 표시 오류 수정하였습니다.
+        - 텍스트 필드 표시/입력 오류 수정하였습니다.
+        - 멀티미디어 재생 버튼 무동작 오류 수정하였습니다.
+        - 애니메이션 팝업 무동작 오류 수정하였습니다.
+        - 페이지 스크롤시 Page Open/Close Event 간헐적 재생 무시 오류 수정하였습니다.
+        
 - 0.9.3 Version Release Notes
-- 개선 사항
-- 뷰어 확대/축소시 페이지 정렬 기능을 제거하였습니다.
-- 주석 표시 해상도 및 위치 정확도를 개선하였습니다.
-- 주석 가져오기 속도를 개선하였습니다.
-- Sticker
-- 스티커 드레그시 정확도를 개선하였습니다.
-- 스티커 드랍시 장착 정확도를 개선하였습니다.
-- 오류 수정
-- 양면 보기 이상에서 열람 문제를 수정하였습니다.
-- 특정 페이지 바로가기시 페이지 표시 오류를 수정하였습니다.
-- 서식
-- 버튼 텍스트 표시 오류를 수정하였습니다.
-- 내장한 멀티 미디어
-- 내장 문서 표시 메모리 할당 문제, 충돌 및 오류 수정하였습니다.
-- 비디오 주석 충돌 및 표시 오류 수정하였습니다.
-- Frame Animation
-- 프레임 애니메이션이 재생 버튼에서 나타나는 오류 수정하였습니다.
-- Subtitles Audio
-- 자막 오디오 충돌 및 표시 오류 수정하였습니다.
-- Quiz
-- 채점 버튼 충돌 오류 수정하였습니다.
+    - 개선 사항
+        - 뷰어 확대/축소시 페이지 정렬 기능을 제거하였습니다.
+        - 주석 표시 해상도 및 위치 정확도를 개선하였습니다.
+        - 주석 가져오기 속도를 개선하였습니다.
+        - Sticker
+            - 스티커 드레그시 정확도를 개선하였습니다.
+            - 스티커 드랍시 장착 정확도를 개선하였습니다.
+    - 오류 수정
+        - 양면 보기 이상에서 열람 문제를 수정하였습니다.
+        - 특정 페이지 바로가기시 페이지 표시 오류를 수정하였습니다.
+        - 서식
+            - 버튼 텍스트 표시 오류를 수정하였습니다.
+        - 내장한 멀티 미디어
+            - 내장 문서 표시 메모리 할당 문제, 충돌 및 오류 수정하였습니다.
+            - 비디오 주석 충돌 및 표시 오류 수정하였습니다.
+        - Frame Animation
+            - 프레임 애니메이션이 재생 버튼에서 나타나는 오류 수정하였습니다.
+        - Subtitles Audio
+            - 자막 오디오 충돌 및 표시 오류 수정하였습니다.
+        - Quiz
+            - 채점 버튼 충돌 오류 수정하였습니다.
 
 - 0.9.2 Version Release Notes
-- iOS 7.0 지원
+    - iOS 7.0 지원합니다.
 
 - 0.9.1 Version Release Notes
-- Quiz
-- 다른 부분 찾기 기능을 지원합니다.
-- 사용자 Footer를 추가하는 기능을 지원합니다.
-- 사용자 DRM문서 열람 기능을 지원합니다.
-- 오류 수정
-- GIF 애니메이션 무한 반복 오류를 수정하였습니다.
-- Paging View에서 가로 보기시 표시 오류를 수정하였습니다.
-- Knowledge Tap
-- 탭시 그룹 동작 오류를 수정하였습니다.
+    - 추가 기능
+        - Quiz
+            - 다른 부분 찾기 기능을 지원합니다.
+        - 사용자 Footer를 추가하는 기능을 지원합니다.
+        - User Random Access Provider(EDDataProvider) 열람 기능을 지원합니다.
+    - 오류 수정
+        - GIF 애니메이션 무한 반복 오류를 수정하였습니다.
+        - Paging View에서 가로 보기시 표시 오류를 수정하였습니다.
+        - Knowledge Tap
+            - 탭시 그룹 동작 오류를 수정하였습니다.
 
 - 0.9.0 Version Release Notes
-- PDF 문서 열람 기능을 지원 합니다.
-- 이미지 ZIP 파일 열람 기능 지원 합니다.
-- 링크 기능(페이지, URL)을 지원 합니다.
-- 내장한 멀티 미디어(동영상, 오디오)를 재생 합니다.
-- 서식(Text, Combo, List, Check, Radio) 입력을 지원 합니다.
-- 내장 문서 팝업 기능을 지원 합니다.
-- PDF
-- 동영상
-- 이미지
-- eduPDF 기능을 지원 합니다.
-- Knowledge Tap
-- Quiz
-- 단답형(Radio, Combo, Text)
-- 다답형(Check, Text)
-- 선긋기
-- 다른 부분 찾기
-- 정답 채점
-- 정답 채점 초기화
-- Subtitles Audio
-- Frame Animation
-- GIF
-- Zipped-Image
-- Sticker
-- Animation
-- Drag And Drop Box
-- Event Trigger
-- Animation Start/Completion Event Trigger
-- Page Visible/Invisible Event Trigger
-- Touch up Event Trigger
-- 여러가지 뷰 설정(Continous/Paging View, Scroll Direction, Read Direction, Display Fitting)을 제공 합니다.
-- Random Access Streaming(Fast Open or Byte Serving)을 지원합니다.
-
-
-
+    - Feature 참조.
