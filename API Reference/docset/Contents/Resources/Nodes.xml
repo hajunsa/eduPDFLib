@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>eduPDFPlayer</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="6"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Constants</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>EDDataProvider</Name>
+            <Path>Classes/EDDataProvider.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDDataProvider.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDDataProvider.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDDataProvider.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/EDDataProvider.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>EDEnvelopeDataProvider</Name>
+            <Path>Classes/EDEnvelopeDataProvider.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDEnvelopeDataProvider.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDEnvelopeDataProvider.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDEnvelopeDataProvider.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>EDHTTPConfig</Name>
+            <Path>Classes/EDHTTPConfig.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDHTTPConfig.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDHTTPConfig.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDHTTPConfig.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/EDHTTPConfig.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>EDPageConfig</Name>
+            <Path>Classes/EDPageConfig.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDPageConfig.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDPageConfig.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDPageConfig.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/EDPageConfig.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>eduPDFPlayer</Name>
+            <Path>Classes/eduPDFPlayer.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/eduPDFPlayer.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/eduPDFPlayer.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/eduPDFPlayer.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/eduPDFPlayer.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+		
+        <Node id="6" type="file" documentType="reference">
+            <Name>EDFooter</Name>
+            <Path>Protocols/EDFooter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/EDFooter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/EDFooter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/EDFooter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="7" type="file" documentType="reference">
+            <Name>EDPageFittingStyle</Name>
+            <Path>Constants/EDPageFittingStyle.html</Path>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>EDPageMoveFinishedType</Name>
+            <Path>Constants/EDPageMoveFinishedType.html</Path>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>EDPageReadDirectionStyle</Name>
+            <Path>Constants/EDPageReadDirectionStyle.html</Path>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>EDPageScrollDirectionStyle</Name>
+            <Path>Constants/EDPageScrollDirectionStyle.html</Path>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>eduPDFOpenFinishedType</Name>
+            <Path>Constants/eduPDFOpenFinishedType.html</Path>
+            
+        </Node>
+		
+        
+	</Library>
+</DocSetNodes>

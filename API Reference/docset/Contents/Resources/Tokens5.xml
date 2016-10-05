@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/eduPDFPlayer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/eduPDFPlayer</TokenIdentifier>
+			<Abstract type="html">eduPDF Player.
+PDF, Zipped-Image 열람 가능합니다.
+eduPDF 기능을 사용할 수 있습니다.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/setPassword:</TokenIdentifier>
+			<Abstract type="html">열람시 필요한 패스워드.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/password</TokenIdentifier>
+			<Abstract type="html">열람시 필요한 패스워드.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/eduPDFPlayer/password</TokenIdentifier>
+			<Abstract type="html">열람시 필요한 패스워드.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/setTouchOneTap:</TokenIdentifier>
+			<Abstract type="html">페이지 위에서 단일 탭 액션이 발생 했을 때 콜백 클로저.
+페이지 밖에서 단일 탭이 일어나면 호출하지 않습니다.
+페이지 안에서 특정 객체(주석, 텍스트, 미디어 등등)가 단일 탭 처리를 할 경우 호출하지 않습니다.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, setter=setTouchOneTap:) void ( ^ touchOneTap ) ( CGPoint pt ) __nullable</Declaration>
+			
+			
+			<Anchor>//api/name/__nullable</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/__nullable</TokenIdentifier>
+			<Abstract type="html">페이지 위에서 단일 탭 액션이 발생 했을 때 콜백 클로저.
+페이지 밖에서 단일 탭이 일어나면 호출하지 않습니다.
+페이지 안에서 특정 객체(주석, 텍스트, 미디어 등등)가 단일 탭 처리를 할 경우 호출하지 않습니다.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, setter=setTouchOneTap:) void ( ^ touchOneTap ) ( CGPoint pt ) __nullable</Declaration>
+			
+			
+			<Anchor>//api/name/__nullable</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/eduPDFPlayer/__nullable</TokenIdentifier>
+			<Abstract type="html">페이지 위에서 단일 탭 액션이 발생 했을 때 콜백 클로저.
+페이지 밖에서 단일 탭이 일어나면 호출하지 않습니다.
+페이지 안에서 특정 객체(주석, 텍스트, 미디어 등등)가 단일 탭 처리를 할 경우 호출하지 않습니다.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, setter=setTouchOneTap:) void ( ^ touchOneTap ) ( CGPoint pt ) __nullable</Declaration>
+			
+			
+			<Anchor>//api/name/__nullable</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/openWithPath:superview:completion:</TokenIdentifier>
+			<Abstract type="html">문서 열람.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>- (void)openWithPath:(nonnull NSString *)path superview:(nonnull UIView *)superview completion:(void ( ^ __nullable ) ( eduPDFPlayer *_Nonnull player , eduPDFOpenFinishedType finished ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">문서 로컬 경로 또는 원격 경로(http, https).</Abstract>
+				</Parameter><Parameter>
+					<Name>superview</Name>
+					<Abstract type="html">화면 표시될 부모 뷰어.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">열람 완료시 콜백 클로저.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/openWithPath:superview:completion:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/openWithPath:superview:config:completion:</TokenIdentifier>
+			<Abstract type="html">문서 열람.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>- (void)openWithPath:(nonnull NSString *)path superview:(nonnull UIView *)superview config:(nullable EDPageConfig *)config completion:(void ( ^ __nullable ) ( eduPDFPlayer *_Nonnull player , eduPDFOpenFinishedType finished ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">문서 로컬 경로 또는 원격 경로(http, https).</Abstract>
+				</Parameter><Parameter>
+					<Name>superview</Name>
+					<Abstract type="html">화면 표시될 부모 뷰어.</Abstract>
+				</Parameter><Parameter>
+					<Name>config</Name>
+					<Abstract type="html">페이지 관련 설정.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">열람 완료시 콜백 클로저.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/openWithPath:superview:config:completion:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/openWithDataProvider:superview:config:completion:</TokenIdentifier>
+			<Abstract type="html">문서 열람.
+외부 DRM이나 데이터 변환이 필요한 경우에 사용합니다.
+EDDataProvider 상속받아 convertData 인터페이스를 직접 구현 합니다.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>- (void)openWithDataProvider:(nonnull EDDataProvider *)dataProvider superview:(nonnull UIView *)superview config:(nullable EDPageConfig *)config completion:(void ( ^ __nullable ) ( eduPDFPlayer *_Nonnull player , eduPDFOpenFinishedType finished ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dataProvider</Name>
+					<Abstract type="html">문서 데이터 제공자.</Abstract>
+				</Parameter><Parameter>
+					<Name>superview</Name>
+					<Abstract type="html">화면 표시될 부모 뷰어.</Abstract>
+				</Parameter><Parameter>
+					<Name>config</Name>
+					<Abstract type="html">페이지 관련 설정.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">열람 완료시 콜백 클로저.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/openWithDataProvider:superview:config:completion:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/close</TokenIdentifier>
+			<Abstract type="html">문서 닫기.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>- (void)close</Declaration>
+			
+			
+			<Anchor>//api/name/close</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/viewWillTransitionToSize:withTransitionCoordinator:</TokenIdentifier>
+			<Abstract type="html">장치 회전 처리.
+장치 회전시 해당 값을 그대로 호출 합니다.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(nonnull id&lt;UIViewControllerTransitionCoordinator&gt;)coordinator</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>size</Name>
+					<Abstract type="html">받은값 그대로 전달.</Abstract>
+				</Parameter><Parameter>
+					<Name>coordinator</Name>
+					<Abstract type="html">받은값 그대로 전달.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewWillTransitionToSize:withTransitionCoordinator:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/pageCount</TokenIdentifier>
+			<Abstract type="html">총 페이지 수.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>- (int)pageCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">총 페이지 수.</Abstract></ReturnValue>
+			<Anchor>//api/name/pageCount</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/currentPageNo</TokenIdentifier>
+			<Abstract type="html">현재 페이지 번호.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>- (int)currentPageNo</Declaration>
+			
+			<ReturnValue><Abstract type="html">현재 페이지 번호.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentPageNo</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/gotoPage:completion:</TokenIdentifier>
+			<Abstract type="html">특정 페이지 이동.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>- (void)gotoPage:(int)pageNo completion:(void ( ^ __nullable ) ( EDPageMoveFinishedType finished ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageNo</Name>
+					<Abstract type="html">이동할 페이지 번호.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">페이지 이동 완료시 콜백 클로저.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/gotoPage:completion:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/nextPage:</TokenIdentifier>
+			<Abstract type="html">다음 페이지 이동.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>- (void)nextPage:(void ( ^ __nullable ) ( EDPageMoveFinishedType finished ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">페이지 이동 완료시 콜백 클로저.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/nextPage:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/prevPage:</TokenIdentifier>
+			<Abstract type="html">이전 페이지 이동.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>- (void)prevPage:(void ( ^ __nullable ) ( EDPageMoveFinishedType finished ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">페이지 이동 완료시 콜백 클로저.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/prevPage:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/createPageThumbnailImage:pageNo:completion:</TokenIdentifier>
+			<Abstract type="html">페이지 섬네일 이미지 생성하여 얻기.
+생성한 이미지는 가로 세로 비율이 유지합니다. 레티나 디스플레이 이면 배율 만큼 생성한 이미지가 큽니다.</Abstract>
+			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			
+			<Declaration>- (void)createPageThumbnailImage:(CGSize)maxSize pageNo:(int)pageNo completion:(void ( ^ __nullable ) ( UIImage *__nullable image , int pageNo ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>maxSize</Name>
+					<Abstract type="html">생성할 이미지 최대 크기(1x 기준).</Abstract>
+				</Parameter><Parameter>
+					<Name>pageNo</Name>
+					<Abstract type="html">생성할 페이지 번호.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">페이지 섬네일 이미지 생성 완료시 콜백 클로저.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createPageThumbnailImage:pageNo:completion:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

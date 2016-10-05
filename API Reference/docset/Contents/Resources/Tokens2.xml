@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/EDEnvelopeDataProvider.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/EDEnvelopeDataProvider</TokenIdentifier>
+			<Abstract type="html">EDEnvelopeDataProvider.
+Unidocs DRM4 문서 열람시 사용합니다.</Abstract>
+			<DeclaredIn>EDEnvelopeDataProvider.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDEnvelopeDataProvider/setOpenKey:</TokenIdentifier>
+			<Abstract type="html">문서 열람 키.</Abstract>
+			<DeclaredIn>EDEnvelopeDataProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *openKey</Declaration>
+			
+			
+			<Anchor>//api/name/openKey</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDEnvelopeDataProvider/openKey</TokenIdentifier>
+			<Abstract type="html">문서 열람 키.</Abstract>
+			<DeclaredIn>EDEnvelopeDataProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *openKey</Declaration>
+			
+			
+			<Anchor>//api/name/openKey</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDEnvelopeDataProvider/openKey</TokenIdentifier>
+			<Abstract type="html">문서 열람 키.</Abstract>
+			<DeclaredIn>EDEnvelopeDataProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *openKey</Declaration>
+			
+			
+			<Anchor>//api/name/openKey</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
