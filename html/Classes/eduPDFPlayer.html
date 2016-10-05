@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>eduPDFPlayer Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">eduPDFPlayer </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Unidocs Inc</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/__nullable">__nullable</option>
+		
+		<option value="//api/name/password">password</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/close">- close</option>
+		
+		<option value="//api/name/createPageThumbnailImage:pageNo:completion:">- createPageThumbnailImage:pageNo:completion:</option>
+		
+		<option value="//api/name/currentPageNo">- currentPageNo</option>
+		
+		<option value="//api/name/gotoPage:completion:">- gotoPage:completion:</option>
+		
+		<option value="//api/name/nextPage:">- nextPage:</option>
+		
+		<option value="//api/name/openWithDataProvider:superview:config:completion:">- openWithDataProvider:superview:config:completion:</option>
+		
+		<option value="//api/name/openWithPath:superview:completion:">- openWithPath:superview:completion:</option>
+		
+		<option value="//api/name/openWithPath:superview:config:completion:">- openWithPath:superview:config:completion:</option>
+		
+		<option value="//api/name/pageCount">- pageCount</option>
+		
+		<option value="//api/name/prevPage:">- prevPage:</option>
+		
+		<option value="//api/name/viewWillTransitionToSize:withTransitionCoordinator:">- viewWillTransitionToSize:withTransitionCoordinator:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">eduPDFPlayer Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>eduPDFPlayer_Public.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>eduPDF Player.
+PDF, Zipped-Image 열람 가능합니다.
+eduPDF 기능을 사용할 수 있습니다.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/password" title="password"></a>
+	<h3 class="method-title"><code><a href="#//api/name/password">&nbsp;&nbsp;password</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>열람시 필요한 패스워드.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *password</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/__nullable" title="__nullable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/__nullable">&nbsp;&nbsp;__nullable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>페이지 위에서 단일 탭 액션이 발생 했을 때 콜백 클로저.
+페이지 밖에서 단일 탭이 일어나면 호출하지 않습니다.
+페이지 안에서 특정 객체(주석, 텍스트, 미디어 등등)가 단일 탭 처리를 할 경우 호출하지 않습니다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, setter=setTouchOneTap:) void ( ^ touchOneTap ) ( CGPoint pt ) __nullable</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openWithPath:superview:completion:" title="openWithPath:superview:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openWithPath:superview:completion:">&ndash;&nbsp;openWithPath:superview:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>문서 열람.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openWithPath:(nonnull NSString *)<em>path</em> superview:(nonnull UIView *)<em>superview</em> completion:(void ( ^ __nullable ) ( eduPDFPlayer *_Nonnull player , eduPDFOpenFinishedType finished ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>문서 로컬 경로 또는 원격 경로(http, https).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>superview</code></th>
+						<td><p>화면 표시될 부모 뷰어.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>열람 완료시 콜백 클로저.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openWithPath:superview:config:completion:" title="openWithPath:superview:config:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openWithPath:superview:config:completion:">&ndash;&nbsp;openWithPath:superview:config:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>문서 열람.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openWithPath:(nonnull NSString *)<em>path</em> superview:(nonnull UIView *)<em>superview</em> config:(nullable EDPageConfig *)<em>config</em> completion:(void ( ^ __nullable ) ( eduPDFPlayer *_Nonnull player , eduPDFOpenFinishedType finished ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>문서 로컬 경로 또는 원격 경로(http, https).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>superview</code></th>
+						<td><p>화면 표시될 부모 뷰어.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>config</code></th>
+						<td><p>페이지 관련 설정.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>열람 완료시 콜백 클로저.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openWithDataProvider:superview:config:completion:" title="openWithDataProvider:superview:config:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openWithDataProvider:superview:config:completion:">&ndash;&nbsp;openWithDataProvider:superview:config:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>문서 열람.
+외부 DRM이나 데이터 변환이 필요한 경우에 사용합니다.
+<a href="../Classes/EDDataProvider.html">EDDataProvider</a> 상속받아 convertData 인터페이스를 직접 구현 합니다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openWithDataProvider:(nonnull EDDataProvider *)<em>dataProvider</em> superview:(nonnull UIView *)<em>superview</em> config:(nullable EDPageConfig *)<em>config</em> completion:(void ( ^ __nullable ) ( eduPDFPlayer *_Nonnull player , eduPDFOpenFinishedType finished ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataProvider</code></th>
+						<td><p>문서 데이터 제공자.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>superview</code></th>
+						<td><p>화면 표시될 부모 뷰어.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>config</code></th>
+						<td><p>페이지 관련 설정.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>열람 완료시 콜백 클로저.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/close" title="close"></a>
+	<h3 class="method-title"><code><a href="#//api/name/close">&ndash;&nbsp;close</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>문서 닫기.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)close</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/viewWillTransitionToSize:withTransitionCoordinator:" title="viewWillTransitionToSize:withTransitionCoordinator:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/viewWillTransitionToSize:withTransitionCoordinator:">&ndash;&nbsp;viewWillTransitionToSize:withTransitionCoordinator:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>장치 회전 처리.
+장치 회전시 해당 값을 그대로 호출 합니다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)viewWillTransitionToSize:(CGSize)<em>size</em> withTransitionCoordinator:(nonnull id&lt;UIViewControllerTransitionCoordinator&gt;)<em>coordinator</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>size</code></th>
+						<td><p>받은값 그대로 전달.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>coordinator</code></th>
+						<td><p>받은값 그대로 전달.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pageCount" title="pageCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pageCount">&ndash;&nbsp;pageCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>총 페이지 수.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)pageCount</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>총 페이지 수.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentPageNo" title="currentPageNo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentPageNo">&ndash;&nbsp;currentPageNo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>현재 페이지 번호.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)currentPageNo</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>현재 페이지 번호.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/gotoPage:completion:" title="gotoPage:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gotoPage:completion:">&ndash;&nbsp;gotoPage:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>특정 페이지 이동.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)gotoPage:(int)<em>pageNo</em> completion:(void ( ^ __nullable ) ( EDPageMoveFinishedType finished ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageNo</code></th>
+						<td><p>이동할 페이지 번호.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>페이지 이동 완료시 콜백 클로저.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/nextPage:" title="nextPage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/nextPage:">&ndash;&nbsp;nextPage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>다음 페이지 이동.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)nextPage:(void ( ^ __nullable ) ( EDPageMoveFinishedType finished ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>페이지 이동 완료시 콜백 클로저.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/prevPage:" title="prevPage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/prevPage:">&ndash;&nbsp;prevPage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>이전 페이지 이동.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)prevPage:(void ( ^ __nullable ) ( EDPageMoveFinishedType finished ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>페이지 이동 완료시 콜백 클로저.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createPageThumbnailImage:pageNo:completion:" title="createPageThumbnailImage:pageNo:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createPageThumbnailImage:pageNo:completion:">&ndash;&nbsp;createPageThumbnailImage:pageNo:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>페이지 섬네일 이미지 생성하여 얻기.
+생성한 이미지는 가로 세로 비율이 유지합니다. 레티나 디스플레이 이면 배율 만큼 생성한 이미지가 큽니다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createPageThumbnailImage:(CGSize)<em>maxSize</em> pageNo:(int)<em>pageNo</em> completion:(void ( ^ __nullable ) ( UIImage *__nullable image , int pageNo ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxSize</code></th>
+						<td><p>생성할 이미지 최대 크기(1x 기준).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageNo</code></th>
+						<td><p>생성할 페이지 번호.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>페이지 섬네일 이미지 생성 완료시 콜백 클로저.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Unidocs Inc. All rights reserved. Updated: 2016-09-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
