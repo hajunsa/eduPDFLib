@@ -30,7 +30,6 @@ target "Project Target" do
 pod 'eduPDFLib'
 end
     - 'pod install'을 실행 합니다.
-    - eduPDFPlayerS.framework폴더안에 'CMap', 'fonts'를 프로젝트로 드레그하여 Create folder references로 추가합니다.(수동)
 
 - Opensource Library
     - freeType : Version 2.4.7
@@ -40,6 +39,7 @@ end
 
 - Library usage
     - 샘플 예제를 제공합니다.
+    - 'https://github.com/hajunsa/eduPDFLib.git'에서 예제 및 도움말을 제공합니다. 
 
 - Feature
     - View Settings
@@ -100,6 +100,7 @@ end
         - 스크롤 관련 콜백 API를 추가하였습니다.
     - 개선 사항
         - 스크롤시 스레드 안정성 개선하였습니다.
+        - 주석 객체 터치 정확도를 개선하였습니다.
     - 오류 수정
         - 페이지 바로가기나 회전, 화면 분할시 페이지 표시 오류 수정하였습니다.
         - 텍스트 필드 표시/입력 오류 수정하였습니다.
