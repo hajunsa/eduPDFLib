@@ -28,6 +28,8 @@
 		52799C4B1D8791CA0009AD48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52799C4E1D8791CA0009AD48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52799C501D8791CA0009AD48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB8D59B94941C1FBE6519E21 /* Pods-eduPDFPlayerPTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eduPDFPlayerPTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-eduPDFPlayerPTest/Pods-eduPDFPlayerPTest.release.xcconfig"; sourceTree = "<group>"; };
+		F74BC2D6DA6F3D5E97DD8DC3 /* Pods-eduPDFPlayerPTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eduPDFPlayerPTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eduPDFPlayerPTest/Pods-eduPDFPlayerPTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 				52799C3E1D8791CA0009AD48 /* eduPDFPlayerPTest */,
 				52799C3D1D8791CA0009AD48 /* Products */,
 				F2BB75789B570A824FFB14BE /* Frameworks */,
+				CE28AD7DD745AE357745B81A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +86,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CE28AD7DD745AE357745B81A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F74BC2D6DA6F3D5E97DD8DC3 /* Pods-eduPDFPlayerPTest.debug.xcconfig */,
+				CB8D59B94941C1FBE6519E21 /* Pods-eduPDFPlayerPTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F2BB75789B570A824FFB14BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52799C531D8791CA0009AD48 /* Build configuration list for PBXNativeTarget "eduPDFPlayerPTest" */;
 			buildPhases = (
+				D92EDA00222D4E27D8EE3C6D /* [CP] Check Pods Manifest.lock */,
 				52799C381D8791CA0009AD48 /* Sources */,
 				52799C391D8791CA0009AD48 /* Frameworks */,
 				52799C3A1D8791CA0009AD48 /* Resources */,
+				DFBA08415839FC6C38502450 /* [CP] Embed Pods Frameworks */,
+				6344E7B8FCB353ABF8D827F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6344E7B8FCB353ABF8D827F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eduPDFPlayerPTest/Pods-eduPDFPlayerPTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D92EDA00222D4E27D8EE3C6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DFBA08415839FC6C38502450 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eduPDFPlayerPTest/Pods-eduPDFPlayerPTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52799C381D8791CA0009AD48 /* Sources */ = {
@@ -275,6 +338,7 @@
 		};
 		52799C541D8791CA0009AD48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F74BC2D6DA6F3D5E97DD8DC3 /* Pods-eduPDFPlayerPTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = eduPDFPlayerPTest/Info.plist;
@@ -286,6 +350,7 @@
 		};
 		52799C551D8791CA0009AD48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8D59B94941C1FBE6519E21 /* Pods-eduPDFPlayerPTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = eduPDFPlayerPTest/Info.plist;
