@@ -50,6 +50,17 @@
             }
             NSLog(@"changedPage pageNo = %d", pageNo);
         }];
+        
+        // 스크롤 시작 할때
+        [self.player setStartScroll:^(int pageNo) {
+            NSLog(@"startScroll pageNo = %d", pageNo);
+        }];
+
+        // 스크롤을 드레깅 방향으로 더 이상 할 수 없을 때
+        [self.player setLimitScroll:^(int pageNo) {
+            NSLog(@"limitScroll pageNo = %d", pageNo);
+        }];
+
         NSLog(@"Open Finished code = %d", (int)finished);
     }];
 }
