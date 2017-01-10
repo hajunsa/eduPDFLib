@@ -1,50 +1,934 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/EDPageReadDirectionStyle.html">
+	<File path="Classes/EDMarkupAnnotationParam.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/EDPageReadDirectionStyle</TokenIdentifier>
-			<Abstract type="html">문서 읽기 방향 설정</Abstract>
-			<DeclaredIn>EDPageEnums.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/EDMarkupAnnotationParam</TokenIdentifier>
+			<Abstract type="html">EDAnnotationBorderStyle
+주석 외곽선 스타일
+아직 지원 안함.</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
             
 			
 			<NodeRef refid="9"/>
 		</Token>
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPageReadDirectionAuto</TokenIdentifier>
-            <Abstract type="html">문서에서 정의한 방향.
-     </Abstract>
-            <Declaration>EDPageReadDirectionAuto</Declaration>
-            
-            <DeclaredIn>EDPageEnums.h</DeclaredIn>
-            
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setIsCompletion:</TokenIdentifier>
+			<Abstract type="html">바로 추가 완료 여부
+NO이면 인터랙션후에 주석을 추가 합니다.
+YES이면 전달한 매개변수로 바로 문서에 추가 합니다.</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isCompletion</Declaration>
+			
+			
+			<Anchor>//api/name/isCompletion</Anchor>
             <NodeRef refid="9"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPageReadDirectionRight</TokenIdentifier>
-            <Abstract type="html">문서를 왼쪽으로 읽음.
-     </Abstract>
-            <Declaration>EDPageReadDirectionRight</Declaration>
-            
-            <DeclaredIn>EDPageEnums.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/isCompletion</TokenIdentifier>
+			<Abstract type="html">바로 추가 완료 여부
+NO이면 인터랙션후에 주석을 추가 합니다.
+YES이면 전달한 매개변수로 바로 문서에 추가 합니다.</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isCompletion</Declaration>
+			
+			
+			<Anchor>//api/name/isCompletion</Anchor>
             <NodeRef refid="9"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPageReadDirectionLeft</TokenIdentifier>
-            <Abstract type="html">문서를 오른쪽으로 읽음.
-     </Abstract>
-            <Declaration>EDPageReadDirectionLeft</Declaration>
-            
-            <DeclaredIn>EDPageEnums.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/isCompletion</TokenIdentifier>
+			<Abstract type="html">바로 추가 완료 여부
+NO이면 인터랙션후에 주석을 추가 합니다.
+YES이면 전달한 매개변수로 바로 문서에 추가 합니다.</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isCompletion</Declaration>
+			
+			
+			<Anchor>//api/name/isCompletion</Anchor>
             <NodeRef refid="9"/>
-        </Token>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setType:</TokenIdentifier>
+			<Abstract type="html">주석 종류
+&quot;Text&quot; &quot;Ink&quot; &quot;Line&quot; &quot;FreeText&quot; &quot;Circle&quot; &quot;Square&quot; &quot;Stamp&quot; &quot;StrikeOut&quot; &quot;Underline&quot; &quot;Highlight&quot;</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/type</TokenIdentifier>
+			<Abstract type="html">주석 종류
+&quot;Text&quot; &quot;Ink&quot; &quot;Line&quot; &quot;FreeText&quot; &quot;Circle&quot; &quot;Square&quot; &quot;Stamp&quot; &quot;StrikeOut&quot; &quot;Underline&quot; &quot;Highlight&quot;</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/type</TokenIdentifier>
+			<Abstract type="html">주석 종류
+&quot;Text&quot; &quot;Ink&quot; &quot;Line&quot; &quot;FreeText&quot; &quot;Circle&quot; &quot;Square&quot; &quot;Stamp&quot; &quot;StrikeOut&quot; &quot;Underline&quot; &quot;Highlight&quot;</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setPageNo:</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
+			
+			
+			<Anchor>//api/name/pageNo</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/pageNo</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
+			
+			
+			<Anchor>//api/name/pageNo</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/pageNo</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
+			
+			
+			<Anchor>//api/name/pageNo</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setFrame:</TokenIdentifier>
+			<Abstract type="html">위치 영역</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGRect frame</Declaration>
+			
+			
+			<Anchor>//api/name/frame</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/frame</TokenIdentifier>
+			<Abstract type="html">위치 영역</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGRect frame</Declaration>
+			
+			
+			<Anchor>//api/name/frame</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/frame</TokenIdentifier>
+			<Abstract type="html">위치 영역</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGRect frame</Declaration>
+			
+			
+			<Anchor>//api/name/frame</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setNm:</TokenIdentifier>
+			<Abstract type="html">식별자
+기본값은 UUID 랜덤 생성</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *nm</Declaration>
+			
+			
+			<Anchor>//api/name/nm</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/nm</TokenIdentifier>
+			<Abstract type="html">식별자
+기본값은 UUID 랜덤 생성</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *nm</Declaration>
+			
+			
+			<Anchor>//api/name/nm</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/nm</TokenIdentifier>
+			<Abstract type="html">식별자
+기본값은 UUID 랜덤 생성</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *nm</Declaration>
+			
+			
+			<Anchor>//api/name/nm</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setSubject:</TokenIdentifier>
+			<Abstract type="html">제목
+기본값은 type값</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *subject</Declaration>
+			
+			
+			<Anchor>//api/name/subject</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/subject</TokenIdentifier>
+			<Abstract type="html">제목
+기본값은 type값</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *subject</Declaration>
+			
+			
+			<Anchor>//api/name/subject</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/subject</TokenIdentifier>
+			<Abstract type="html">제목
+기본값은 type값</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *subject</Declaration>
+			
+			
+			<Anchor>//api/name/subject</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setAuthor:</TokenIdentifier>
+			<Abstract type="html">저작자
+기본값은 단말기 이름</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *author</Declaration>
+			
+			
+			<Anchor>//api/name/author</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/author</TokenIdentifier>
+			<Abstract type="html">저작자
+기본값은 단말기 이름</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *author</Declaration>
+			
+			
+			<Anchor>//api/name/author</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/author</TokenIdentifier>
+			<Abstract type="html">저작자
+기본값은 단말기 이름</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *author</Declaration>
+			
+			
+			<Anchor>//api/name/author</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setContents:</TokenIdentifier>
+			<Abstract type="html">내용</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *contents</Declaration>
+			
+			
+			<Anchor>//api/name/contents</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/contents</TokenIdentifier>
+			<Abstract type="html">내용</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *contents</Declaration>
+			
+			
+			<Anchor>//api/name/contents</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/contents</TokenIdentifier>
+			<Abstract type="html">내용</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *contents</Declaration>
+			
+			
+			<Anchor>//api/name/contents</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setOpacity:</TokenIdentifier>
+			<Abstract type="html">투명도</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/opacity</TokenIdentifier>
+			<Abstract type="html">투명도</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/opacity</TokenIdentifier>
+			<Abstract type="html">투명도</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setBorderColor:</TokenIdentifier>
+			<Abstract type="html">외곽선 색상</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *borderColor</Declaration>
+			
+			
+			<Anchor>//api/name/borderColor</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/borderColor</TokenIdentifier>
+			<Abstract type="html">외곽선 색상</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *borderColor</Declaration>
+			
+			
+			<Anchor>//api/name/borderColor</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/borderColor</TokenIdentifier>
+			<Abstract type="html">외곽선 색상</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *borderColor</Declaration>
+			
+			
+			<Anchor>//api/name/borderColor</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setFillColor:</TokenIdentifier>
+			<Abstract type="html">채움 색상</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *fillColor</Declaration>
+			
+			
+			<Anchor>//api/name/fillColor</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/fillColor</TokenIdentifier>
+			<Abstract type="html">채움 색상</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *fillColor</Declaration>
+			
+			
+			<Anchor>//api/name/fillColor</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/fillColor</TokenIdentifier>
+			<Abstract type="html">채움 색상</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *fillColor</Declaration>
+			
+			
+			<Anchor>//api/name/fillColor</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setBorderWidth:</TokenIdentifier>
+			<Abstract type="html">외곽선 굵기</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat borderWidth</Declaration>
+			
+			
+			<Anchor>//api/name/borderWidth</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/borderWidth</TokenIdentifier>
+			<Abstract type="html">외곽선 굵기</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat borderWidth</Declaration>
+			
+			
+			<Anchor>//api/name/borderWidth</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/borderWidth</TokenIdentifier>
+			<Abstract type="html">외곽선 굵기</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat borderWidth</Declaration>
+			
+			
+			<Anchor>//api/name/borderWidth</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setBorderStyle:</TokenIdentifier>
+			<Abstract type="html">외곽선 스타일</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) EDAnnotationBorderStyle borderStyle</Declaration>
+			
+			
+			<Anchor>//api/name/borderStyle</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/borderStyle</TokenIdentifier>
+			<Abstract type="html">외곽선 스타일</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) EDAnnotationBorderStyle borderStyle</Declaration>
+			
+			
+			<Anchor>//api/name/borderStyle</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/borderStyle</TokenIdentifier>
+			<Abstract type="html">외곽선 스타일</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) EDAnnotationBorderStyle borderStyle</Declaration>
+			
+			
+			<Anchor>//api/name/borderStyle</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setName:</TokenIdentifier>
+			<Abstract type="html">아이콘 모양
+&quot;Check&quot;, &quot;Circle&quot;, &quot;Comment&quot;, &quot;Cross&quot;, &quot;CrossHairs&quot;, &quot;Help&quot;, &quot;Insert&quot;, &quot;Key&quot;, &quot;NewParagraph&quot;, &quot;Note&quot;, &quot;Paragraph&quot;, &quot;RightArrow&quot;, &quot;RightPointer&quot;, &quot;Star&quot;, &quot;UpArrow&quot;, &quot;UpLeftArrow&quot;</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/name</TokenIdentifier>
+			<Abstract type="html">아이콘 모양
+&quot;Check&quot;, &quot;Circle&quot;, &quot;Comment&quot;, &quot;Cross&quot;, &quot;CrossHairs&quot;, &quot;Help&quot;, &quot;Insert&quot;, &quot;Key&quot;, &quot;NewParagraph&quot;, &quot;Note&quot;, &quot;Paragraph&quot;, &quot;RightArrow&quot;, &quot;RightPointer&quot;, &quot;Star&quot;, &quot;UpArrow&quot;, &quot;UpLeftArrow&quot;</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/name</TokenIdentifier>
+			<Abstract type="html">아이콘 모양
+&quot;Check&quot;, &quot;Circle&quot;, &quot;Comment&quot;, &quot;Cross&quot;, &quot;CrossHairs&quot;, &quot;Help&quot;, &quot;Insert&quot;, &quot;Key&quot;, &quot;NewParagraph&quot;, &quot;Note&quot;, &quot;Paragraph&quot;, &quot;RightArrow&quot;, &quot;RightPointer&quot;, &quot;Star&quot;, &quot;UpArrow&quot;, &quot;UpLeftArrow&quot;</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setHead:</TokenIdentifier>
+			<Abstract type="html">라인 머리 모양
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *head</Declaration>
+			
+			
+			<Anchor>//api/name/head</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/head</TokenIdentifier>
+			<Abstract type="html">라인 머리 모양
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *head</Declaration>
+			
+			
+			<Anchor>//api/name/head</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/head</TokenIdentifier>
+			<Abstract type="html">라인 머리 모양
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *head</Declaration>
+			
+			
+			<Anchor>//api/name/head</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setTail:</TokenIdentifier>
+			<Abstract type="html">라인 꼬리 모양
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tail</Declaration>
+			
+			
+			<Anchor>//api/name/tail</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/tail</TokenIdentifier>
+			<Abstract type="html">라인 꼬리 모양
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tail</Declaration>
+			
+			
+			<Anchor>//api/name/tail</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/tail</TokenIdentifier>
+			<Abstract type="html">라인 꼬리 모양
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tail</Declaration>
+			
+			
+			<Anchor>//api/name/tail</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setPaths:</TokenIdentifier>
+			<Abstract type="html">획 목록(문서 뷰어 기준)</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *paths</Declaration>
+			
+			
+			<Anchor>//api/name/paths</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/paths</TokenIdentifier>
+			<Abstract type="html">획 목록(문서 뷰어 기준)</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *paths</Declaration>
+			
+			
+			<Anchor>//api/name/paths</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/paths</TokenIdentifier>
+			<Abstract type="html">획 목록(문서 뷰어 기준)</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *paths</Declaration>
+			
+			
+			<Anchor>//api/name/paths</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setPathsOrigin:</TokenIdentifier>
+			<Abstract type="html">획 목록(문서 기준)</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *pathsOrigin</Declaration>
+			
+			
+			<Anchor>//api/name/pathsOrigin</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/pathsOrigin</TokenIdentifier>
+			<Abstract type="html">획 목록(문서 기준)</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *pathsOrigin</Declaration>
+			
+			
+			<Anchor>//api/name/pathsOrigin</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/pathsOrigin</TokenIdentifier>
+			<Abstract type="html">획 목록(문서 기준)</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *pathsOrigin</Declaration>
+			
+			
+			<Anchor>//api/name/pathsOrigin</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setImage:</TokenIdentifier>
+			<Abstract type="html">이미지</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/image</TokenIdentifier>
+			<Abstract type="html">이미지</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/image</TokenIdentifier>
+			<Abstract type="html">이미지</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setTextColor:</TokenIdentifier>
+			<Abstract type="html">글자 색상</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *textColor</Declaration>
+			
+			
+			<Anchor>//api/name/textColor</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/textColor</TokenIdentifier>
+			<Abstract type="html">글자 색상</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *textColor</Declaration>
+			
+			
+			<Anchor>//api/name/textColor</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/textColor</TokenIdentifier>
+			<Abstract type="html">글자 색상</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *textColor</Declaration>
+			
+			
+			<Anchor>//api/name/textColor</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setFontSize:</TokenIdentifier>
+			<Abstract type="html">폰트 크기</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat fontSize</Declaration>
+			
+			
+			<Anchor>//api/name/fontSize</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/fontSize</TokenIdentifier>
+			<Abstract type="html">폰트 크기</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat fontSize</Declaration>
+			
+			
+			<Anchor>//api/name/fontSize</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/fontSize</TokenIdentifier>
+			<Abstract type="html">폰트 크기</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat fontSize</Declaration>
+			
+			
+			<Anchor>//api/name/fontSize</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setTextAlignment:</TokenIdentifier>
+			<Abstract type="html">글자 정렬</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTextAlignment textAlignment</Declaration>
+			
+			
+			<Anchor>//api/name/textAlignment</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/textAlignment</TokenIdentifier>
+			<Abstract type="html">글자 정렬</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTextAlignment textAlignment</Declaration>
+			
+			
+			<Anchor>//api/name/textAlignment</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/textAlignment</TokenIdentifier>
+			<Abstract type="html">글자 정렬</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTextAlignment textAlignment</Declaration>
+			
+			
+			<Anchor>//api/name/textAlignment</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setStartCaret:</TokenIdentifier>
+			<Abstract type="html">시작 텍스트 인덱스
+x는 단어 인덱스
+y는 문자 인덱스</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint startCaret</Declaration>
+			
+			
+			<Anchor>//api/name/startCaret</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/startCaret</TokenIdentifier>
+			<Abstract type="html">시작 텍스트 인덱스
+x는 단어 인덱스
+y는 문자 인덱스</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint startCaret</Declaration>
+			
+			
+			<Anchor>//api/name/startCaret</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/startCaret</TokenIdentifier>
+			<Abstract type="html">시작 텍스트 인덱스
+x는 단어 인덱스
+y는 문자 인덱스</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint startCaret</Declaration>
+			
+			
+			<Anchor>//api/name/startCaret</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/setEndCaret:</TokenIdentifier>
+			<Abstract type="html">완료 텍스트 인덱스
+x는 단어 인덱스
+y는 문자 인덱스</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint endCaret</Declaration>
+			
+			
+			<Anchor>//api/name/endCaret</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/endCaret</TokenIdentifier>
+			<Abstract type="html">완료 텍스트 인덱스
+x는 단어 인덱스
+y는 문자 인덱스</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint endCaret</Declaration>
+			
+			
+			<Anchor>//api/name/endCaret</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDMarkupAnnotationParam/endCaret</TokenIdentifier>
+			<Abstract type="html">완료 텍스트 인덱스
+x는 단어 인덱스
+y는 문자 인덱스</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint endCaret</Declaration>
+			
+			
+			<Anchor>//api/name/endCaret</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDMarkupAnnotationParam/isValiedCaret</TokenIdentifier>
+			<Abstract type="html">텍스트 인텍스 유효성</Abstract>
+			<DeclaredIn>EDMarkupAnnotationParam.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isValiedCaret</Declaration>
+			
+			<ReturnValue><Abstract type="html">유효성 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/isValiedCaret</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
         
         
 	</File>

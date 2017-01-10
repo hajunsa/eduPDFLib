@@ -16,6 +16,16 @@
 						<NodeRef refid="3"/>
 						<NodeRef refid="4"/>
 						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
 						
 					</Subnodes>
 				</Node>
@@ -26,7 +36,7 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="6"/>
+						<NodeRef refid="16"/>
 						
 					</Subnodes>
 				</Node>
@@ -36,11 +46,13 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="7"/>
-						<NodeRef refid="8"/>
-						<NodeRef refid="9"/>
-						<NodeRef refid="10"/>
-						<NodeRef refid="11"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
 						
 					</Subnodes>
 				</Node>
@@ -52,6 +64,72 @@
 	<Library>
 		
 		<Node id="1" type="file" documentType="reference">
+            <Name>EDAnnotation</Name>
+            <Path>Classes/EDAnnotation.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDAnnotation.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDAnnotation.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDAnnotation.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/EDAnnotation.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/EDAnnotation.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>EDBookmark</Name>
+            <Path>Classes/EDBookmark.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDBookmark.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDBookmark.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDBookmark.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
             <Name>EDDataProvider</Name>
             <Path>Classes/EDDataProvider.html</Path>
             
@@ -84,7 +162,34 @@
             </Subnodes>
             
         </Node>
-		<Node id="2" type="file" documentType="reference">
+		<Node id="4" type="file" documentType="reference">
+            <Name>EDDocumentProvider</Name>
+            <Path>Classes/EDDocumentProvider.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDDocumentProvider.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDDocumentProvider.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDDocumentProvider.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
             <Name>EDEnvelopeDataProvider</Name>
             <Path>Classes/EDEnvelopeDataProvider.html</Path>
             
@@ -111,7 +216,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="3" type="file" documentType="reference">
+		<Node id="6" type="file" documentType="reference">
             <Name>EDHTTPConfig</Name>
             <Path>Classes/EDHTTPConfig.html</Path>
             
@@ -144,7 +249,133 @@
             </Subnodes>
             
         </Node>
-		<Node id="4" type="file" documentType="reference">
+		<Node id="7" type="file" documentType="reference">
+            <Name>EDImage</Name>
+            <Path>Classes/EDImage.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDImage.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDImage.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDImage.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/EDImage.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>EDLink</Name>
+            <Path>Classes/EDLink.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDLink.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDLink.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDLink.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/EDLink.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>EDMarkupAnnotationParam</Name>
+            <Path>Classes/EDMarkupAnnotationParam.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDMarkupAnnotationParam.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDMarkupAnnotationParam.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDMarkupAnnotationParam.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/EDMarkupAnnotationParam.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>EDOutlines</Name>
+            <Path>Classes/EDOutlines.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDOutlines.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDOutlines.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/EDOutlines.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
             <Name>EDPageConfig</Name>
             <Path>Classes/EDPageConfig.html</Path>
             
@@ -174,10 +405,97 @@
                 </Node>
                 
                 
+                <Node type="section">
+                    <Path>Classes/EDPageConfig.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
             </Subnodes>
             
         </Node>
-		<Node id="5" type="file" documentType="reference">
+		<Node id="12" type="file" documentType="reference">
+            <Name>EDTextSelection</Name>
+            <Path>Classes/EDTextSelection.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDTextSelection.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDTextSelection.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDTextSelection.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>EDTouchCoordination</Name>
+            <Path>Classes/EDTouchCoordination.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDTouchCoordination.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDTouchCoordination.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDTouchCoordination.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>EDXFDFParam</Name>
+            <Path>Classes/EDXFDFParam.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EDXFDFParam.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EDXFDFParam.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/EDXFDFParam.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="15" type="file" documentType="reference">
             <Name>eduPDFPlayer</Name>
             <Path>Classes/eduPDFPlayer.html</Path>
             
@@ -212,7 +530,7 @@
         </Node>
 		
 		
-        <Node id="6" type="file" documentType="reference">
+        <Node id="16" type="file" documentType="reference">
             <Name>EDFooter</Name>
             <Path>Protocols/EDFooter.html</Path>
             
@@ -240,27 +558,37 @@
             
         </Node>
 		
-        <Node id="7" type="file" documentType="reference">
+        <Node id="17" type="file" documentType="reference">
             <Name>EDPageFittingStyle</Name>
             <Path>Constants/EDPageFittingStyle.html</Path>
             
         </Node>
-		<Node id="8" type="file" documentType="reference">
+		<Node id="18" type="file" documentType="reference">
             <Name>EDPageMoveFinishedType</Name>
             <Path>Constants/EDPageMoveFinishedType.html</Path>
             
         </Node>
-		<Node id="9" type="file" documentType="reference">
+		<Node id="19" type="file" documentType="reference">
             <Name>EDPageReadDirectionStyle</Name>
             <Path>Constants/EDPageReadDirectionStyle.html</Path>
             
         </Node>
-		<Node id="10" type="file" documentType="reference">
+		<Node id="20" type="file" documentType="reference">
             <Name>EDPageScrollDirectionStyle</Name>
             <Path>Constants/EDPageScrollDirectionStyle.html</Path>
             
         </Node>
-		<Node id="11" type="file" documentType="reference">
+		<Node id="21" type="file" documentType="reference">
+            <Name>EDPlayStateType</Name>
+            <Path>Constants/EDPlayStateType.html</Path>
+            
+        </Node>
+		<Node id="22" type="file" documentType="reference">
+            <Name>EDTouchObjectType</Name>
+            <Path>Constants/EDTouchObjectType.html</Path>
+            
+        </Node>
+		<Node id="23" type="file" documentType="reference">
             <Name>eduPDFOpenFinishedType</Name>
             <Path>Constants/eduPDFOpenFinishedType.html</Path>
             

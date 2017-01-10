@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/EDDataProvider.html">
+	<File path="Classes/EDAnnotation.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/EDDataProvider</TokenIdentifier>
-			<Abstract type="html">EDDataProvider.
-외부 DRM이나 데이터 변환이 필요한 경우에 사용합니다.
-기본로직은 일반 문서 파일 경로 열람과 동일합니다.
-상속 받아 DRM 걸린 문서에 대한 처리를 구현 해야합니다.</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/EDAnnotation</TokenIdentifier>
+			<Abstract type="html">EDAnnotation.
+주석</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
             
 			
 			<NodeRef refid="1"/>
@@ -16,117 +14,1111 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/initWithPath:</TokenIdentifier>
-			<Abstract type="html">생성자</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setType:</TokenIdentifier>
+			<Abstract type="html">종류</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
 			
-			<Declaration>- (instancetype)initWithPath:(NSString *)path</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/type</TokenIdentifier>
+			<Abstract type="html">종류</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/type</TokenIdentifier>
+			<Abstract type="html">종류</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setNm:</TokenIdentifier>
+			<Abstract type="html">식별자</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *nm</Declaration>
+			
+			
+			<Anchor>//api/name/nm</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/nm</TokenIdentifier>
+			<Abstract type="html">식별자</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *nm</Declaration>
+			
+			
+			<Anchor>//api/name/nm</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/nm</TokenIdentifier>
+			<Abstract type="html">식별자</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *nm</Declaration>
+			
+			
+			<Anchor>//api/name/nm</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setSubject:</TokenIdentifier>
+			<Abstract type="html">제목</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *subject</Declaration>
+			
+			
+			<Anchor>//api/name/subject</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/subject</TokenIdentifier>
+			<Abstract type="html">제목</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *subject</Declaration>
+			
+			
+			<Anchor>//api/name/subject</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/subject</TokenIdentifier>
+			<Abstract type="html">제목</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *subject</Declaration>
+			
+			
+			<Anchor>//api/name/subject</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setAuthor:</TokenIdentifier>
+			<Abstract type="html">저작자. 기본으로 단말기 이름을 사용합니다.</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *author</Declaration>
+			
+			
+			<Anchor>//api/name/author</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/author</TokenIdentifier>
+			<Abstract type="html">저작자. 기본으로 단말기 이름을 사용합니다.</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *author</Declaration>
+			
+			
+			<Anchor>//api/name/author</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/author</TokenIdentifier>
+			<Abstract type="html">저작자. 기본으로 단말기 이름을 사용합니다.</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *author</Declaration>
+			
+			
+			<Anchor>//api/name/author</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setContents:</TokenIdentifier>
+			<Abstract type="html">내용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, getter=getContents, setter=setContents:) NSString *contents</Declaration>
+			
+			
+			<Anchor>//api/name/contents</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/getContents</TokenIdentifier>
+			<Abstract type="html">내용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, getter=getContents, setter=setContents:) NSString *contents</Declaration>
+			
+			
+			<Anchor>//api/name/contents</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/contents</TokenIdentifier>
+			<Abstract type="html">내용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, getter=getContents, setter=setContents:) NSString *contents</Declaration>
+			
+			
+			<Anchor>//api/name/contents</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setDate:</TokenIdentifier>
+			<Abstract type="html">수정 일자</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/date</TokenIdentifier>
+			<Abstract type="html">수정 일자</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/date</TokenIdentifier>
+			<Abstract type="html">수정 일자</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setCreationDate:</TokenIdentifier>
+			<Abstract type="html">생성 일자</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *creationDate</Declaration>
+			
+			
+			<Anchor>//api/name/creationDate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/creationDate</TokenIdentifier>
+			<Abstract type="html">생성 일자</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *creationDate</Declaration>
+			
+			
+			<Anchor>//api/name/creationDate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/creationDate</TokenIdentifier>
+			<Abstract type="html">생성 일자</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *creationDate</Declaration>
+			
+			
+			<Anchor>//api/name/creationDate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setOpacity:</TokenIdentifier>
+			<Abstract type="html">투명도</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/opacity</TokenIdentifier>
+			<Abstract type="html">투명도</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/opacity</TokenIdentifier>
+			<Abstract type="html">투명도</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setBorderColor:</TokenIdentifier>
+			<Abstract type="html">외곽선</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *borderColor</Declaration>
+			
+			
+			<Anchor>//api/name/borderColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/borderColor</TokenIdentifier>
+			<Abstract type="html">외곽선</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *borderColor</Declaration>
+			
+			
+			<Anchor>//api/name/borderColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/borderColor</TokenIdentifier>
+			<Abstract type="html">외곽선</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *borderColor</Declaration>
+			
+			
+			<Anchor>//api/name/borderColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setFillColor:</TokenIdentifier>
+			<Abstract type="html">채움 색상</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, nonatomic, getter=getFillColor) UIColor *fillColor</Declaration>
+			
+			
+			<Anchor>//api/name/fillColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/getFillColor</TokenIdentifier>
+			<Abstract type="html">채움 색상</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, nonatomic, getter=getFillColor) UIColor *fillColor</Declaration>
+			
+			
+			<Anchor>//api/name/fillColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/fillColor</TokenIdentifier>
+			<Abstract type="html">채움 색상</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, nonatomic, getter=getFillColor) UIColor *fillColor</Declaration>
+			
+			
+			<Anchor>//api/name/fillColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setBorderWidth:</TokenIdentifier>
+			<Abstract type="html">외곽선 굵기</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat borderWidth</Declaration>
+			
+			
+			<Anchor>//api/name/borderWidth</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/borderWidth</TokenIdentifier>
+			<Abstract type="html">외곽선 굵기</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat borderWidth</Declaration>
+			
+			
+			<Anchor>//api/name/borderWidth</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/borderWidth</TokenIdentifier>
+			<Abstract type="html">외곽선 굵기</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat borderWidth</Declaration>
+			
+			
+			<Anchor>//api/name/borderWidth</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setBorderStyle:</TokenIdentifier>
+			<Abstract type="html">외곽선 스타일</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int borderStyle</Declaration>
+			
+			
+			<Anchor>//api/name/borderStyle</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/borderStyle</TokenIdentifier>
+			<Abstract type="html">외곽선 스타일</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int borderStyle</Declaration>
+			
+			
+			<Anchor>//api/name/borderStyle</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/borderStyle</TokenIdentifier>
+			<Abstract type="html">외곽선 스타일</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int borderStyle</Declaration>
+			
+			
+			<Anchor>//api/name/borderStyle</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setNoZoom:</TokenIdentifier>
+			<Abstract type="html">고정 크기 여부</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL noZoom</Declaration>
+			
+			
+			<Anchor>//api/name/noZoom</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/noZoom</TokenIdentifier>
+			<Abstract type="html">고정 크기 여부</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL noZoom</Declaration>
+			
+			
+			<Anchor>//api/name/noZoom</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/noZoom</TokenIdentifier>
+			<Abstract type="html">고정 크기 여부</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL noZoom</Declaration>
+			
+			
+			<Anchor>//api/name/noZoom</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setName:</TokenIdentifier>
+			<Abstract type="html">*  Sticky Note(Text) 아이콘
+*  &quot;Check&quot;, &quot;Circle&quot;, &quot;Comment&quot;, &quot;Cross&quot;, &quot;CrossHairs&quot;, &quot;Help&quot;, &quot;Insert&quot;, &quot;Key&quot;, &quot;NewParagraph&quot;, &quot;Note&quot;, &quot;Paragraph&quot;, &quot;RightArrow&quot;, &quot;RightPointer&quot;, &quot;Star&quot;, &quot;UpArrow&quot;, &quot;UpLeftArrow&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/name</TokenIdentifier>
+			<Abstract type="html">*  Sticky Note(Text) 아이콘
+*  &quot;Check&quot;, &quot;Circle&quot;, &quot;Comment&quot;, &quot;Cross&quot;, &quot;CrossHairs&quot;, &quot;Help&quot;, &quot;Insert&quot;, &quot;Key&quot;, &quot;NewParagraph&quot;, &quot;Note&quot;, &quot;Paragraph&quot;, &quot;RightArrow&quot;, &quot;RightPointer&quot;, &quot;Star&quot;, &quot;UpArrow&quot;, &quot;UpLeftArrow&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/name</TokenIdentifier>
+			<Abstract type="html">*  Sticky Note(Text) 아이콘
+*  &quot;Check&quot;, &quot;Circle&quot;, &quot;Comment&quot;, &quot;Cross&quot;, &quot;CrossHairs&quot;, &quot;Help&quot;, &quot;Insert&quot;, &quot;Key&quot;, &quot;NewParagraph&quot;, &quot;Note&quot;, &quot;Paragraph&quot;, &quot;RightArrow&quot;, &quot;RightPointer&quot;, &quot;Star&quot;, &quot;UpArrow&quot;, &quot;UpLeftArrow&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setHead:</TokenIdentifier>
+			<Abstract type="html">Line 머리 모양
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *head</Declaration>
+			
+			
+			<Anchor>//api/name/head</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/head</TokenIdentifier>
+			<Abstract type="html">Line 머리 모양
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *head</Declaration>
+			
+			
+			<Anchor>//api/name/head</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/head</TokenIdentifier>
+			<Abstract type="html">Line 머리 모양
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *head</Declaration>
+			
+			
+			<Anchor>//api/name/head</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setTail:</TokenIdentifier>
+			<Abstract type="html">Line 꼬리 모양
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tail</Declaration>
+			
+			
+			<Anchor>//api/name/tail</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/tail</TokenIdentifier>
+			<Abstract type="html">Line 꼬리 모양
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tail</Declaration>
+			
+			
+			<Anchor>//api/name/tail</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/tail</TokenIdentifier>
+			<Abstract type="html">Line 꼬리 모양
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tail</Declaration>
+			
+			
+			<Anchor>//api/name/tail</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setFontSize:</TokenIdentifier>
+			<Abstract type="html">폰트 크기</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat fontSize</Declaration>
+			
+			
+			<Anchor>//api/name/fontSize</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/fontSize</TokenIdentifier>
+			<Abstract type="html">폰트 크기</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat fontSize</Declaration>
+			
+			
+			<Anchor>//api/name/fontSize</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/fontSize</TokenIdentifier>
+			<Abstract type="html">폰트 크기</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat fontSize</Declaration>
+			
+			
+			<Anchor>//api/name/fontSize</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setFontColor:</TokenIdentifier>
+			<Abstract type="html">폰트 색상</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *fontColor</Declaration>
+			
+			
+			<Anchor>//api/name/fontColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/fontColor</TokenIdentifier>
+			<Abstract type="html">폰트 색상</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *fontColor</Declaration>
+			
+			
+			<Anchor>//api/name/fontColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/fontColor</TokenIdentifier>
+			<Abstract type="html">폰트 색상</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *fontColor</Declaration>
+			
+			
+			<Anchor>//api/name/fontColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EDAnnotation/names</TokenIdentifier>
+			<Abstract type="html">Sticky Note(Text) 아이콘 목록
+&quot;Check&quot;, &quot;Circle&quot;, &quot;Comment&quot;, &quot;Cross&quot;, &quot;CrossHairs&quot;, &quot;Help&quot;, &quot;Insert&quot;, &quot;Key&quot;, &quot;NewParagraph&quot;, &quot;Note&quot;, &quot;Paragraph&quot;, &quot;RightArrow&quot;, &quot;RightPointer&quot;, &quot;Star&quot;, &quot;UpArrow&quot;, &quot;UpLeftArrow&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)names</Declaration>
+			
+			<ReturnValue><Abstract type="html">아이콘 목록</Abstract></ReturnValue>
+			<Anchor>//api/name/names</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/pageNo</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (int)pageNo</Declaration>
+			
+			<ReturnValue><Abstract type="html">페이지 번호</Abstract></ReturnValue>
+			<Anchor>//api/name/pageNo</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/isReadOnly</TokenIdentifier>
+			<Abstract type="html">읽기 전용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isReadOnly</Declaration>
+			
+			<ReturnValue><Abstract type="html">읽기 전용 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/isReadOnly</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/isLocked</TokenIdentifier>
+			<Abstract type="html">위치 잠금</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isLocked</Declaration>
+			
+			<ReturnValue><Abstract type="html">위치 잠금 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/isLocked</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/isHidden</TokenIdentifier>
+			<Abstract type="html">표시</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isHidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">표시 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/isHidden</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setHidden:</TokenIdentifier>
+			<Abstract type="html">표시 설정</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)setHidden:(BOOL)hidden</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>path</Name>
-					<Abstract type="html">문서 로컬 경로.</Abstract>
+					<Name>hidden</Name>
+					<Abstract type="html">표시 여부</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/initWithPath:</Anchor>
+			<Anchor>//api/name/setHidden:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/getBytes:offset:size:</TokenIdentifier>
-			<Abstract type="html">문서 데이터 가져오기.
-외부 암호화 모듈을 사용시 블럭 단위 암호화 데이터를 복호화할 때 사용합니다.
-복화된 문서 바이너리를 buff에 넣어야 합니다.</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setReadOnly:</TokenIdentifier>
+			<Abstract type="html">읽기 전용 설정</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
 			
-			<Declaration>- (int)getBytes:(char *)buff offset:(unsigned int)offset size:(int)size</Declaration>
+			<Declaration>- (void)setReadOnly:(BOOL)readOnly</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>buff</Name>
-					<Abstract type="html">가져올 문서 데이터 버퍼.</Abstract>
-				</Parameter><Parameter>
-					<Name>offset</Name>
-					<Abstract type="html">가져올 문서 시작 오프셋.</Abstract>
-				</Parameter><Parameter>
-					<Name>size</Name>
-					<Abstract type="html">가져올 문서 데이터 크기.</Abstract>
+					<Name>readOnly</Name>
+					<Abstract type="html">읽기 전용</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">읽어들인 데이터 크기.</Abstract></ReturnValue>
-			<Anchor>//api/name/getBytes:offset:size:</Anchor>
+			
+			<Anchor>//api/name/setReadOnly:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/size</TokenIdentifier>
-			<Abstract type="html">파일 크기
-문서 크기 입니다.</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setLocked:</TokenIdentifier>
+			<Abstract type="html">위치 잠금 설정</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
 			
-			<Declaration>- (unsigned int)size</Declaration>
+			<Declaration>- (void)setLocked:(BOOL)locked</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>locked</Name>
+					<Abstract type="html">위치 잠금</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			<ReturnValue><Abstract type="html">문서 크기.</Abstract></ReturnValue>
-			<Anchor>//api/name/size</Anchor>
+			<Anchor>//api/name/setLocked:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/open</TokenIdentifier>
-			<Abstract type="html">문서 열기</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/fillColorAble</TokenIdentifier>
+			<Abstract type="html">표시</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
 			
-			<Declaration>- (void)open</Declaration>
+			<Declaration>- (BOOL)fillColorAble</Declaration>
 			
-			
-			<Anchor>//api/name/open</Anchor>
+			<ReturnValue><Abstract type="html">표시 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/fillColorAble</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/close</TokenIdentifier>
-			<Abstract type="html">문서 닫기</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/borderWidthAble</TokenIdentifier>
+			<Abstract type="html">외곽선 굵기 가능</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
 			
-			<Declaration>- (void)close</Declaration>
+			<Declaration>- (BOOL)borderWidthAble</Declaration>
 			
-			
-			<Anchor>//api/name/close</Anchor>
+			<ReturnValue><Abstract type="html">외곽선 굵기 가능 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/borderWidthAble</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/setPath:</TokenIdentifier>
-			<Abstract type="html">문서 로컬 경로.</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/nameAble</TokenIdentifier>
+			<Abstract type="html">아이콘 가능</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
+			<Declaration>- (BOOL)nameAble</Declaration>
 			
-			
-			<Anchor>//api/name/path</Anchor>
+			<ReturnValue><Abstract type="html">아이콘 가능 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/nameAble</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/path</TokenIdentifier>
-			<Abstract type="html">문서 로컬 경로.</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/headTailAble</TokenIdentifier>
+			<Abstract type="html">선 머리, 꼬리 가능</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
+			<Declaration>- (BOOL)headTailAble</Declaration>
 			
-			
-			<Anchor>//api/name/path</Anchor>
+			<ReturnValue><Abstract type="html">선 머리, 꼬리 가능 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/headTailAble</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDDataProvider/path</TokenIdentifier>
-			<Abstract type="html">문서 로컬 경로.</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/fontSizeAble</TokenIdentifier>
+			<Abstract type="html">폰트 크기 가능</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
+			<Declaration>- (BOOL)fontSizeAble</Declaration>
+			
+			<ReturnValue><Abstract type="html">폰트 크기 가능 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/fontSizeAble</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/removeAble</TokenIdentifier>
+			<Abstract type="html">제거 가능</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)removeAble</Declaration>
+			
+			<ReturnValue><Abstract type="html">제거 가능 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/removeAble</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/removeFromPage</TokenIdentifier>
+			<Abstract type="html">페이지에서 제거</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)removeFromPage</Declaration>
 			
 			
-			<Anchor>//api/name/path</Anchor>
+			<Anchor>//api/name/removeFromPage</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/removeFromPageWithRemoveAble</TokenIdentifier>
+			<Abstract type="html">페이지에서 제거 가능하면 제거</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)removeFromPageWithRemoveAble</Declaration>
+			
+			
+			<Anchor>//api/name/removeFromPageWithRemoveAble</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/removeStroke:</TokenIdentifier>
+			<Abstract type="html">페이지에서 획 제거
+만약 모든 획을 다 제거하면 해당 주석을 제거 합니다.</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)removeStroke:(int)strokeIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>strokeIndex</Name>
+					<Abstract type="html">획 인덱스</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeStroke:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/syncBorderWidth:</TokenIdentifier>
+			<Abstract type="html">외곽선 굵기 적용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)syncBorderWidth:(CGFloat)width</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>width</Name>
+					<Abstract type="html">외곽선 굵기</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/syncBorderWidth:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/syncBorderColor:</TokenIdentifier>
+			<Abstract type="html">외곽선 색상 적용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)syncBorderColor:(UIColor *)color</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">외곽선 색상</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/syncBorderColor:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/syncFillColor:</TokenIdentifier>
+			<Abstract type="html">채움 색상 적용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)syncFillColor:(UIColor *)color</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">채움 색상</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/syncFillColor:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/syncOpacity:</TokenIdentifier>
+			<Abstract type="html">투명도 적용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)syncOpacity:(CGFloat)opacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">투명도</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/syncOpacity:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/syncName:</TokenIdentifier>
+			<Abstract type="html">아이콘 적용
+&quot;Check&quot;, &quot;Circle&quot;, &quot;Comment&quot;, &quot;Cross&quot;, &quot;CrossHairs&quot;, &quot;Help&quot;, &quot;Insert&quot;, &quot;Key&quot;, &quot;NewParagraph&quot;, &quot;Note&quot;, &quot;Paragraph&quot;, &quot;RightArrow&quot;, &quot;RightPointer&quot;, &quot;Star&quot;, &quot;UpArrow&quot;, &quot;UpLeftArrow&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)syncName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">아이콘</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/syncName:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/syncHead:</TokenIdentifier>
+			<Abstract type="html">라인 머리 모양 적용
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)syncHead:(NSString *)head</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>head</Name>
+					<Abstract type="html">라인 머리 모양</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/syncHead:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/syncTail:</TokenIdentifier>
+			<Abstract type="html">라인 꼬리 모양 적용
+&quot;None&quot;, &quot;OpenArrow&quot;, &quot;Square&quot;, &quot;Circle&quot;</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)syncTail:(NSString *)tail</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>head</Name>
+					<Abstract type="html">라인 꼬리 모양</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/syncTail:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/syncFontSize:</TokenIdentifier>
+			<Abstract type="html">폰트 크기 적용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)syncFontSize:(CGFloat)fontSize</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fontSize</Name>
+					<Abstract type="html">폰트 크기</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/syncFontSize:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/syncFontColor:</TokenIdentifier>
+			<Abstract type="html">폰트 색상 적용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)syncFontColor:(UIColor *)fontColor</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fontColor</Name>
+					<Abstract type="html">폰트 색상</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/syncFontColor:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/syncLock:</TokenIdentifier>
+			<Abstract type="html">화면 잠금 적용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)syncLock:(BOOL)lock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>lock</Name>
+					<Abstract type="html">화면 잠금</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/syncLock:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/syncContents:</TokenIdentifier>
+			<Abstract type="html">내용 적용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)syncContents:(NSString *)contents</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contents</Name>
+					<Abstract type="html">내용</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/syncContents:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/syncSelf</TokenIdentifier>
+			<Abstract type="html">변경한 속성들 적용</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (void)syncSelf</Declaration>
+			
+			
+			<Anchor>//api/name/syncSelf</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/getAllLinks</TokenIdentifier>
+			<Abstract type="html">링크 목록</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (NSArray&lt;EDLink*&gt; *)getAllLinks</Declaration>
+			
+			<ReturnValue><Abstract type="html">링크 목록</Abstract></ReturnValue>
+			<Anchor>//api/name/getAllLinks</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/isMarkup</TokenIdentifier>
+			<Abstract type="html">마크업 주석</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isMarkup</Declaration>
+			
+			<ReturnValue><Abstract type="html">마크업 주석 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/isMarkup</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

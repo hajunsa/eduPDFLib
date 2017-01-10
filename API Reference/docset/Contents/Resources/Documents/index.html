@@ -47,7 +47,7 @@
 						<h1>eduPDFLib</h1>
 
 <ul>
-<li><p>Description</p>
+<li><p><a href="Classes/eduPDFPlayer.html">eduPDFPlayer</a></p>
 
 <ul>
 <li>문서 파일을 열람하는 뷰어 입니다.</li>
@@ -88,12 +88,12 @@
 <li><p>Project settings(iOS 7.0, Cocoapods)</p>
 
 <ul>
-<li>API 설명서 및 샘플예제는 &lsquo;<a href="https://github.com/hajunsa/eduPDFLib">https://github.com/hajunsa/eduPDFLib</a>&ldquo;에 공개하였습니다.</li>
 <li>프로젝트 &lsquo;Podfile&rsquo; 파일을 만들고 아래와같은 내용을 넣습니다.
 target &ldquo;Project Target&rdquo; do
 pod &lsquo;eduPDFLib&rsquo;
 end</li>
 <li>&lsquo;pod install'을 실행 합니다.</li>
+<li>eduPDFPlayerS.framework폴더안에 &lsquo;CMap&rsquo;, &lsquo;fonts'를 프로젝트로 드레그하여 Create folder references로 추가합니다.(수동)</li>
 </ul>
 </li>
 <li><p>Opensource Library</p>
@@ -109,62 +109,60 @@ end</li>
 
 <ul>
 <li>샘플 예제를 제공합니다.</li>
-<li>&lsquo;<a href="https://github.com/hajunsa/eduPDFLib.git" title="">https://github.com/hajunsa/eduPDFLib.git'</a>에서 예제 및 도움말을 제공합니다.</li>
 </ul>
 </li>
 <li><p>Feature</p>
 
 <ul>
-<li>View Settings
+<li>PDF 표준 기능
 
 <ul>
-<li>Continous/Paging</li>
-<li>Scroll Direction</li>
-<li>Read Direction</li>
-<li>Display Fitting</li>
+<li>단면, 여러면 보기. 다양한 페이지 정렬. 읽기 방향. 스크롤/페이징 보기</li>
+<li>페이지 네비게이션.</li>
+<li>다양한 형태 열람.
+
+<ul>
+<li>로컬 파일</li>
+<li>Stream(NSInputStream)</li>
+<li>랜덤 액세스 제공자(<a href="Classes/EDDataProvider.html">EDDataProvider</a>)</li>
+<li>원격 열람(HTTP)
+
+<ul>
+<li>Fast Open(Streaming or Byte Serving)</li>
+<li>Download</li>
 </ul>
 </li>
-<li>Documents Open
-
-<ul>
-<li>Open Method
-
-<ul>
-<li>Local File</li>
-<li>User Random Access Provider(<a href="Classes/EDDataProvider.html">EDDataProvider</a>)</li>
-<li>Remote Random Access Streaming(HTTP Fast Open or Byte Serving)</li>
+<li>Standard Encryption</li>
+<li>Unidocs DRM</li>
 </ul>
 </li>
-<li>Open Format
+<li>문서 내장, 팝업, 전체화면 지원
 
 <ul>
-<li>PDF, eduPDF</li>
-<li>ZIP(Imaged)</li>
+<li>PDF</li>
+<li>Video</li>
+<li>Image</li>
+<li>HTML</li>
+<li>Audio</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>View Function
+<li>링크 및 첨부
 
 <ul>
-<li>Page Navication/Callback</li>
-<li>Page Thumbnails Get</li>
-<li>Scroll Callback</li>
-</ul>
-</li>
-<li>Event Trigger
+<li>문서
 
 <ul>
-<li>Animation Start/Completion Event</li>
-<li>Page Visible/Invisible Event</li>
-<li>Page Open/Close Event</li>
-<li>Touch Up Event</li>
+<li>hwp</li>
+<li>office</li>
 </ul>
 </li>
-<li>PDF Function
+<li>URL</li>
+</ul>
+</li>
+<li>Annotation
 
 <ul>
-<li>Form Field
+<li>Form Widget Annotation
 
 <ul>
 <li>Text</li>
@@ -174,42 +172,160 @@ end</li>
 <li>List</li>
 </ul>
 </li>
-<li>Popup Embeded Documents
+<li>Markup Annotation
 
 <ul>
-<li>PDF</li>
-<li>Movie</li>
-<li>Image</li>
+<li>Sticky Note</li>
+<li>Ink</li>
+<li>Line</li>
+<li>Highlight</li>
+<li>Underline</li>
+<li>StrikeOut</li>
+<li>FreeText</li>
+<li>Rectangle</li>
+<li>Circle</li>
+<li>Square</li>
+<li>Stamp</li>
+<li>Eraser(for Remove)</li>
+</ul>
+</li>
+<li>XFDF</li>
+</ul>
+</li>
+<li>Bookmark</li>
+<li>Outlines</li>
+<li>Text
+
+<ul>
+<li>Text Search</li>
+<li>Text Selection</li>
+<li>Text Paragraph(for TTS)</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>eduPDF Function
+<li>eduPDF 확장 기능
 
 <ul>
 <li>Knowledge Tap</li>
 <li>Quiz
 
 <ul>
+<li>그룹 문제 풀기(여러 Quiz Item이 연결된 형태)</li>
 <li>단답형(Radio, Combo, Text)</li>
 <li>다답형(Check, Text)</li>
 <li>선긋기</li>
-<li>다른 부분 찾기</li>
+<li>다른 부분 찾기
+
+<ul>
 <li>정답 채점</li>
 <li>정답 채점 초기화</li>
 </ul>
 </li>
-<li>Subtitles Audio</li>
-<li>Frame Animation</li>
+</ul>
+</li>
+<li>Audio
+
+<ul>
+<li>Subtitles Audio
+
+<ul>
+<li>객체별 자막 색상 설정</li>
+<li>여러 페이지 지원(하나의 음원으로)</li>
+</ul>
+</li>
+<li>BGM</li>
+<li>Audio Auto Play</li>
+<li>Fading Effect</li>
+</ul>
+</li>
+<li>Media
+
+<ul>
+<li>Play Once</li>
+</ul>
+</li>
+<li>Frame Animation
+
+<ul>
 <li>GIF</li>
 <li>Zipped-Image</li>
+</ul>
+</li>
 <li>Sticker
 
 <ul>
 <li>Animation</li>
 <li>Drag And Drop Box</li>
+<li>Play Once</li>
+<li>Reset</li>
 </ul>
 </li>
+<li>Scroll Lock</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>0.9.6 Version Release Notes</p>
+
+<ul>
+<li>추가 사항
+
+<ul>
+<li>Highlight, Underline, StrikeOut, FreeText, Rectangle, Circle, Square, Stamp 주석 기능을 추가 하였습니다.</li>
+<li>Stiker Play Once, Reset기능을 추가 하였습니다.</li>
+<li>마크업 주석 속성 수정 기능을 추가 하였습니다.</li>
+<li>마크업 주석 지우개 기능을 추가 하였습니다.</li>
+<li>주석 가져오기/내보내기 기능(XFDF)을 추가 하였습니다.</li>
+<li>텍스트 선택 기능을 추가 하였습니다.</li>
+<li>페이지 단락(문장들) 가져오기 기능을 추가 하였습니다.</li>
+<li>문서 스트림 열람기능을 추가 하였습니다.</li>
+</ul>
+</li>
+<li>개선 사항
+
+<ul>
+<li>Public API Renewal</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>0.9.5 Version Release Notes</p>
+
+<ul>
+<li>추가 사항
+
+<ul>
+<li>Scroll Lock기능을 추가 하였습니다.</li>
+<li>Fading Effect, BGM, Media Play Once기능을 추가 하였습니다.</li>
+<li>그룹 문제 풀기기능을 추가 하였습니다.</li>
+<li>목차, 텍스트 검색, 책갈피 기능을 추가 하였습니다.</li>
+<li>Sticky Note, Ink, Line 주석 기능을 추가 하였습니다.</li>
+<li>첨부 문서(hwp, office) 열람 연결 기능을 추가하였습니다.</li>
+<li>HTML 문서 팝업 기능을 추가 하였습니다.</li>
+<li>Unidocs DRM 기능을 추가 하였습니다.</li>
+<li>PDF 문서 내부 설정 적용 기능을 추가 하였습니다.</li>
+<li>여러 페이지에 걸친 자막 오디오 기능을 추가 하였습니다.</li>
+<li>자막 오디오에서 자막별 색상 적용을 추가 하였습니다.</li>
+</ul>
+</li>
+<li>개선 사항
+
+<ul>
+<li>주석 표시 기능을 개선 하였습니다.</li>
+<li>내장 문서 팝업 기능을 개선 하였습니다.</li>
+<li>페이지 리셋 기능을 개선 하였습니다.</li>
+<li>텍스트 필드 입력 기능을 개선 하였습니다.</li>
+<li>문서 로딩 표시 기능을 개선 하였습니다.</li>
+</ul>
+</li>
+<li>오류 수정
+
+<ul>
+<li>Knowledge Tap 동작 오류를 수정하였습니다.</li>
+<li>주석 표시 순서 오류를 수정하였습니다.</li>
+<li>GIF 반복 횟수 오류를 수정하였습니다.</li>
+<li>페이지 프레임 정렬 오류를 수정하였습니다.</li>
 </ul>
 </li>
 </ul>
@@ -217,30 +333,32 @@ end</li>
 <li><p>0.9.4 Version Release Notes</p>
 
 <ul>
-<li>Cocoapods 설치 지원합니다.</li>
-<li>Github API 설명서 및 샘플 예제를 공개합니다.</li>
-<li>추가 기능
+<li>Cocoapods</li>
+<li>추가 사항
 
 <ul>
-<li>자막 오디오 페이지 자동 재생 구현하였습니다.</li>
-<li>스크롤 관련 콜백 API를 추가하였습니다.</li>
+<li>스크롤뷰 콜백 API를 추가 하였습니다.</li>
+<li>Subtitles Audio
+
+<ul>
+<li>객체 전체 재생 기능을 추가 하였습니다.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>개선 사항
 
 <ul>
-<li>스크롤시 스레드 안정성 개선하였습니다.</li>
-<li>주석 객체 터치 정확도를 개선하였습니다.</li>
+<li>2면 보기 이상에서 스크롤시 스레드 안정성을 개선하였습니다.</li>
+<li>주석 객체 터치 정확도를 개선 하였습니다.</li>
 </ul>
 </li>
 <li>오류 수정
 
 <ul>
-<li>페이지 바로가기나 회전, 화면 분할시 페이지 표시 오류 수정하였습니다.</li>
-<li>텍스트 필드 표시/입력 오류 수정하였습니다.</li>
-<li>멀티미디어 재생 버튼 무동작 오류 수정하였습니다.</li>
-<li>애니메이션 팝업 무동작 오류 수정하였습니다.</li>
-<li>페이지 스크롤시 Page Open/Close Event 간헐적 재생 무시 오류 수정하였습니다.</li>
+<li>멀티미디어중 리치미디어 재생 오류를 수정하였습니다.</li>
+<li>내장 문서 팝업 이미지 문서 열기 오류를 수정하였습니다.</li>
+<li>Knowledge Tap 그룹 탭 오류를 수정하였습니다.</li>
 </ul>
 </li>
 </ul>
@@ -306,13 +424,10 @@ end</li>
 <li><p>0.9.2 Version Release Notes</p>
 
 <ul>
-<li>iOS 7.0 지원합니다.</li>
+<li>iOS 7.0 지원</li>
 </ul>
 </li>
 <li><p>0.9.1 Version Release Notes</p>
-
-<ul>
-<li>추가 기능
 
 <ul>
 <li>Quiz
@@ -322,9 +437,7 @@ end</li>
 </ul>
 </li>
 <li>사용자 Footer를 추가하는 기능을 지원합니다.</li>
-<li>User Random Access Provider(<a href="Classes/EDDataProvider.html">EDDataProvider</a>) 열람 기능을 지원합니다.</li>
-</ul>
-</li>
+<li>사용자 DRM문서 열람 기능을 지원합니다.</li>
 <li>오류 수정
 
 <ul>
@@ -343,7 +456,61 @@ end</li>
 <li><p>0.9.0 Version Release Notes</p>
 
 <ul>
-<li>Feature 참조.</li>
+<li>PDF 문서 열람 기능을 지원 합니다.</li>
+<li>이미지 ZIP 파일 열람 기능 지원 합니다.</li>
+<li>링크 기능(페이지, URL)을 지원 합니다.</li>
+<li>내장한 멀티 미디어(동영상, 오디오)를 재생 합니다.</li>
+<li>서식(Text, Combo, List, Check, Radio) 입력을 지원 합니다.</li>
+<li>내장 문서 팝업 기능을 지원 합니다.
+
+<ul>
+<li>PDF</li>
+<li>동영상</li>
+<li>이미지</li>
+</ul>
+</li>
+<li>eduPDF 기능을 지원 합니다.
+
+<ul>
+<li>Knowledge Tap</li>
+<li>Quiz
+
+<ul>
+<li>단답형(Radio, Combo, Text)</li>
+<li>다답형(Check, Text)</li>
+<li>선긋기</li>
+<li>다른 부분 찾기</li>
+<li>정답 채점</li>
+<li>정답 채점 초기화</li>
+</ul>
+</li>
+<li>Subtitles Audio</li>
+<li>Frame Animation
+
+<ul>
+<li>GIF</li>
+<li>Zipped-Image</li>
+</ul>
+</li>
+<li>Sticker
+
+<ul>
+<li>Animation</li>
+<li>Drag And Drop Box</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Event Trigger
+
+<ul>
+<li>Animation Start/Completion Event Trigger</li>
+<li>Page Visible/Invisible Event Trigger</li>
+<li>Touch up Event Trigger</li>
+</ul>
+</li>
+<li>여러가지 뷰 설정(Continous/Paging View, Scroll Direction, Read Direction, Display Fitting)을 제공 합니다.</li>
+<li>Random Access Streaming(Fast Open or Byte Serving)을 지원합니다.</li>
 </ul>
 </li>
 </ul>
@@ -361,13 +528,33 @@ end</li>
 							<h2 class="index-title">Class References</h2>
 							<ul>
 								
+								<li><a href="Classes/EDAnnotation.html">EDAnnotation</a></li>
+								
+								<li><a href="Classes/EDBookmark.html">EDBookmark</a></li>
+								
 								<li><a href="Classes/EDDataProvider.html">EDDataProvider</a></li>
+								
+								<li><a href="Classes/EDDocumentProvider.html">EDDocumentProvider</a></li>
 								
 								<li><a href="Classes/EDEnvelopeDataProvider.html">EDEnvelopeDataProvider</a></li>
 								
 								<li><a href="Classes/EDHTTPConfig.html">EDHTTPConfig</a></li>
 								
+								<li><a href="Classes/EDImage.html">EDImage</a></li>
+								
+								<li><a href="Classes/EDLink.html">EDLink</a></li>
+								
+								<li><a href="Classes/EDMarkupAnnotationParam.html">EDMarkupAnnotationParam</a></li>
+								
+								<li><a href="Classes/EDOutlines.html">EDOutlines</a></li>
+								
 								<li><a href="Classes/EDPageConfig.html">EDPageConfig</a></li>
+								
+								<li><a href="Classes/EDTextSelection.html">EDTextSelection</a></li>
+								
+								<li><a href="Classes/EDTouchCoordination.html">EDTouchCoordination</a></li>
+								
+								<li><a href="Classes/EDXFDFParam.html">EDXFDFParam</a></li>
 								
 								<li><a href="Classes/eduPDFPlayer.html">eduPDFPlayer</a></li>
 								
@@ -398,6 +585,10 @@ end</li>
 								
 									<li><a href="Constants/EDPageScrollDirectionStyle.html">EDPageScrollDirectionStyle</a></li>
 								
+									<li><a href="Constants/EDPlayStateType.html">EDPlayStateType</a></li>
+								
+									<li><a href="Constants/EDTouchObjectType.html">EDTouchObjectType</a></li>
+								
 									<li><a href="Constants/eduPDFOpenFinishedType.html">eduPDFOpenFinishedType</a></li>
 								
 							</ul>
@@ -411,7 +602,7 @@ end</li>
 					<footer>
 						<div class="footer-copyright">
 							
-							<p class="copyright">Copyright &copy; 2016 Unidocs Inc. All rights reserved. Updated: 2016-10-10</p>
+							<p class="copyright">Copyright &copy; 2017 Unidocs Inc. All rights reserved. Updated: 2017-01-09</p>
 							
 							
 							<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

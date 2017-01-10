@@ -1,39 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/EDPageScrollDirectionStyle.html">
+	<File path="Classes/EDOutlines.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/EDPageScrollDirectionStyle</TokenIdentifier>
-			<Abstract type="html">문서 스크롤 방향 설정</Abstract>
-			<DeclaredIn>EDPageEnums.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/EDOutlines</TokenIdentifier>
+			<Abstract type="html">PDF 목차(Outlines) 데이터 접근 관리자 입니다.</Abstract>
+			<DeclaredIn>EDOutlines.h</DeclaredIn>
             
 			
 			<NodeRef refid="10"/>
 		</Token>
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPageScrollDirectionHorizontal</TokenIdentifier>
-            <Abstract type="html">문서를 가로로 스크롤.
-     </Abstract>
-            <Declaration>EDPageScrollDirectionHorizontal</Declaration>
-            
-            <DeclaredIn>EDPageEnums.h</DeclaredIn>
-            
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDOutlines/isFlat</TokenIdentifier>
+			<Abstract type="html">목차 데이터를 생성시 모두 가져와서 목록화 했는지 여부 입니다.</Abstract>
+			<DeclaredIn>EDOutlines.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isFlat</Declaration>
+			
+			<ReturnValue><Abstract type="html">플렛 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/isFlat</Anchor>
             <NodeRef refid="10"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPageScrollDirectionVertical</TokenIdentifier>
-            <Abstract type="html">문서를 세로로 스크롤.
-     </Abstract>
-            <Declaration>EDPageScrollDirectionVertical</Declaration>
-            
-            <DeclaredIn>EDPageEnums.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDOutlines/objectAtIndex:</TokenIdentifier>
+			<Abstract type="html">현재 이동한 커서에서 해당 인덱스 목차 데이터를 가져옵니다.</Abstract>
+			<DeclaredIn>EDOutlines.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)objectAtIndex:(NSInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">목차 인덱스</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">목차 데이터</Abstract></ReturnValue>
+			<Anchor>//api/name/objectAtIndex:</Anchor>
             <NodeRef refid="10"/>
-        </Token>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDOutlines/count</TokenIdentifier>
+			<Abstract type="html">현재 이동한 커서에서 전체 목차 갯수 입니다.</Abstract>
+			<DeclaredIn>EDOutlines.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)count</Declaration>
+			
+			<ReturnValue><Abstract type="html">목차 갯수</Abstract></ReturnValue>
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDOutlines/push:</TokenIdentifier>
+			<Abstract type="html">목차 커서 이동을 합니다. 플렛 옵션으로 생성한 경우 유효하지 않습니다.</Abstract>
+			<DeclaredIn>EDOutlines.h</DeclaredIn>
+			
+			<Declaration>- (void)push:(NSString *)Id</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>Id</Name>
+					<Abstract type="html">목차 커서 아이디</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/push:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDOutlines/pop</TokenIdentifier>
+			<Abstract type="html">목차 커서를 이전상태로 이동 합니다. 플렛 옵션으로 생성한 경우 유효하지 않습니다.</Abstract>
+			<DeclaredIn>EDOutlines.h</DeclaredIn>
+			
+			<Declaration>- (void)pop</Declaration>
+			
+			
+			<Anchor>//api/name/pop</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDOutlines/canPop</TokenIdentifier>
+			<Abstract type="html">목차 커서를 이전상태로 이동 가능 여부 입니다. 플렛 옵션으로 생성한 경우 유효하지 않습니다.</Abstract>
+			<DeclaredIn>EDOutlines.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)canPop</Declaration>
+			
+			<ReturnValue><Abstract type="html">이동 가능 여부</Abstract></ReturnValue>
+			<Anchor>//api/name/canPop</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
         
         
 	</File>

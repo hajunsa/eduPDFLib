@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/EDTouchCoordination.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/EDTouchCoordination</TokenIdentifier>
+			<Abstract type="html">EDTouchCoordination.
+터치 했을 때 콜백 하는 정보 객체</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/setType:</TokenIdentifier>
+			<Abstract type="html">터치 종류</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) EDTouchObjectType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/type</TokenIdentifier>
+			<Abstract type="html">터치 종류</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) EDTouchObjectType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDTouchCoordination/type</TokenIdentifier>
+			<Abstract type="html">터치 종류</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) EDTouchObjectType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/setPointInnerView:</TokenIdentifier>
+			<Abstract type="html">문서 뷰어 좌표 상에 터치 포인트</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint pointInnerView</Declaration>
+			
+			
+			<Anchor>//api/name/pointInnerView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/pointInnerView</TokenIdentifier>
+			<Abstract type="html">문서 뷰어 좌표 상에 터치 포인트</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint pointInnerView</Declaration>
+			
+			
+			<Anchor>//api/name/pointInnerView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDTouchCoordination/pointInnerView</TokenIdentifier>
+			<Abstract type="html">문서 뷰어 좌표 상에 터치 포인트</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint pointInnerView</Declaration>
+			
+			
+			<Anchor>//api/name/pointInnerView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/setFrameInnerView:</TokenIdentifier>
+			<Abstract type="html">문서 뷰어 좌표 상에 터치 영역</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGRect frameInnerView</Declaration>
+			
+			
+			<Anchor>//api/name/frameInnerView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/frameInnerView</TokenIdentifier>
+			<Abstract type="html">문서 뷰어 좌표 상에 터치 영역</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGRect frameInnerView</Declaration>
+			
+			
+			<Anchor>//api/name/frameInnerView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDTouchCoordination/frameInnerView</TokenIdentifier>
+			<Abstract type="html">문서 뷰어 좌표 상에 터치 영역</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGRect frameInnerView</Declaration>
+			
+			
+			<Anchor>//api/name/frameInnerView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/setPageNo:</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
+			
+			
+			<Anchor>//api/name/pageNo</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/pageNo</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
+			
+			
+			<Anchor>//api/name/pageNo</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDTouchCoordination/pageNo</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
+			
+			
+			<Anchor>//api/name/pageNo</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/setPointOrigin:</TokenIdentifier>
+			<Abstract type="html">문서 좌표상 터치 포인트</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGPoint pointOrigin</Declaration>
+			
+			
+			<Anchor>//api/name/pointOrigin</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/pointOrigin</TokenIdentifier>
+			<Abstract type="html">문서 좌표상 터치 포인트</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGPoint pointOrigin</Declaration>
+			
+			
+			<Anchor>//api/name/pointOrigin</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDTouchCoordination/pointOrigin</TokenIdentifier>
+			<Abstract type="html">문서 좌표상 터치 포인트</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGPoint pointOrigin</Declaration>
+			
+			
+			<Anchor>//api/name/pointOrigin</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/setPointDisplay:</TokenIdentifier>
+			<Abstract type="html">화면상에 터치 포인트</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGPoint pointDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/pointDisplay</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/pointDisplay</TokenIdentifier>
+			<Abstract type="html">화면상에 터치 포인트</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGPoint pointDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/pointDisplay</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDTouchCoordination/pointDisplay</TokenIdentifier>
+			<Abstract type="html">화면상에 터치 포인트</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGPoint pointDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/pointDisplay</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/setFrameOrigin:</TokenIdentifier>
+			<Abstract type="html">문서 좌표상 터치 영역</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGRect frameOrigin</Declaration>
+			
+			
+			<Anchor>//api/name/frameOrigin</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/frameOrigin</TokenIdentifier>
+			<Abstract type="html">문서 좌표상 터치 영역</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGRect frameOrigin</Declaration>
+			
+			
+			<Anchor>//api/name/frameOrigin</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDTouchCoordination/frameOrigin</TokenIdentifier>
+			<Abstract type="html">문서 좌표상 터치 영역</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGRect frameOrigin</Declaration>
+			
+			
+			<Anchor>//api/name/frameOrigin</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/setFrameDisplay:</TokenIdentifier>
+			<Abstract type="html">화면상에 터치 영역</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGRect frameDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/frameDisplay</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/frameDisplay</TokenIdentifier>
+			<Abstract type="html">화면상에 터치 영역</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGRect frameDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/frameDisplay</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDTouchCoordination/frameDisplay</TokenIdentifier>
+			<Abstract type="html">화면상에 터치 영역</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CGRect frameDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/frameDisplay</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/setAnnotMakerParam:</TokenIdentifier>
+			<Abstract type="html">주석 생성 정보</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) EDMarkupAnnotationParam *annotMakerParam</Declaration>
+			
+			
+			<Anchor>//api/name/annotMakerParam</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/annotMakerParam</TokenIdentifier>
+			<Abstract type="html">주석 생성 정보</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) EDMarkupAnnotationParam *annotMakerParam</Declaration>
+			
+			
+			<Anchor>//api/name/annotMakerParam</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDTouchCoordination/annotMakerParam</TokenIdentifier>
+			<Abstract type="html">주석 생성 정보</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) EDMarkupAnnotationParam *annotMakerParam</Declaration>
+			
+			
+			<Anchor>//api/name/annotMakerParam</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/setObjectView:</TokenIdentifier>
+			<Abstract type="html">터치한 뷰 객체</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) UIView *objectView</Declaration>
+			
+			
+			<Anchor>//api/name/objectView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/objectView</TokenIdentifier>
+			<Abstract type="html">터치한 뷰 객체</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) UIView *objectView</Declaration>
+			
+			
+			<Anchor>//api/name/objectView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDTouchCoordination/objectView</TokenIdentifier>
+			<Abstract type="html">터치한 뷰 객체</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) UIView *objectView</Declaration>
+			
+			
+			<Anchor>//api/name/objectView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/setAnnotation:</TokenIdentifier>
+			<Abstract type="html">터치한 주석</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) EDAnnotation *annotation</Declaration>
+			
+			
+			<Anchor>//api/name/annotation</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/annotation</TokenIdentifier>
+			<Abstract type="html">터치한 주석</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) EDAnnotation *annotation</Declaration>
+			
+			
+			<Anchor>//api/name/annotation</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDTouchCoordination/annotation</TokenIdentifier>
+			<Abstract type="html">터치한 주석</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) EDAnnotation *annotation</Declaration>
+			
+			
+			<Anchor>//api/name/annotation</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/setText:</TokenIdentifier>
+			<Abstract type="html">터치한 텍스트</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) EDTextSelection *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDTouchCoordination/text</TokenIdentifier>
+			<Abstract type="html">터치한 텍스트</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) EDTextSelection *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDTouchCoordination/text</TokenIdentifier>
+			<Abstract type="html">터치한 텍스트</Abstract>
+			<DeclaredIn>EDTouchCoordination.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) EDTextSelection *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

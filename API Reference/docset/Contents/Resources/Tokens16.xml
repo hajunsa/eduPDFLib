@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/EDFooter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/EDFooter</TokenIdentifier>
+			<Abstract type="html">컨텐츠 마지막 페이지에 들어가는 하단바.
+마지막 페이지 번호를 가집니다.</Abstract>
+			<DeclaredIn>EDFooter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/EDFooter/heightWithWidth:</TokenIdentifier>
+			<Abstract type="html">Footer 세로 길이</Abstract>
+			<DeclaredIn>EDFooter.h</DeclaredIn>
+			
+			<Declaration>- (CGFloat)heightWithWidth:(CGFloat)width</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>width</Name>
+					<Abstract type="html">Footer 가로 길이(이전 페이지 가로길이와 동일).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">세로 길이.</Abstract></ReturnValue>
+			<Anchor>//api/name/heightWithWidth:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/EDFooter/display</TokenIdentifier>
+			<Abstract type="html">화면에 그리기.</Abstract>
+			<DeclaredIn>EDFooter.h</DeclaredIn>
+			
+			<Declaration>- (void)display</Declaration>
+			
+			
+			<Anchor>//api/name/display</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

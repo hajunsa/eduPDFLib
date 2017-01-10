@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/EDPageMoveFinishedType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/EDPageMoveFinishedType</TokenIdentifier>
+			<Abstract type="html">페이지 이동시 성공 또는 실패 종류.</Abstract>
+			<DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPageMove_Success</TokenIdentifier>
+            <Abstract type="html">페이지 이동 성공.
+     </Abstract>
+            <Declaration>EDPageMove_Success</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPageMove_InvailedPageNo</TokenIdentifier>
+            <Abstract type="html">페이지 번호가 유효하지 않음.
+     </Abstract>
+            <Declaration>EDPageMove_InvailedPageNo</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPageMove_NotExistsPageView</TokenIdentifier>
+            <Abstract type="html">페이지 뷰어가 존재하지 않음.
+     </Abstract>
+            <Declaration>EDPageMove_NotExistsPageView</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPageMove_OtherInputMode</TokenIdentifier>
+            <Abstract type="html">다른 종류 입력 모드라서 이동 실패.
+     </Abstract>
+            <Declaration>EDPageMove_OtherInputMode</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

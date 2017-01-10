@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/EDEnvelopeDataProvider.html">
+	<File path="Classes/EDBookmark.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/EDEnvelopeDataProvider</TokenIdentifier>
-			<Abstract type="html">EDEnvelopeDataProvider.
-Unidocs DRM4 문서 열람시 사용합니다.</Abstract>
-			<DeclaredIn>EDEnvelopeDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/EDBookmark</TokenIdentifier>
+			<Abstract type="html">책갈피</Abstract>
+			<DeclaredIn>EDBookmark.h</DeclaredIn>
             
 			
 			<NodeRef refid="2"/>
@@ -14,38 +13,110 @@ Unidocs DRM4 문서 열람시 사용합니다.</Abstract>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDEnvelopeDataProvider/setOpenKey:</TokenIdentifier>
-			<Abstract type="html">문서 열람 키.</Abstract>
-			<DeclaredIn>EDEnvelopeDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDBookmark/setPageNo:</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDBookmark.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *openKey</Declaration>
+			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
 			
 			
-			<Anchor>//api/name/openKey</Anchor>
+			<Anchor>//api/name/pageNo</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDEnvelopeDataProvider/openKey</TokenIdentifier>
-			<Abstract type="html">문서 열람 키.</Abstract>
-			<DeclaredIn>EDEnvelopeDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDBookmark/pageNo</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDBookmark.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *openKey</Declaration>
+			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
 			
 			
-			<Anchor>//api/name/openKey</Anchor>
+			<Anchor>//api/name/pageNo</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDEnvelopeDataProvider/openKey</TokenIdentifier>
-			<Abstract type="html">문서 열람 키.</Abstract>
-			<DeclaredIn>EDEnvelopeDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDBookmark/pageNo</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDBookmark.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *openKey</Declaration>
+			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
 			
 			
-			<Anchor>//api/name/openKey</Anchor>
+			<Anchor>//api/name/pageNo</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDBookmark/setMemo:</TokenIdentifier>
+			<Abstract type="html">내용</Abstract>
+			<DeclaredIn>EDBookmark.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *memo</Declaration>
+			
+			
+			<Anchor>//api/name/memo</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDBookmark/memo</TokenIdentifier>
+			<Abstract type="html">내용</Abstract>
+			<DeclaredIn>EDBookmark.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *memo</Declaration>
+			
+			
+			<Anchor>//api/name/memo</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDBookmark/memo</TokenIdentifier>
+			<Abstract type="html">내용</Abstract>
+			<DeclaredIn>EDBookmark.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *memo</Declaration>
+			
+			
+			<Anchor>//api/name/memo</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDBookmark/setColor:</TokenIdentifier>
+			<Abstract type="html">색상</Abstract>
+			<DeclaredIn>EDBookmark.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDBookmark/color</TokenIdentifier>
+			<Abstract type="html">색상</Abstract>
+			<DeclaredIn>EDBookmark.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDBookmark/color</TokenIdentifier>
+			<Abstract type="html">색상</Abstract>
+			<DeclaredIn>EDBookmark.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/EDHTTPConfig.html">
+	<File path="Classes/EDDataProvider.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/EDHTTPConfig</TokenIdentifier>
-			<Abstract type="html">문서 페이지 관련 설정.</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/EDDataProvider</TokenIdentifier>
+			<Abstract type="html">EDDataProvider.
+외부 DRM이나 데이터 변환이 필요한 경우에 사용합니다.
+기본로직은 일반 문서 파일 경로 열람과 동일합니다.
+상속 받아 DRM 걸린 문서에 대한 처리를 구현 해야합니다.</Abstract>
+			<DeclaredIn>EDDataProvider.h</DeclaredIn>
             
 			
 			<NodeRef refid="3"/>
@@ -13,332 +16,117 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/setFastOpenTotalCacheSize:</TokenIdentifier>
-			<Abstract type="html">Fast Open시 전체 캐쉬 크기.
-기본값 : 1610241024 bytes</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/initWithPath:</TokenIdentifier>
+			<Abstract type="html">생성자</Abstract>
+			<DeclaredIn>EDDataProvider.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) int64_t fastOpenTotalCacheSize</Declaration>
+			<Declaration>- (instancetype)initWithPath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">문서 로컬 경로.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/fastOpenTotalCacheSize</Anchor>
+			<Anchor>//api/name/initWithPath:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/fastOpenTotalCacheSize</TokenIdentifier>
-			<Abstract type="html">Fast Open시 전체 캐쉬 크기.
-기본값 : 1610241024 bytes</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/getBytes:offset:size:</TokenIdentifier>
+			<Abstract type="html">문서 데이터 가져오기.
+외부 암호화 모듈을 사용시 블럭 단위 암호화 데이터를 복호화할 때 사용합니다.
+복화된 문서 바이너리를 buff에 넣어야 합니다.</Abstract>
+			<DeclaredIn>EDDataProvider.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) int64_t fastOpenTotalCacheSize</Declaration>
-			
-			
-			<Anchor>//api/name/fastOpenTotalCacheSize</Anchor>
+			<Declaration>- (int)getBytes:(char *)buff offset:(unsigned int)offset size:(int)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buff</Name>
+					<Abstract type="html">가져올 문서 데이터 버퍼.</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">가져올 문서 시작 오프셋.</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">가져올 문서 데이터 크기.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">읽어들인 데이터 크기.</Abstract></ReturnValue>
+			<Anchor>//api/name/getBytes:offset:size:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDHTTPConfig/fastOpenTotalCacheSize</TokenIdentifier>
-			<Abstract type="html">Fast Open시 전체 캐쉬 크기.
-기본값 : 1610241024 bytes</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/size</TokenIdentifier>
+			<Abstract type="html">파일 크기
+문서 크기 입니다.</Abstract>
+			<DeclaredIn>EDDataProvider.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) int64_t fastOpenTotalCacheSize</Declaration>
+			<Declaration>- (unsigned int)size</Declaration>
 			
-			
-			<Anchor>//api/name/fastOpenTotalCacheSize</Anchor>
+			<ReturnValue><Abstract type="html">문서 크기.</Abstract></ReturnValue>
+			<Anchor>//api/name/size</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/setDisableFastOpen:</TokenIdentifier>
-			<Abstract type="html">Fast Open 비활성화.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/open</TokenIdentifier>
+			<Abstract type="html">문서 열기</Abstract>
+			<DeclaredIn>EDDataProvider.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL disableFastOpen</Declaration>
+			<Declaration>- (void)open</Declaration>
 			
 			
-			<Anchor>//api/name/disableFastOpen</Anchor>
+			<Anchor>//api/name/open</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/disableFastOpen</TokenIdentifier>
-			<Abstract type="html">Fast Open 비활성화.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/close</TokenIdentifier>
+			<Abstract type="html">문서 닫기</Abstract>
+			<DeclaredIn>EDDataProvider.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL disableFastOpen</Declaration>
+			<Declaration>- (void)close</Declaration>
 			
 			
-			<Anchor>//api/name/disableFastOpen</Anchor>
+			<Anchor>//api/name/close</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDHTTPConfig/disableFastOpen</TokenIdentifier>
-			<Abstract type="html">Fast Open 비활성화.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/setPath:</TokenIdentifier>
+			<Abstract type="html">문서 로컬 경로.</Abstract>
+			<DeclaredIn>EDDataProvider.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL disableFastOpen</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
 			
 			
-			<Anchor>//api/name/disableFastOpen</Anchor>
+			<Anchor>//api/name/path</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/setOnlyContentsTypePDF:</TokenIdentifier>
-			<Abstract type="html">원격 경로는 모두 PDF 형식으로 설정.
-기본값 : YES</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/path</TokenIdentifier>
+			<Abstract type="html">문서 로컬 경로.</Abstract>
+			<DeclaredIn>EDDataProvider.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL onlyContentsTypePDF</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
 			
 			
-			<Anchor>//api/name/onlyContentsTypePDF</Anchor>
+			<Anchor>//api/name/path</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/onlyContentsTypePDF</TokenIdentifier>
-			<Abstract type="html">원격 경로는 모두 PDF 형식으로 설정.
-기본값 : YES</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDDataProvider/path</TokenIdentifier>
+			<Abstract type="html">문서 로컬 경로.</Abstract>
+			<DeclaredIn>EDDataProvider.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL onlyContentsTypePDF</Declaration>
-			
-			
-			<Anchor>//api/name/onlyContentsTypePDF</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDHTTPConfig/onlyContentsTypePDF</TokenIdentifier>
-			<Abstract type="html">원격 경로는 모두 PDF 형식으로 설정.
-기본값 : YES</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL onlyContentsTypePDF</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
 			
 			
-			<Anchor>//api/name/onlyContentsTypePDF</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/setDisableDownload:</TokenIdentifier>
-			<Abstract type="html">파일 다운로드 비활성화.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL disableDownload</Declaration>
-			
-			
-			<Anchor>//api/name/disableDownload</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/disableDownload</TokenIdentifier>
-			<Abstract type="html">파일 다운로드 비활성화.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL disableDownload</Declaration>
-			
-			
-			<Anchor>//api/name/disableDownload</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDHTTPConfig/disableDownload</TokenIdentifier>
-			<Abstract type="html">파일 다운로드 비활성화.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL disableDownload</Declaration>
-			
-			
-			<Anchor>//api/name/disableDownload</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/setValidatesSecureCertificateHTTPS:</TokenIdentifier>
-			<Abstract type="html">HTTPS 통신시 인증된 서명만 사용할지 여부.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL validatesSecureCertificateHTTPS</Declaration>
-			
-			
-			<Anchor>//api/name/validatesSecureCertificateHTTPS</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/validatesSecureCertificateHTTPS</TokenIdentifier>
-			<Abstract type="html">HTTPS 통신시 인증된 서명만 사용할지 여부.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL validatesSecureCertificateHTTPS</Declaration>
-			
-			
-			<Anchor>//api/name/validatesSecureCertificateHTTPS</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDHTTPConfig/validatesSecureCertificateHTTPS</TokenIdentifier>
-			<Abstract type="html">HTTPS 통신시 인증된 서명만 사용할지 여부.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL validatesSecureCertificateHTTPS</Declaration>
-			
-			
-			<Anchor>//api/name/validatesSecureCertificateHTTPS</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/setDisableFileSave:</TokenIdentifier>
-			<Abstract type="html">원격경로 문서 로컬 파일 저장 여부.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL disableFileSave</Declaration>
-			
-			
-			<Anchor>//api/name/disableFileSave</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/disableFileSave</TokenIdentifier>
-			<Abstract type="html">원격경로 문서 로컬 파일 저장 여부.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL disableFileSave</Declaration>
-			
-			
-			<Anchor>//api/name/disableFileSave</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDHTTPConfig/disableFileSave</TokenIdentifier>
-			<Abstract type="html">원격경로 문서 로컬 파일 저장 여부.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL disableFileSave</Declaration>
-			
-			
-			<Anchor>//api/name/disableFileSave</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/setEnableFastDownload:</TokenIdentifier>
-			<Abstract type="html">원격경로 빠른 다운로드 사용 여부.
-정적 파일을 다운로드할 때 느린 WAS(톰캣 같은)대신 아파치를 이용한 다운로드가 필요한 경우에 사용합니다.
-WAS와 프로토콜 정의가 필요합니다.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL enableFastDownload</Declaration>
-			
-			
-			<Anchor>//api/name/enableFastDownload</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/enableFastDownload</TokenIdentifier>
-			<Abstract type="html">원격경로 빠른 다운로드 사용 여부.
-정적 파일을 다운로드할 때 느린 WAS(톰캣 같은)대신 아파치를 이용한 다운로드가 필요한 경우에 사용합니다.
-WAS와 프로토콜 정의가 필요합니다.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL enableFastDownload</Declaration>
-			
-			
-			<Anchor>//api/name/enableFastDownload</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDHTTPConfig/enableFastDownload</TokenIdentifier>
-			<Abstract type="html">원격경로 빠른 다운로드 사용 여부.
-정적 파일을 다운로드할 때 느린 WAS(톰캣 같은)대신 아파치를 이용한 다운로드가 필요한 경우에 사용합니다.
-WAS와 프로토콜 정의가 필요합니다.
-기본값 : NO</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL enableFastDownload</Declaration>
-			
-			
-			<Anchor>//api/name/enableFastDownload</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/setDownloadDir:</TokenIdentifier>
-			<Abstract type="html">다운로드 경로.
-기본값 : Library/Caches/Download</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *downloadDir</Declaration>
-			
-			
-			<Anchor>//api/name/downloadDir</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDHTTPConfig/downloadDir</TokenIdentifier>
-			<Abstract type="html">다운로드 경로.
-기본값 : Library/Caches/Download</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *downloadDir</Declaration>
-			
-			
-			<Anchor>//api/name/downloadDir</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDHTTPConfig/downloadDir</TokenIdentifier>
-			<Abstract type="html">다운로드 경로.
-기본값 : Library/Caches/Download</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *downloadDir</Declaration>
-			
-			
-			<Anchor>//api/name/downloadDir</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/EDHTTPConfig/defaultConfig</TokenIdentifier>
-			<Abstract type="html">기본 설정</Abstract>
-			<DeclaredIn>EDHTTPConfig.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)defaultConfig</Declaration>
-			
-			<ReturnValue><Abstract type="html">기본 설정</Abstract></ReturnValue>
-			<Anchor>//api/name/defaultConfig</Anchor>
+			<Anchor>//api/name/path</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

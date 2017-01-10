@@ -68,7 +68,13 @@
 		
 		<option value="//api/name/displayPageCount">displayPageCount</option>
 		
+		<option value="//api/name/documentPageLayout">documentPageLayout</option>
+		
+		<option value="//api/name/enableAudioesAutoPlay">enableAudioesAutoPlay</option>
+		
 		<option value="//api/name/footer">footer</option>
+		
+		<option value="//api/name/indicatorHidden">indicatorHidden</option>
 		
 		<option value="//api/name/initPageNo">initPageNo</option>
 		
@@ -90,6 +96,8 @@
 		
 		<option value="//api/name/reservePageCount">reservePageCount</option>
 		
+		<option value="//api/name/siteID">siteID</option>
+		
 		<option value="//api/name/subtitleHighlightColor">subtitleHighlightColor</option>
 		
 		<option value="//api/name/xpdfPageRenderingWithCoreGraphic">xpdfPageRenderingWithCoreGraphic</option>
@@ -105,6 +113,14 @@
 	</optgroup>
 	
 
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/maxPageNo:pageCount:">- maxPageNo:pageCount:</option>
+		
+		<option value="//api/name/minPageNo:">- minPageNo:</option>
+		
+	</optgroup>
 	
 	
 </select>
@@ -322,6 +338,49 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/documentPageLayout" title="documentPageLayout"></a>
+	<h3 class="method-title"><code><a href="#//api/name/documentPageLayout">&nbsp;&nbsp;documentPageLayout</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>문서에 설정한 Page Layout
+<a href="#//api/name/displayPageCount">displayPageCount</a>, <a href="#//api/name/blankPageCount">blankPageCount</a>, <a href="#//api/name/pagingEnabled">pagingEnabled</a> 값을 문서에 정의한 설정을 합니다.
+기본값 : YES</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL documentPageLayout</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EDPageConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/displayPageCount" title="displayPageCount"></a>
 	<h3 class="method-title"><code><a href="#//api/name/displayPageCount">&nbsp;&nbsp;displayPageCount</a></code>
 </h3>
@@ -408,8 +467,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/maximumZoomScale" title="maximumZoomScale"></a>
-	<h3 class="method-title"><code><a href="#//api/name/maximumZoomScale">&nbsp;&nbsp;maximumZoomScale</a></code>
+	<a name="//api/name/pagingEnabled" title="pagingEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pagingEnabled">&nbsp;&nbsp;pagingEnabled</a></code>
 </h3>
 
 	<div class="method-info">
@@ -419,13 +478,14 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>최대 확대 배율.
-기본값 : 256</p>
+				<p>화면 페이징 표시 여부
+끊김 없이 페이지를 표시하려면 NO설정 합니다.
+기본값 : NO</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat maximumZoomScale</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL pagingEnabled</code></div>
 
 		    
 			
@@ -450,8 +510,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/pagingEnabled" title="pagingEnabled"></a>
-	<h3 class="method-title"><code><a href="#//api/name/pagingEnabled">&nbsp;&nbsp;pagingEnabled</a></code>
+	<a name="//api/name/maximumZoomScale" title="maximumZoomScale"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maximumZoomScale">&nbsp;&nbsp;maximumZoomScale</a></code>
 </h3>
 
 	<div class="method-info">
@@ -461,14 +521,13 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>화면 페이징 표시 여부
-끊김 없이 페이지를 표시하려면 NO설정 합니다.
-기본값 : NO</p>
+				<p>최대 확대 배율.
+기본값 : 256</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL pagingEnabled</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat maximumZoomScale</code></div>
 
 		    
 			
@@ -683,6 +742,49 @@
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL isDismissOnTap</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EDPageConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/indicatorHidden" title="indicatorHidden"></a>
+	<h3 class="method-title"><code><a href="#//api/name/indicatorHidden">&nbsp;&nbsp;indicatorHidden</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>로딩 표시 숨김 여부
+문서 열람시 로딩 표시를 숨깁니다.
+기본값 : NO</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL indicatorHidden</code></div>
 
 		    
 			
@@ -961,6 +1063,90 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/enableAudioesAutoPlay" title="enableAudioesAutoPlay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableAudioesAutoPlay">&nbsp;&nbsp;enableAudioesAutoPlay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>오디오 자동 재생 설정.
+기본값 : NO</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL enableAudioesAutoPlay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EDPageConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/siteID" title="siteID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/siteID">&nbsp;&nbsp;siteID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>DRM 문서 사이트별 식별자.
+기본값 : nil</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSString *siteID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EDPageConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/defaultConfig" title="defaultConfig"></a>
 	<h3 class="method-title"><code><a href="#//api/name/defaultConfig">+&nbsp;defaultConfig</a></code>
 </h3>
@@ -1006,6 +1192,127 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/minPageNo:" title="minPageNo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minPageNo:">&ndash;&nbsp;minPageNo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>표시 페이지들에서 최소 페이지 번호.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)minPageNo:(int)<em>pageNo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageNo</code></th>
+						<td><p>해당 페이지 번호.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>표시 페이지들에서 페이지 최소 번호.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EDPageConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxPageNo:pageCount:" title="maxPageNo:pageCount:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxPageNo:pageCount:">&ndash;&nbsp;maxPageNo:pageCount:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>표시 페이지들에서 최대 페이지 번호.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)maxPageNo:(int)<em>pageNo</em> pageCount:(int)<em>pageCount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageNo</code></th>
+						<td><p>해당 페이지 번호.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageCount</code></th>
+						<td><p>문서 페이지 전체 갯수.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>표시 페이지들에서 페이지 최대 번호.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EDPageConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -1021,7 +1328,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Unidocs Inc. All rights reserved. Updated: 2016-10-10</p>
+						<p class="copyright">Copyright &copy; 2017 Unidocs Inc. All rights reserved. Updated: 2017-01-09</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
