@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		520331051E28AE2300593587 /* eduPDFPlayerS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520331041E28AE2300593587 /* eduPDFPlayerS.framework */; };
+		520331071E28AE2900593587 /* MapFonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 520331061E28AE2900593587 /* MapFonts.bundle */; };
+		520B09B41E23189500252EEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B09B31E23189500252EEC /* main.m */; };
+		520B09B71E23189500252EEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B09B61E23189500252EEC /* AppDelegate.m */; };
+		520B09BA1E23189500252EEC /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 520B09B91E23189500252EEC /* ViewController.mm */; };
+		520B09BD1E23189500252EEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520B09BB1E23189500252EEC /* Main.storyboard */; };
+		520B09BF1E23189500252EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520B09BE1E23189500252EEC /* Assets.xcassets */; };
+		520B09C21E23189500252EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520B09C01E23189500252EEC /* LaunchScreen.storyboard */; };
+		520B09D01E23192400252EEC /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 520B09CF1E23192400252EEC /* libxml2.tbd */; };
+		520B09D21E23192B00252EEC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 520B09D11E23192B00252EEC /* libz.tbd */; };
+		520B09D41E23199500252EEC /* fdf_data_exchange.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 520B09D31E23199500252EEC /* fdf_data_exchange.pdf */; };
+		520B09DA1E231F1000252EEC /* ReaderMainPagebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B09D71E231F1000252EEC /* ReaderMainPagebar.m */; };
+		520B09DB1E231F1000252EEC /* ReaderThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B09D91E231F1000252EEC /* ReaderThumbView.m */; };
+		52366C651E232B4000BCF8C3 /* CustomOutlineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52366C601E232B4000BCF8C3 /* CustomOutlineCell.m */; };
+		52366C661E232B4000BCF8C3 /* CustomOutlineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52366C611E232B4000BCF8C3 /* CustomOutlineCell.xib */; };
+		52366C671E232B4000BCF8C3 /* CustomOutlines.m in Sources */ = {isa = PBXBuildFile; fileRef = 52366C631E232B4000BCF8C3 /* CustomOutlines.m */; };
+		52366C681E232B4000BCF8C3 /* CustomOutlines.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52366C641E232B4000BCF8C3 /* CustomOutlines.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		520331041E28AE2300593587 /* eduPDFPlayerS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = eduPDFPlayerS.framework; path = ../../Pods/eduPDFLib/Frameworks/eduPDFPlayerS.framework; sourceTree = "<group>"; };
+		520331061E28AE2900593587 /* MapFonts.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MapFonts.bundle; path = ../../Pods/eduPDFLib/Resources/MapFonts.bundle; sourceTree = "<group>"; };
+		520B09AF1E23189500252EEC /* Thumbnails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thumbnails.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		520B09B31E23189500252EEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		520B09B51E23189500252EEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		520B09B61E23189500252EEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		520B09B81E23189500252EEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		520B09B91E23189500252EEC /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		520B09BC1E23189500252EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		520B09BE1E23189500252EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		520B09C11E23189500252EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		520B09C31E23189500252EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520B09CF1E23192400252EEC /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		520B09D11E23192B00252EEC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		520B09D31E23199500252EEC /* fdf_data_exchange.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = fdf_data_exchange.pdf; sourceTree = "<group>"; };
+		520B09D61E231F1000252EEC /* ReaderMainPagebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderMainPagebar.h; sourceTree = "<group>"; };
+		520B09D71E231F1000252EEC /* ReaderMainPagebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderMainPagebar.m; sourceTree = "<group>"; };
+		520B09D81E231F1000252EEC /* ReaderThumbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbView.h; sourceTree = "<group>"; };
+		520B09D91E231F1000252EEC /* ReaderThumbView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbView.m; sourceTree = "<group>"; };
+		52366C5F1E232B4000BCF8C3 /* CustomOutlineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomOutlineCell.h; sourceTree = "<group>"; };
+		52366C601E232B4000BCF8C3 /* CustomOutlineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomOutlineCell.m; sourceTree = "<group>"; };
+		52366C611E232B4000BCF8C3 /* CustomOutlineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOutlineCell.xib; sourceTree = "<group>"; };
+		52366C621E232B4000BCF8C3 /* CustomOutlines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomOutlines.h; sourceTree = "<group>"; };
+		52366C631E232B4000BCF8C3 /* CustomOutlines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomOutlines.m; sourceTree = "<group>"; };
+		52366C641E232B4000BCF8C3 /* CustomOutlines.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOutlines.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		520B09AC1E23189500252EEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520B09D21E23192B00252EEC /* libz.tbd in Frameworks */,
+				520331051E28AE2300593587 /* eduPDFPlayerS.framework in Frameworks */,
+				520B09D01E23192400252EEC /* libxml2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		520B09A61E23189500252EEC = {
+			isa = PBXGroup;
+			children = (
+				520B09B11E23189500252EEC /* Thumbnails */,
+				520B09B01E23189500252EEC /* Products */,
+				520B09CC1E23191B00252EEC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		520B09B01E23189500252EEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				520B09AF1E23189500252EEC /* Thumbnails.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		520B09B11E23189500252EEC /* Thumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				52366C5E1E232B2C00BCF8C3 /* Outlines */,
+				520B09D51E231F0400252EEC /* ThirdParty */,
+				520B09D31E23199500252EEC /* fdf_data_exchange.pdf */,
+				520B09B51E23189500252EEC /* AppDelegate.h */,
+				520B09B61E23189500252EEC /* AppDelegate.m */,
+				520B09B81E23189500252EEC /* ViewController.h */,
+				520B09B91E23189500252EEC /* ViewController.mm */,
+				520B09BB1E23189500252EEC /* Main.storyboard */,
+				520B09BE1E23189500252EEC /* Assets.xcassets */,
+				520B09C01E23189500252EEC /* LaunchScreen.storyboard */,
+				520B09C31E23189500252EEC /* Info.plist */,
+				520B09B21E23189500252EEC /* Supporting Files */,
+			);
+			path = Thumbnails;
+			sourceTree = "<group>";
+		};
+		520B09B21E23189500252EEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				520B09B31E23189500252EEC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		520B09CC1E23191B00252EEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				520331061E28AE2900593587 /* MapFonts.bundle */,
+				520331041E28AE2300593587 /* eduPDFPlayerS.framework */,
+				520B09D11E23192B00252EEC /* libz.tbd */,
+				520B09CF1E23192400252EEC /* libxml2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		520B09D51E231F0400252EEC /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				520B09D61E231F1000252EEC /* ReaderMainPagebar.h */,
+				520B09D71E231F1000252EEC /* ReaderMainPagebar.m */,
+				520B09D81E231F1000252EEC /* ReaderThumbView.h */,
+				520B09D91E231F1000252EEC /* ReaderThumbView.m */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		52366C5E1E232B2C00BCF8C3 /* Outlines */ = {
+			isa = PBXGroup;
+			children = (
+				52366C5F1E232B4000BCF8C3 /* CustomOutlineCell.h */,
+				52366C601E232B4000BCF8C3 /* CustomOutlineCell.m */,
+				52366C611E232B4000BCF8C3 /* CustomOutlineCell.xib */,
+				52366C621E232B4000BCF8C3 /* CustomOutlines.h */,
+				52366C631E232B4000BCF8C3 /* CustomOutlines.m */,
+				52366C641E232B4000BCF8C3 /* CustomOutlines.xib */,
+			);
+			path = Outlines;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		520B09AE1E23189500252EEC /* Thumbnails */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 520B09C61E23189500252EEC /* Build configuration list for PBXNativeTarget "Thumbnails" */;
+			buildPhases = (
+				520B09AB1E23189500252EEC /* Sources */,
+				520B09AC1E23189500252EEC /* Frameworks */,
+				520B09AD1E23189500252EEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Thumbnails;
+			productName = Thumbnails;
+			productReference = 520B09AF1E23189500252EEC /* Thumbnails.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		520B09A71E23189500252EEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Unidocs Inc";
+				TargetAttributes = {
+					520B09AE1E23189500252EEC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D89HG2YBXS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 520B09AA1E23189500252EEC /* Build configuration list for PBXProject "Thumbnails" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 520B09A61E23189500252EEC;
+			productRefGroup = 520B09B01E23189500252EEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				520B09AE1E23189500252EEC /* Thumbnails */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		520B09AD1E23189500252EEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520B09D41E23199500252EEC /* fdf_data_exchange.pdf in Resources */,
+				52366C681E232B4000BCF8C3 /* CustomOutlines.xib in Resources */,
+				520B09C21E23189500252EEC /* LaunchScreen.storyboard in Resources */,
+				520B09BF1E23189500252EEC /* Assets.xcassets in Resources */,
+				520B09BD1E23189500252EEC /* Main.storyboard in Resources */,
+				52366C661E232B4000BCF8C3 /* CustomOutlineCell.xib in Resources */,
+				520331071E28AE2900593587 /* MapFonts.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		520B09AB1E23189500252EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520B09DA1E231F1000252EEC /* ReaderMainPagebar.m in Sources */,
+				52366C671E232B4000BCF8C3 /* CustomOutlines.m in Sources */,
+				52366C651E232B4000BCF8C3 /* CustomOutlineCell.m in Sources */,
+				520B09DB1E231F1000252EEC /* ReaderThumbView.m in Sources */,
+				520B09BA1E23189500252EEC /* ViewController.mm in Sources */,
+				520B09B71E23189500252EEC /* AppDelegate.m in Sources */,
+				520B09B41E23189500252EEC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		520B09BB1E23189500252EEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				520B09BC1E23189500252EEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		520B09C01E23189500252EEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				520B09C11E23189500252EEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		520B09C41E23189500252EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		520B09C51E23189500252EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		520B09C71E23189500252EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D89HG2YBXS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../Pods/eduPDFLib/Frameworks\"";
+				INFOPLIST_FILE = Thumbnails/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.unidocs.Thumbnails;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		520B09C81E23189500252EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D89HG2YBXS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../Pods/eduPDFLib/Frameworks\"";
+				INFOPLIST_FILE = Thumbnails/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.unidocs.Thumbnails;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		520B09AA1E23189500252EEC /* Build configuration list for PBXProject "Thumbnails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520B09C41E23189500252EEC /* Debug */,
+				520B09C51E23189500252EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		520B09C61E23189500252EEC /* Build configuration list for PBXNativeTarget "Thumbnails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520B09C71E23189500252EEC /* Debug */,
+				520B09C81E23189500252EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 520B09A71E23189500252EEC /* Project object */;
+}

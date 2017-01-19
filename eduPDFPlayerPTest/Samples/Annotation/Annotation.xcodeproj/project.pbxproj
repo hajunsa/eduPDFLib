@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		520330F11E28AA5E00593587 /* eduPDFPlayerS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520330F01E28AA5E00593587 /* eduPDFPlayerS.framework */; };
+		520330F31E28AA6600593587 /* MapFonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 520330F21E28AA6600593587 /* MapFonts.bundle */; };
+		52FD6C3A1E1A14DD0054615D /* 94_1436254771905.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 52FD6C391E1A14DD0054615D /* 94_1436254771905.jpeg */; };
+		DD600A831E150B5C00721633 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD600A821E150B5C00721633 /* main.m */; };
+		DD600A861E150B5C00721633 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD600A851E150B5C00721633 /* AppDelegate.m */; };
+		DD600A891E150B5C00721633 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD600A881E150B5C00721633 /* ViewController.mm */; };
+		DD600A8C1E150B5C00721633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD600A8A1E150B5C00721633 /* Main.storyboard */; };
+		DD600A8E1E150B5C00721633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD600A8D1E150B5C00721633 /* Assets.xcassets */; };
+		DD600A911E150B5C00721633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD600A8F1E150B5C00721633 /* LaunchScreen.storyboard */; };
+		DD600AA61E150D9100721633 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD600AA51E150D9100721633 /* libz.tbd */; };
+		DD600AA81E150D9600721633 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD600AA71E150D9600721633 /* libxml2.tbd */; };
+		DD600AAA1E150E7300721633 /* fdf_data_exchange.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DD600AA91E150E7300721633 /* fdf_data_exchange.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		520330F01E28AA5E00593587 /* eduPDFPlayerS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = eduPDFPlayerS.framework; path = ../../Pods/eduPDFLib/Frameworks/eduPDFPlayerS.framework; sourceTree = "<group>"; };
+		520330F21E28AA6600593587 /* MapFonts.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MapFonts.bundle; path = ../../Pods/eduPDFLib/Resources/MapFonts.bundle; sourceTree = "<group>"; };
+		52FD6C391E1A14DD0054615D /* 94_1436254771905.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 94_1436254771905.jpeg; sourceTree = "<group>"; };
+		DD600A7E1E150B5C00721633 /* Annotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Annotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD600A821E150B5C00721633 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD600A841E150B5C00721633 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD600A851E150B5C00721633 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD600A871E150B5C00721633 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD600A881E150B5C00721633 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		DD600A8B1E150B5C00721633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD600A8D1E150B5C00721633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD600A901E150B5C00721633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD600A921E150B5C00721633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD600AA51E150D9100721633 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DD600AA71E150D9600721633 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		DD600AA91E150E7300721633 /* fdf_data_exchange.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = fdf_data_exchange.pdf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD600A7B1E150B5C00721633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD600AA81E150D9600721633 /* libxml2.tbd in Frameworks */,
+				520330F11E28AA5E00593587 /* eduPDFPlayerS.framework in Frameworks */,
+				DD600AA61E150D9100721633 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD600A751E150B5C00721633 = {
+			isa = PBXGroup;
+			children = (
+				DD600A801E150B5C00721633 /* Annotation */,
+				DD600A7F1E150B5C00721633 /* Products */,
+				DD600A9E1E150BBD00721633 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD600A7F1E150B5C00721633 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD600A7E1E150B5C00721633 /* Annotation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD600A801E150B5C00721633 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				52FD6C391E1A14DD0054615D /* 94_1436254771905.jpeg */,
+				DD600AA91E150E7300721633 /* fdf_data_exchange.pdf */,
+				DD600A841E150B5C00721633 /* AppDelegate.h */,
+				DD600A851E150B5C00721633 /* AppDelegate.m */,
+				DD600A871E150B5C00721633 /* ViewController.h */,
+				DD600A881E150B5C00721633 /* ViewController.mm */,
+				DD600A8A1E150B5C00721633 /* Main.storyboard */,
+				DD600A8D1E150B5C00721633 /* Assets.xcassets */,
+				DD600A8F1E150B5C00721633 /* LaunchScreen.storyboard */,
+				DD600A921E150B5C00721633 /* Info.plist */,
+				DD600A811E150B5C00721633 /* Supporting Files */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		DD600A811E150B5C00721633 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD600A821E150B5C00721633 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD600A9E1E150BBD00721633 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				520330F21E28AA6600593587 /* MapFonts.bundle */,
+				520330F01E28AA5E00593587 /* eduPDFPlayerS.framework */,
+				DD600AA71E150D9600721633 /* libxml2.tbd */,
+				DD600AA51E150D9100721633 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD600A7D1E150B5C00721633 /* Annotation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD600A951E150B5C00721633 /* Build configuration list for PBXNativeTarget "Annotation" */;
+			buildPhases = (
+				DD600A7A1E150B5C00721633 /* Sources */,
+				DD600A7B1E150B5C00721633 /* Frameworks */,
+				DD600A7C1E150B5C00721633 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Annotation;
+			productName = Annotation;
+			productReference = DD600A7E1E150B5C00721633 /* Annotation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD600A761E150B5C00721633 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Unidocs Inc";
+				TargetAttributes = {
+					DD600A7D1E150B5C00721633 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DD600A791E150B5C00721633 /* Build configuration list for PBXProject "Annotation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD600A751E150B5C00721633;
+			productRefGroup = DD600A7F1E150B5C00721633 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD600A7D1E150B5C00721633 /* Annotation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD600A7C1E150B5C00721633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD600AAA1E150E7300721633 /* fdf_data_exchange.pdf in Resources */,
+				DD600A911E150B5C00721633 /* LaunchScreen.storyboard in Resources */,
+				DD600A8E1E150B5C00721633 /* Assets.xcassets in Resources */,
+				520330F31E28AA6600593587 /* MapFonts.bundle in Resources */,
+				52FD6C3A1E1A14DD0054615D /* 94_1436254771905.jpeg in Resources */,
+				DD600A8C1E150B5C00721633 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD600A7A1E150B5C00721633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD600A891E150B5C00721633 /* ViewController.mm in Sources */,
+				DD600A861E150B5C00721633 /* AppDelegate.m in Sources */,
+				DD600A831E150B5C00721633 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD600A8A1E150B5C00721633 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD600A8B1E150B5C00721633 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD600A8F1E150B5C00721633 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD600A901E150B5C00721633 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD600A931E150B5C00721633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD600A941E150B5C00721633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD600A961E150B5C00721633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../Pods/eduPDFLib/Frameworks\"";
+				INFOPLIST_FILE = Annotation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unidocs-Inc.Annotation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD600A971E150B5C00721633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../Pods/eduPDFLib/Frameworks\"";
+				INFOPLIST_FILE = Annotation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unidocs-Inc.Annotation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD600A791E150B5C00721633 /* Build configuration list for PBXProject "Annotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD600A931E150B5C00721633 /* Debug */,
+				DD600A941E150B5C00721633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD600A951E150B5C00721633 /* Build configuration list for PBXNativeTarget "Annotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD600A961E150B5C00721633 /* Debug */,
+				DD600A971E150B5C00721633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD600A761E150B5C00721633 /* Project object */;
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDc-Ap-SfF">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gST-rG-ww0">
+                                        <rect key="frame" x="8" y="12" width="57" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Outlines"/>
+                                        <connections>
+                                            <action selector="outlines:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YW6-FK-BwT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mM-BB-P8I">
+                                        <rect key="frame" x="73" y="12" width="138" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Add Bookmark"/>
+                                        <state key="selected" title="Remove Bookmark"/>
+                                        <connections>
+                                            <action selector="bookmark:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3t7-OJ-NBA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qP-Ks-4RQ">
+                                        <rect key="frame" x="219" y="12" width="98" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Bookmark List"/>
+                                        <connections>
+                                            <action selector="bookmarks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEK-cj-8g3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="JXr-HZ-Ixa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NvJ-m8-0sx">
+                                <rect key="frame" x="0.0" y="564" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="KJi-tl-wWK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tDc-Ap-SfF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Au-cc-QDc"/>
+                            <constraint firstAttribute="trailing" secondItem="NvJ-m8-0sx" secondAttribute="trailing" id="8gR-MX-6gR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tDc-Ap-SfF" secondAttribute="bottom" id="HMg-wq-WM8"/>
+                            <constraint firstAttribute="trailing" secondItem="tDc-Ap-SfF" secondAttribute="trailing" id="JR6-dv-MPF"/>
+                            <constraint firstItem="NvJ-m8-0sx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bMY-uP-NK6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NvJ-m8-0sx" secondAttribute="bottom" constant="54" id="gIz-WS-kCu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bookmarkButton" destination="4mM-BB-P8I" id="Ry8-17-0Lt"/>
+                        <outlet property="thumbnailsBarContainView" destination="NvJ-m8-0sx" id="BwR-FK-MNK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="112.89355322338831"/>
+        </scene>
+    </scenes>
+</document>

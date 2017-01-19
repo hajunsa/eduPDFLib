@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		520331011E28ADAE00593587 /* eduPDFPlayerS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520331001E28ADAE00593587 /* eduPDFPlayerS.framework */; };
+		520331031E28ADB400593587 /* MapFonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 520331021E28ADB400593587 /* MapFonts.bundle */; };
+		522061941E1E54F50015BEC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 522061931E1E54F50015BEC1 /* main.m */; };
+		522061971E1E54F50015BEC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 522061961E1E54F50015BEC1 /* AppDelegate.m */; };
+		5220619A1E1E54F50015BEC1 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 522061991E1E54F50015BEC1 /* ViewController.mm */; };
+		5220619D1E1E54F50015BEC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5220619B1E1E54F50015BEC1 /* Main.storyboard */; };
+		5220619F1E1E54F50015BEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5220619E1E1E54F50015BEC1 /* Assets.xcassets */; };
+		522061A21E1E54F50015BEC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522061A01E1E54F50015BEC1 /* LaunchScreen.storyboard */; };
+		522061B01E1E55EE0015BEC1 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 522061AF1E1E55EE0015BEC1 /* libxml2.tbd */; };
+		522061B21E1E55FB0015BEC1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 522061B11E1E55FB0015BEC1 /* libz.tbd */; };
+		522061B41E1E56400015BEC1 /* adobe_supplement_iso32000.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 522061B31E1E56400015BEC1 /* adobe_supplement_iso32000.pdf */; };
+		DD317A2C1E20BEBF007A6F90 /* TTSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD317A2B1E20BEBF007A6F90 /* TTSPlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		520331001E28ADAE00593587 /* eduPDFPlayerS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = eduPDFPlayerS.framework; path = ../../Pods/eduPDFLib/Frameworks/eduPDFPlayerS.framework; sourceTree = "<group>"; };
+		520331021E28ADB400593587 /* MapFonts.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MapFonts.bundle; path = ../../Pods/eduPDFLib/Resources/MapFonts.bundle; sourceTree = "<group>"; };
+		5220618F1E1E54F50015BEC1 /* Text.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Text.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		522061931E1E54F50015BEC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		522061951E1E54F50015BEC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		522061961E1E54F50015BEC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		522061981E1E54F50015BEC1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		522061991E1E54F50015BEC1 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		5220619C1E1E54F50015BEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5220619E1E1E54F50015BEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		522061A11E1E54F50015BEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		522061A31E1E54F50015BEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522061AF1E1E55EE0015BEC1 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		522061B11E1E55FB0015BEC1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		522061B31E1E56400015BEC1 /* adobe_supplement_iso32000.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = adobe_supplement_iso32000.pdf; sourceTree = "<group>"; };
+		DD317A2A1E20BEBF007A6F90 /* TTSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSPlayer.h; sourceTree = "<group>"; };
+		DD317A2B1E20BEBF007A6F90 /* TTSPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSPlayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5220618C1E1E54F50015BEC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522061B21E1E55FB0015BEC1 /* libz.tbd in Frameworks */,
+				520331011E28ADAE00593587 /* eduPDFPlayerS.framework in Frameworks */,
+				522061B01E1E55EE0015BEC1 /* libxml2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		522061861E1E54F50015BEC1 = {
+			isa = PBXGroup;
+			children = (
+				522061911E1E54F50015BEC1 /* Text */,
+				522061901E1E54F50015BEC1 /* Products */,
+				522061AC1E1E55D40015BEC1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		522061901E1E54F50015BEC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5220618F1E1E54F50015BEC1 /* Text.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		522061911E1E54F50015BEC1 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				522061B31E1E56400015BEC1 /* adobe_supplement_iso32000.pdf */,
+				522061951E1E54F50015BEC1 /* AppDelegate.h */,
+				522061961E1E54F50015BEC1 /* AppDelegate.m */,
+				522061981E1E54F50015BEC1 /* ViewController.h */,
+				522061991E1E54F50015BEC1 /* ViewController.mm */,
+				5220619B1E1E54F50015BEC1 /* Main.storyboard */,
+				5220619E1E1E54F50015BEC1 /* Assets.xcassets */,
+				522061A01E1E54F50015BEC1 /* LaunchScreen.storyboard */,
+				522061A31E1E54F50015BEC1 /* Info.plist */,
+				522061921E1E54F50015BEC1 /* Supporting Files */,
+				DD317A2A1E20BEBF007A6F90 /* TTSPlayer.h */,
+				DD317A2B1E20BEBF007A6F90 /* TTSPlayer.m */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		522061921E1E54F50015BEC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				522061931E1E54F50015BEC1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		522061AC1E1E55D40015BEC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				520331021E28ADB400593587 /* MapFonts.bundle */,
+				520331001E28ADAE00593587 /* eduPDFPlayerS.framework */,
+				522061B11E1E55FB0015BEC1 /* libz.tbd */,
+				522061AF1E1E55EE0015BEC1 /* libxml2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5220618E1E1E54F50015BEC1 /* Text */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 522061A61E1E54F50015BEC1 /* Build configuration list for PBXNativeTarget "Text" */;
+			buildPhases = (
+				5220618B1E1E54F50015BEC1 /* Sources */,
+				5220618C1E1E54F50015BEC1 /* Frameworks */,
+				5220618D1E1E54F50015BEC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Text;
+			productName = Text;
+			productReference = 5220618F1E1E54F50015BEC1 /* Text.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		522061871E1E54F50015BEC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Unidocs Inc";
+				TargetAttributes = {
+					5220618E1E1E54F50015BEC1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D89HG2YBXS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5220618A1E1E54F50015BEC1 /* Build configuration list for PBXProject "Text" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 522061861E1E54F50015BEC1;
+			productRefGroup = 522061901E1E54F50015BEC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5220618E1E1E54F50015BEC1 /* Text */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5220618D1E1E54F50015BEC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522061A21E1E54F50015BEC1 /* LaunchScreen.storyboard in Resources */,
+				5220619F1E1E54F50015BEC1 /* Assets.xcassets in Resources */,
+				5220619D1E1E54F50015BEC1 /* Main.storyboard in Resources */,
+				520331031E28ADB400593587 /* MapFonts.bundle in Resources */,
+				522061B41E1E56400015BEC1 /* adobe_supplement_iso32000.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5220618B1E1E54F50015BEC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5220619A1E1E54F50015BEC1 /* ViewController.mm in Sources */,
+				522061971E1E54F50015BEC1 /* AppDelegate.m in Sources */,
+				DD317A2C1E20BEBF007A6F90 /* TTSPlayer.m in Sources */,
+				522061941E1E54F50015BEC1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5220619B1E1E54F50015BEC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5220619C1E1E54F50015BEC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		522061A01E1E54F50015BEC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				522061A11E1E54F50015BEC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		522061A41E1E54F50015BEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		522061A51E1E54F50015BEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		522061A71E1E54F50015BEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D89HG2YBXS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../Pods/eduPDFLib/Frameworks\"";
+				INFOPLIST_FILE = Text/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.unidocs.Text;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		522061A81E1E54F50015BEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D89HG2YBXS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../Pods/eduPDFLib/Frameworks\"";
+				INFOPLIST_FILE = Text/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.unidocs.Text;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5220618A1E1E54F50015BEC1 /* Build configuration list for PBXProject "Text" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522061A41E1E54F50015BEC1 /* Debug */,
+				522061A51E1E54F50015BEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		522061A61E1E54F50015BEC1 /* Build configuration list for PBXNativeTarget "Text" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522061A71E1E54F50015BEC1 /* Debug */,
+				522061A81E1E54F50015BEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 522061871E1E54F50015BEC1 /* Project object */;
+}
