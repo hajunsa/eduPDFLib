@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/EDTouchObjectType.html">
+	<File path="Constants/EDPlayStateType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/EDTouchObjectType</TokenIdentifier>
-			<Abstract type="html">터치한 객체 종류</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/EDPlayStateType</TokenIdentifier>
+			<Abstract type="html">재생 상태</Abstract>
 			<DeclaredIn>EDPageEnums.h</DeclaredIn>
             
 			
@@ -14,10 +14,10 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDTouchPage</TokenIdentifier>
-            <Abstract type="html">페이지
+            <TokenIdentifier>//apple_ref/c/econst/EDPlayStateStop</TokenIdentifier>
+            <Abstract type="html">재생 중지 상태
      </Abstract>
-            <Declaration>EDTouchPage</Declaration>
+            <Declaration>EDPlayStateStop</Declaration>
             
             <DeclaredIn>EDPageEnums.h</DeclaredIn>
             
@@ -25,10 +25,10 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDTouchAnnotation</TokenIdentifier>
-            <Abstract type="html">주석
+            <TokenIdentifier>//apple_ref/c/econst/EDPlayStatePlaying</TokenIdentifier>
+            <Abstract type="html">재생 중 상태
      </Abstract>
-            <Declaration>EDTouchAnnotation</Declaration>
+            <Declaration>EDPlayStatePlaying</Declaration>
             
             <DeclaredIn>EDPageEnums.h</DeclaredIn>
             
@@ -36,10 +36,21 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDTouchTextSelection</TokenIdentifier>
-            <Abstract type="html">텍스트 선택
+            <TokenIdentifier>//apple_ref/c/econst/EDPlayStatePause</TokenIdentifier>
+            <Abstract type="html">재생 일시 중지 상태
      </Abstract>
-            <Declaration>EDTouchTextSelection</Declaration>
+            <Declaration>EDPlayStatePause</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPlayStateFinish</TokenIdentifier>
+            <Abstract type="html">재생 완료 상태
+     </Abstract>
+            <Declaration>EDPlayStateFinish</Declaration>
             
             <DeclaredIn>EDPageEnums.h</DeclaredIn>
             

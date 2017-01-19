@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/EDEnvelopeDataProvider.html">
+	<File path="Classes/EDDocumentProvider.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/EDEnvelopeDataProvider</TokenIdentifier>
-			<Abstract type="html">EDEnvelopeDataProvider.
-Unidocs DRM4 문서 열람시 사용합니다.</Abstract>
-			<DeclaredIn>EDEnvelopeDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/EDDocumentProvider</TokenIdentifier>
+			<Abstract type="html">문서 제공자
+경로, 스트림, 데이터제공자로 열람 가능합니다.</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
             
 			
 			<NodeRef refid="5"/>
@@ -14,38 +14,218 @@ Unidocs DRM4 문서 열람시 사용합니다.</Abstract>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDEnvelopeDataProvider/setOpenKey:</TokenIdentifier>
-			<Abstract type="html">문서 열람 키.</Abstract>
-			<DeclaredIn>EDEnvelopeDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDocumentProvider/setPath:</TokenIdentifier>
+			<Abstract type="html">입력 경로(로컬 또는 원격 http)</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *openKey</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
 			
 			
-			<Anchor>//api/name/openKey</Anchor>
+			<Anchor>//api/name/path</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDEnvelopeDataProvider/openKey</TokenIdentifier>
-			<Abstract type="html">문서 열람 키.</Abstract>
-			<DeclaredIn>EDEnvelopeDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDocumentProvider/path</TokenIdentifier>
+			<Abstract type="html">입력 경로(로컬 또는 원격 http)</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *openKey</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
 			
 			
-			<Anchor>//api/name/openKey</Anchor>
+			<Anchor>//api/name/path</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDEnvelopeDataProvider/openKey</TokenIdentifier>
-			<Abstract type="html">문서 열람 키.</Abstract>
-			<DeclaredIn>EDEnvelopeDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDDocumentProvider/path</TokenIdentifier>
+			<Abstract type="html">입력 경로(로컬 또는 원격 http)</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *openKey</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
 			
 			
-			<Anchor>//api/name/openKey</Anchor>
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDocumentProvider/setPassword:</TokenIdentifier>
+			<Abstract type="html">열람 키</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDocumentProvider/password</TokenIdentifier>
+			<Abstract type="html">열람 키</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDDocumentProvider/password</TokenIdentifier>
+			<Abstract type="html">열람 키</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDocumentProvider/setInputStream:</TokenIdentifier>
+			<Abstract type="html">입력 스트림</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSInputStream *inputStream</Declaration>
+			
+			
+			<Anchor>//api/name/inputStream</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDocumentProvider/inputStream</TokenIdentifier>
+			<Abstract type="html">입력 스트림</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSInputStream *inputStream</Declaration>
+			
+			
+			<Anchor>//api/name/inputStream</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDDocumentProvider/inputStream</TokenIdentifier>
+			<Abstract type="html">입력 스트림</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSInputStream *inputStream</Declaration>
+			
+			
+			<Anchor>//api/name/inputStream</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDocumentProvider/setDataProvider:</TokenIdentifier>
+			<Abstract type="html">입력 데이터 제공자</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) EDDataProvider *dataProvider</Declaration>
+			
+			
+			<Anchor>//api/name/dataProvider</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDocumentProvider/dataProvider</TokenIdentifier>
+			<Abstract type="html">입력 데이터 제공자</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) EDDataProvider *dataProvider</Declaration>
+			
+			
+			<Anchor>//api/name/dataProvider</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDDocumentProvider/dataProvider</TokenIdentifier>
+			<Abstract type="html">입력 데이터 제공자</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) EDDataProvider *dataProvider</Declaration>
+			
+			
+			<Anchor>//api/name/dataProvider</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDocumentProvider/setSuperview:</TokenIdentifier>
+			<Abstract type="html">문서뷰가 바인딩할 부모 뷰어</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) UIView *superview</Declaration>
+			
+			
+			<Anchor>//api/name/superview</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDocumentProvider/superview</TokenIdentifier>
+			<Abstract type="html">문서뷰가 바인딩할 부모 뷰어</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) UIView *superview</Declaration>
+			
+			
+			<Anchor>//api/name/superview</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDDocumentProvider/superview</TokenIdentifier>
+			<Abstract type="html">문서뷰가 바인딩할 부모 뷰어</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) UIView *superview</Declaration>
+			
+			
+			<Anchor>//api/name/superview</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDocumentProvider/setConfig:</TokenIdentifier>
+			<Abstract type="html">문서뷰 설정</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) EDPageConfig *config</Declaration>
+			
+			
+			<Anchor>//api/name/config</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDDocumentProvider/config</TokenIdentifier>
+			<Abstract type="html">문서뷰 설정</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) EDPageConfig *config</Declaration>
+			
+			
+			<Anchor>//api/name/config</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDDocumentProvider/config</TokenIdentifier>
+			<Abstract type="html">문서뷰 설정</Abstract>
+			<DeclaredIn>EDDocumentProvider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) EDPageConfig *config</Declaration>
+			
+			
+			<Anchor>//api/name/config</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		

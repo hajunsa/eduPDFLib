@@ -62,6 +62,8 @@
 		
 		<option value="//api/name/audioPlayState">audioPlayState</option>
 		
+		<option value="//api/name/docID">docID</option>
+		
 		<option value="//api/name/enableAudioesAutoPlay">enableAudioesAutoPlay</option>
 		
 		<option value="//api/name/openedPath">openedPath</option>
@@ -86,6 +88,8 @@
 		
 		<option value="//api/name/bookmarkCount">- bookmarkCount</option>
 		
+		<option value="//api/name/clearHighlight">- clearHighlight</option>
+		
 		<option value="//api/name/clearSelection">- clearSelection</option>
 		
 		<option value="//api/name/close">- close</option>
@@ -98,7 +102,11 @@
 		
 		<option value="//api/name/currentPageNo">- currentPageNo</option>
 		
+		<option value="//api/name/didReceiveMemoryWarning">- didReceiveMemoryWarning</option>
+		
 		<option value="//api/name/didRotateFromInterfaceOrientation:">- didRotateFromInterfaceOrientation:</option>
+		
+		<option value="//api/name/doSingleTapAction:">- doSingleTapAction:</option>
 		
 		<option value="//api/name/exportXFDF:">- exportXFDF:</option>
 		
@@ -112,6 +120,8 @@
 		
 		<option value="//api/name/gotoPage:completion:">- gotoPage:completion:</option>
 		
+		<option value="//api/name/hasAudio:">- hasAudio:</option>
+		
 		<option value="//api/name/hasPageLabel">- hasPageLabel</option>
 		
 		<option value="//api/name/hideHighlight:">- hideHighlight:</option>
@@ -123,6 +133,8 @@
 		<option value="//api/name/isAudioPause">- isAudioPause</option>
 		
 		<option value="//api/name/isAudioPlaying">- isAudioPlaying</option>
+		
+		<option value="//api/name/isLoadedPage:">- isLoadedPage:</option>
 		
 		<option value="//api/name/isOpened">- isOpened</option>
 		
@@ -278,6 +290,47 @@ eduPDF 기능을 사용할 수 있습니다.</p>
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak, getter=getOpenedPath, readonly) NSString *openedPath</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/docID" title="docID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/docID">&nbsp;&nbsp;docID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>열람중인 문서 고유 식별자</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak, getter=getDocID, readonly) NSString *docID</code></div>
 
 		    
 			
@@ -1024,6 +1077,47 @@ iOS 8.0 미만</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/didReceiveMemoryWarning" title="didReceiveMemoryWarning"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didReceiveMemoryWarning">&ndash;&nbsp;didReceiveMemoryWarning</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>메모리 부족 경고</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didReceiveMemoryWarning</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/pageCount" title="pageCount"></a>
 	<h3 class="method-title"><code><a href="#//api/name/pageCount">&ndash;&nbsp;pageCount</a></code>
 </h3>
@@ -1561,6 +1655,65 @@ EDConfig displayPageCount가 2이상 일 때 currentPageNo와 다른 값을 돌�
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/hasAudio:" title="hasAudio:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hasAudio:">&ndash;&nbsp;hasAudio:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>오디오를 있는지 여부
+자동 재생이 가능한 오디오가 있는지 여부 입니다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)hasAudio:(int)<em>pageNo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageNo</code></th>
+						<td><p>페이지 번호.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>오디오를 있는지 여부.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/isAudioPlaying" title="isAudioPlaying"></a>
 	<h3 class="method-title"><code><a href="#//api/name/isAudioPlaying">&ndash;&nbsp;isAudioPlaying</a></code>
 </h3>
@@ -1793,11 +1946,6 @@ EDConfig displayPageCount가 2이상 일 때 currentPageNo와 다른 값을 돌�
 					<tr>
 						<th scope="row" class="argument-name"><code>param</code></th>
 						<td><p>마크업 주석 매개 변수들.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>주석 추가 모드를 마치면 호출.</p></td>
 					</tr>
 				
 				</table>
@@ -2872,6 +3020,163 @@ EDConfig displayPageCount가 2이상 일 때 currentPageNo와 다른 값을 돌�
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearHighlight" title="clearHighlight"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearHighlight">&ndash;&nbsp;clearHighlight</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>모든 텍스트 영역 강조 표시 해제 하기</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearHighlight</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/doSingleTapAction:" title="doSingleTapAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/doSingleTapAction:">&ndash;&nbsp;doSingleTapAction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>외부에서 싱글탭 액션 실행 하기</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (EDTouchCoordination *__nullable)doSingleTapAction:(UITouch *__nullable)<em>touch</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>touch</code></th>
+						<td><p>터치 객체.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>싱글탭 액션 정보</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLoadedPage:" title="isLoadedPage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLoadedPage:">&ndash;&nbsp;isLoadedPage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>해당 페이지가 로드를 했는지 여부</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isLoadedPage:(int)<em>pageNo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageNo</code></th>
+						<td><p>페이지 번호.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>로드 여부</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">eduPDFPlayer_Public.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -2887,7 +3192,7 @@ EDConfig displayPageCount가 2이상 일 때 currentPageNo와 다른 값을 돌�
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Unidocs Inc. All rights reserved. Updated: 2017-01-09</p>
+						<p class="copyright">Copyright &copy; 2017 Unidocs Inc. All rights reserved. Updated: 2017-01-19</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

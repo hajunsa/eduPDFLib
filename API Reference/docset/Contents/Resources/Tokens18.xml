@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/EDPageMoveFinishedType.html">
+	<File path="Constants/EDPageFittingStyle.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/EDPageMoveFinishedType</TokenIdentifier>
-			<Abstract type="html">페이지 이동시 성공 또는 실패 종류.</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/EDPageFittingStyle</TokenIdentifier>
+			<Abstract type="html">문서 페이지 화면 피팅 스타일</Abstract>
 			<DeclaredIn>EDPageEnums.h</DeclaredIn>
             
 			
@@ -14,10 +14,10 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPageMove_Success</TokenIdentifier>
-            <Abstract type="html">페이지 이동 성공.
+            <TokenIdentifier>//apple_ref/c/econst/EDPageFittingImageFull</TokenIdentifier>
+            <Abstract type="html">페이지 전체가 화면에 표시
      </Abstract>
-            <Declaration>EDPageMove_Success</Declaration>
+            <Declaration>EDPageFittingImageFull</Declaration>
             
             <DeclaredIn>EDPageEnums.h</DeclaredIn>
             
@@ -25,10 +25,10 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPageMove_InvailedPageNo</TokenIdentifier>
-            <Abstract type="html">페이지 번호가 유효하지 않음.
+            <TokenIdentifier>//apple_ref/c/econst/EDPageFittingDisplayFull</TokenIdentifier>
+            <Abstract type="html">화면 전체에 페이지 일부가 가득 표시
      </Abstract>
-            <Declaration>EDPageMove_InvailedPageNo</Declaration>
+            <Declaration>EDPageFittingDisplayFull</Declaration>
             
             <DeclaredIn>EDPageEnums.h</DeclaredIn>
             
@@ -36,10 +36,10 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPageMove_NotExistsPageView</TokenIdentifier>
-            <Abstract type="html">페이지 뷰어가 존재하지 않음.
+            <TokenIdentifier>//apple_ref/c/econst/EDPageFittingWidth</TokenIdentifier>
+            <Abstract type="html">페이지가 화면 가로 길이에 가득 표시
      </Abstract>
-            <Declaration>EDPageMove_NotExistsPageView</Declaration>
+            <Declaration>EDPageFittingWidth</Declaration>
             
             <DeclaredIn>EDPageEnums.h</DeclaredIn>
             
@@ -47,10 +47,10 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPageMove_OtherInputMode</TokenIdentifier>
-            <Abstract type="html">다른 종류 입력 모드라서 이동 실패.
+            <TokenIdentifier>//apple_ref/c/econst/EDPageFittingHeight</TokenIdentifier>
+            <Abstract type="html">페이지가 화면 세로 길이에 가득 표시
      </Abstract>
-            <Declaration>EDPageMove_OtherInputMode</Declaration>
+            <Declaration>EDPageFittingHeight</Declaration>
             
             <DeclaredIn>EDPageEnums.h</DeclaredIn>
             

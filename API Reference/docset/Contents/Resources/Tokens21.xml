@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/EDPlayStateType.html">
+	<File path="Constants/EDPageScrollDirectionStyle.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/EDPlayStateType</TokenIdentifier>
-			<Abstract type="html">재생 상태</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/EDPageScrollDirectionStyle</TokenIdentifier>
+			<Abstract type="html">문서 스크롤 방향 설정</Abstract>
 			<DeclaredIn>EDPageEnums.h</DeclaredIn>
             
 			
@@ -14,10 +14,10 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPlayStateStop</TokenIdentifier>
-            <Abstract type="html">재생 중지 상태
+            <TokenIdentifier>//apple_ref/c/econst/EDPageScrollDirectionHorizontal</TokenIdentifier>
+            <Abstract type="html">문서를 가로로 스크롤.
      </Abstract>
-            <Declaration>EDPlayStateStop</Declaration>
+            <Declaration>EDPageScrollDirectionHorizontal</Declaration>
             
             <DeclaredIn>EDPageEnums.h</DeclaredIn>
             
@@ -25,32 +25,10 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPlayStatePlaying</TokenIdentifier>
-            <Abstract type="html">재생 중 상태
+            <TokenIdentifier>//apple_ref/c/econst/EDPageScrollDirectionVertical</TokenIdentifier>
+            <Abstract type="html">문서를 세로로 스크롤.
      </Abstract>
-            <Declaration>EDPlayStatePlaying</Declaration>
-            
-            <DeclaredIn>EDPageEnums.h</DeclaredIn>
-            
-            <NodeRef refid="21"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPlayStatePause</TokenIdentifier>
-            <Abstract type="html">재생 일시 중지 상태
-     </Abstract>
-            <Declaration>EDPlayStatePause</Declaration>
-            
-            <DeclaredIn>EDPageEnums.h</DeclaredIn>
-            
-            <NodeRef refid="21"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPlayStateFinish</TokenIdentifier>
-            <Abstract type="html">재생 완료 상태
-     </Abstract>
-            <Declaration>EDPlayStateFinish</Declaration>
+            <Declaration>EDPageScrollDirectionVertical</Declaration>
             
             <DeclaredIn>EDPageEnums.h</DeclaredIn>
             

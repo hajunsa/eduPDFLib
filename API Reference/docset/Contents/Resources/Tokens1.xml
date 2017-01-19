@@ -671,6 +671,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/setLocked:</TokenIdentifier>
+			<Abstract type="html">화면 잠금</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, setter=setLocked:, getter=isLocked) BOOL isLocked</Declaration>
+			
+			
+			<Anchor>//api/name/isLocked</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDAnnotation/isLocked</TokenIdentifier>
+			<Abstract type="html">화면 잠금</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, setter=setLocked:, getter=isLocked) BOOL isLocked</Declaration>
+			
+			
+			<Anchor>//api/name/isLocked</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDAnnotation/isLocked</TokenIdentifier>
+			<Abstract type="html">화면 잠금</Abstract>
+			<DeclaredIn>EDAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, setter=setLocked:, getter=isLocked) BOOL isLocked</Declaration>
+			
+			
+			<Anchor>//api/name/isLocked</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/EDAnnotation/names</TokenIdentifier>
 			<Abstract type="html">Sticky Note(Text) 아이콘 목록
 &quot;Check&quot;, &quot;Circle&quot;, &quot;Comment&quot;, &quot;Cross&quot;, &quot;CrossHairs&quot;, &quot;Help&quot;, &quot;Insert&quot;, &quot;Key&quot;, &quot;NewParagraph&quot;, &quot;Note&quot;, &quot;Paragraph&quot;, &quot;RightArrow&quot;, &quot;RightPointer&quot;, &quot;Star&quot;, &quot;UpArrow&quot;, &quot;UpLeftArrow&quot;</Abstract>
@@ -955,7 +991,7 @@
 			<Declaration>- (void)syncOpacity:(CGFloat)opacity</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>color</Name>
+					<Name>opacity</Name>
 					<Abstract type="html">투명도</Abstract>
 				</Parameter>
 			</Parameters>
@@ -1009,7 +1045,7 @@
 			<Declaration>- (void)syncTail:(NSString *)tail</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>head</Name>
+					<Name>tail</Name>
 					<Abstract type="html">라인 꼬리 모양</Abstract>
 				</Parameter>
 			</Parameters>

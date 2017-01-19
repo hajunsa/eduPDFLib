@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/EDLink.html">
+	<File path="Classes/EDImage.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/EDLink</TokenIdentifier>
-			<Abstract type="html">링크</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/EDImage</TokenIdentifier>
+			<Abstract type="html">이미지</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
             
 			
 			<NodeRef refid="8"/>
@@ -13,161 +13,194 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDLink/setAnnotation:</TokenIdentifier>
-			<Abstract type="html">연결된 주석</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDImage/setPageNo:</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, weak) EDAnnotation *annotation</Declaration>
+			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
 			
 			
-			<Anchor>//api/name/annotation</Anchor>
+			<Anchor>//api/name/pageNo</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDLink/annotation</TokenIdentifier>
-			<Abstract type="html">연결된 주석</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDImage/pageNo</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, weak) EDAnnotation *annotation</Declaration>
+			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
 			
 			
-			<Anchor>//api/name/annotation</Anchor>
+			<Anchor>//api/name/pageNo</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDLink/annotation</TokenIdentifier>
-			<Abstract type="html">연결된 주석</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDImage/pageNo</TokenIdentifier>
+			<Abstract type="html">페이지 번호</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, weak) EDAnnotation *annotation</Declaration>
+			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
 			
 			
-			<Anchor>//api/name/annotation</Anchor>
+			<Anchor>//api/name/pageNo</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDLink/setDestPageNo:</TokenIdentifier>
-			<Abstract type="html">이동할 페이지 번호
-0이면 이동할 페이지가 없음.</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDImage/setMaxSize:</TokenIdentifier>
+			<Abstract type="html">최대 크기(비율 유지)</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, getter=getDestPageNo) int destPageNo</Declaration>
+			<Declaration>@property (nonatomic, assign) CGSize maxSize</Declaration>
 			
 			
-			<Anchor>//api/name/destPageNo</Anchor>
+			<Anchor>//api/name/maxSize</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDLink/getDestPageNo</TokenIdentifier>
-			<Abstract type="html">이동할 페이지 번호
-0이면 이동할 페이지가 없음.</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDImage/maxSize</TokenIdentifier>
+			<Abstract type="html">최대 크기(비율 유지)</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, getter=getDestPageNo) int destPageNo</Declaration>
+			<Declaration>@property (nonatomic, assign) CGSize maxSize</Declaration>
 			
 			
-			<Anchor>//api/name/destPageNo</Anchor>
+			<Anchor>//api/name/maxSize</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDLink/destPageNo</TokenIdentifier>
-			<Abstract type="html">이동할 페이지 번호
-0이면 이동할 페이지가 없음.</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDImage/maxSize</TokenIdentifier>
+			<Abstract type="html">최대 크기(비율 유지)</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, getter=getDestPageNo) int destPageNo</Declaration>
+			<Declaration>@property (nonatomic, assign) CGSize maxSize</Declaration>
 			
 			
-			<Anchor>//api/name/destPageNo</Anchor>
+			<Anchor>//api/name/maxSize</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDLink/setDestURI:</TokenIdentifier>
-			<Abstract type="html">연결할 URL</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDImage/setMinPageNo:</TokenIdentifier>
+			<Abstract type="html">랜더링 가능한 최소 페이지 번호(전역값)</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *destURI</Declaration>
+			<Declaration>@property (nonatomic, assign, setter=setMinPageNo:, getter=getMinPageNo) int minPageNo</Declaration>
 			
 			
-			<Anchor>//api/name/destURI</Anchor>
+			<Anchor>//api/name/minPageNo</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDLink/destURI</TokenIdentifier>
-			<Abstract type="html">연결할 URL</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDImage/getMinPageNo</TokenIdentifier>
+			<Abstract type="html">랜더링 가능한 최소 페이지 번호(전역값)</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *destURI</Declaration>
+			<Declaration>@property (nonatomic, assign, setter=setMinPageNo:, getter=getMinPageNo) int minPageNo</Declaration>
 			
 			
-			<Anchor>//api/name/destURI</Anchor>
+			<Anchor>//api/name/minPageNo</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDLink/destURI</TokenIdentifier>
-			<Abstract type="html">연결할 URL</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDImage/minPageNo</TokenIdentifier>
+			<Abstract type="html">랜더링 가능한 최소 페이지 번호(전역값)</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *destURI</Declaration>
+			<Declaration>@property (nonatomic, assign, setter=setMinPageNo:, getter=getMinPageNo) int minPageNo</Declaration>
 			
 			
-			<Anchor>//api/name/destURI</Anchor>
+			<Anchor>//api/name/minPageNo</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDLink/destURItoDestPageNo</TokenIdentifier>
-			<Abstract type="html">연결할 URL가지고 이동할 페이지 번호를 가져오기</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDImage/setMaxPageNo:</TokenIdentifier>
+			<Abstract type="html">랜더링 가능한 최대 페이지 번호(전역값)</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>- (int)destURItoDestPageNo</Declaration>
+			<Declaration>@property (nonatomic, assign, setter=setMaxPageNo:, getter=getMaxPageNo) int maxPageNo</Declaration>
 			
-			<ReturnValue><Abstract type="html">페이지 번호</Abstract></ReturnValue>
-			<Anchor>//api/name/destURItoDestPageNo</Anchor>
+			
+			<Anchor>//api/name/maxPageNo</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDLink/isAudio</TokenIdentifier>
-			<Abstract type="html">오디오</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDImage/getMaxPageNo</TokenIdentifier>
+			<Abstract type="html">랜더링 가능한 최대 페이지 번호(전역값)</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)isAudio</Declaration>
+			<Declaration>@property (nonatomic, assign, setter=setMaxPageNo:, getter=getMaxPageNo) int maxPageNo</Declaration>
 			
-			<ReturnValue><Abstract type="html">오디오 여부</Abstract></ReturnValue>
-			<Anchor>//api/name/isAudio</Anchor>
+			
+			<Anchor>//api/name/maxPageNo</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDLink/isVideo</TokenIdentifier>
-			<Abstract type="html">비디오</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDImage/maxPageNo</TokenIdentifier>
+			<Abstract type="html">랜더링 가능한 최대 페이지 번호(전역값)</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)isVideo</Declaration>
+			<Declaration>@property (nonatomic, assign, setter=setMaxPageNo:, getter=getMaxPageNo) int maxPageNo</Declaration>
 			
-			<ReturnValue><Abstract type="html">비디오 여부</Abstract></ReturnValue>
-			<Anchor>//api/name/isVideo</Anchor>
+			
+			<Anchor>//api/name/maxPageNo</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDLink/isAnimation</TokenIdentifier>
-			<Abstract type="html">애니메이션</Abstract>
-			<DeclaredIn>EDLink.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDImage/setValiedTest:</TokenIdentifier>
+			<Abstract type="html">랜더링 가능한지 여부</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)isAnimation</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL valiedTest</Declaration>
 			
-			<ReturnValue><Abstract type="html">애니메이션 여부</Abstract></ReturnValue>
-			<Anchor>//api/name/isAnimation</Anchor>
+			
+			<Anchor>//api/name/valiedTest</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDImage/valiedTest</TokenIdentifier>
+			<Abstract type="html">랜더링 가능한지 여부</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL valiedTest</Declaration>
+			
+			
+			<Anchor>//api/name/valiedTest</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDImage/valiedTest</TokenIdentifier>
+			<Abstract type="html">랜더링 가능한지 여부</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL valiedTest</Declaration>
+			
+			
+			<Anchor>//api/name/valiedTest</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDImage/copyImage</TokenIdentifier>
+			<Abstract type="html">이미지 복사하여 가져오기</Abstract>
+			<DeclaredIn>EDImage.h</DeclaredIn>
+			
+			<Declaration>- (UIImage *)copyImage</Declaration>
+			
+			
+			<Anchor>//api/name/copyImage</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		

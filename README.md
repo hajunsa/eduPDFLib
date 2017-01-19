@@ -4,6 +4,9 @@
     - 문서 파일을 열람하는 뷰어 입니다.
     - 지원하는 문서 형식은 PDF(eduPDF), ZIP(이미지)을 지원 합니다.
 
+- License
+    - eduPDF 확장 기능은 이 라이브러리 버전에 포함한 기능이지만, 상용으로 사용을 할 경우 별도의 라이센스 협의를 해야 합니다.
+
 - Compatibility
     - eduPDFPlayer는 iOS 8.0 이상에서 지원합니다.
     - iOS 7.0에서는 eduPDFPlayerS가 지원합니다.
@@ -22,6 +25,7 @@
     - Build Settings에 Enable Bitcode 항목을 NO로 설정합니다.
     - Build Phases에 Link Binary With Libraries 항목에서 'libc++.tbd', 'libxml2.tbd', 'libz.tbd'을 추가합니다.
     - eduPDFPlayerS.framework폴더안에 'CMap', 'fonts'를 프로젝트로 드레그하여 Create folder references로 추가합니다.
+    - 'MapFonts.bundle'을 프로젝트로 드레그하여 추가합니다.(수동)
 
 - Project settings(iOS 7.0, Cocoapods)
     - 프로젝트 'Podfile' 파일을 만들고 아래와같은 내용을 넣습니다.
@@ -29,7 +33,6 @@ target "Project Target" do
     pod 'eduPDFLib'
 end
     - 'pod install'을 실행 합니다.
-    - eduPDFPlayerS.framework폴더안에 'CMap', 'fonts'를 프로젝트로 드레그하여 Create folder references로 추가합니다.(수동)
 
 - Opensource Library
     - freeType : Version 2.4.7
@@ -101,25 +104,48 @@ end
             - 다른 부분 찾기
                 - 정답 채점
                 - 정답 채점 초기화
-        - Audio
-            - Subtitles Audio
-                - 객체별 자막 색상 설정
-                - 여러 페이지 지원(하나의 음원으로)
-            - BGM
-            - Audio Auto Play
-            - Fading Effect
         - Media
             - Play Once
-        - Frame Animation
-            - GIF
-            - Zipped-Image
+            - Scroll Lock
+            - Audio
+                - Subtitles Audio
+                    - 객체별 자막 색상 설정
+                    - 여러 페이지 지원(하나의 음원으로)
+                - BGM
+                - Audio Auto Play
+                - Fading Effect
+            - Frame Animation
+                - GIF
+                - Zipped-Image
         - Sticker
             - Animation
             - Drag And Drop Box
             - Play Once
             - Reset
-        - Scroll Lock
 
+- 0.9.7 Version Release Notes
+    - 추가 사항
+        - 마크업 주석 만들기에 필요한 종류별 매개변수 생성 API를 추가 하였습니다.
+        - 주석/텍스트 선택 및 링크 강조 색상 설정 API를 추가 하였습니다.
+        - 주석 선택하기 API를 추가 하였습니다.
+    - 개선 사항
+        - 텍스트 입력 인터랙션을 개선 하였습니다.
+        - 스티커 탭, 드레그앤드랍 인터랙션을 개선 하였습니다.
+        - 마크업 주석 인터랙션을 개선 하였습니다.
+        - 주석 속성 변경 데이터 처리 및 표시 갱신을 개선 하였습니다.
+        - 주석 이미지 해상도, 정밀도, 메모리 사용량을 개선 하였습니다.
+        - 미디어 팝업을 개선 하였습니다.
+    - 오류 수정
+        - 글상자(FreeText) 텍스트 표시 오류를 수정 하였습니다.
+        - 비디오 플롯팅 팝업후 전체보기 전환후 재생 완료시 오류를 수정 하였습니다.
+        - 마크업 날리지탭 표시 오류를 수정 하였습니다. 
+        - 주석 표시 오류를 수정 하였습니다.
+        - 폰트가 내장 안된 컨텐츠 텍스트 표시 및 가져오기 오류를 수정 하였습니다. 
+        - 퀴즈 채점 표시 오류를 수정 하였습니다.
+        - 퀴즈 선긋기 표시 오류를 수정 하였습니다.
+        - 퀴즈 채점 해제시 충돌 문제를 수정 하였습니다.
+        - 페이지 넘김시 미디어 재생 중지 오류를 수정 하였습니다.
+        - ZIP 이미지 문서 열람시 충돌 오류를 수정 하였습니다.
 - 0.9.6 Version Release Notes
     - 추가 사항
         - Highlight, Underline, StrikeOut, FreeText, Rectangle, Circle, Square, Stamp 주석 기능을 추가 하였습니다.
@@ -131,7 +157,12 @@ end
         - 페이지 단락(문장들) 가져오기 기능을 추가 하였습니다.
         - 문서 스트림 열람기능을 추가 하였습니다.
     - 개선 사항
+        - 문서 닫기 안전성을 개선 하였습니다.
+        - 문서 팝업 표시방법을 개선 하였습니다.
         - Public API Renewal
+    - 오류 수정
+        - Stiker 연속 애니메이션시 재생시 재생을 중복 실행하지 않게 수정 하였습니다.
+        - Stiker 무한 반복 애니메이션인 경우 애니메이션 여부 예외처리를 추가 하였습니다.
 
 - 0.9.5 Version Release Notes
     - 추가 사항
@@ -159,8 +190,8 @@ end
         - 페이지 프레임 정렬 오류를 수정하였습니다.
 
 - 0.9.4 Version Release Notes
-    - Cocoapods
     - 추가 사항
+        - Cocoapods 배포를 시작합니다.
         - 스크롤뷰 콜백 API를 추가 하였습니다.
         - Subtitles Audio
             - 객체 전체 재생 기능을 추가 하였습니다.

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/EDTextSelection.html">
+	<File path="Classes/EDPageConfig.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/EDTextSelection</TokenIdentifier>
-			<Abstract type="html">EDTextSelection.
-텍스트 선택, 검색, 문장 목록 모델 객체 입니다.</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/EDPageConfig</TokenIdentifier>
+			<Abstract type="html">문서 페이지 관련 설정.</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
             
 			
 			<NodeRef refid="12"/>
@@ -14,326 +13,981 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/setPageNo:</TokenIdentifier>
-			<Abstract type="html">페이지 번호</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setInitPageNo:</TokenIdentifier>
+			<Abstract type="html">문서 열람시 최초로 표시할 페이지 번호.
+기본값 : 1</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
+			<Declaration>@property (nonatomic, assign) int initPageNo</Declaration>
 			
 			
-			<Anchor>//api/name/pageNo</Anchor>
+			<Anchor>//api/name/initPageNo</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/pageNo</TokenIdentifier>
-			<Abstract type="html">페이지 번호</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/initPageNo</TokenIdentifier>
+			<Abstract type="html">문서 열람시 최초로 표시할 페이지 번호.
+기본값 : 1</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
+			<Declaration>@property (nonatomic, assign) int initPageNo</Declaration>
 			
 			
-			<Anchor>//api/name/pageNo</Anchor>
+			<Anchor>//api/name/initPageNo</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDTextSelection/pageNo</TokenIdentifier>
-			<Abstract type="html">페이지 번호</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/initPageNo</TokenIdentifier>
+			<Abstract type="html">문서 열람시 최초로 표시할 페이지 번호.
+기본값 : 1</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) int pageNo</Declaration>
+			<Declaration>@property (nonatomic, assign) int initPageNo</Declaration>
 			
 			
-			<Anchor>//api/name/pageNo</Anchor>
+			<Anchor>//api/name/initPageNo</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/setContents:</TokenIdentifier>
-			<Abstract type="html">텍스트 내용</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setPageScrollDirectionStyle:</TokenIdentifier>
+			<Abstract type="html">페이지 스크롤 방향.
+기본값 : EDPageScrollDirectionHorizontal</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *contents</Declaration>
+			<Declaration>@property (nonatomic, assign) EDPageScrollDirectionStyle pageScrollDirectionStyle</Declaration>
 			
 			
-			<Anchor>//api/name/contents</Anchor>
+			<Anchor>//api/name/pageScrollDirectionStyle</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/contents</TokenIdentifier>
-			<Abstract type="html">텍스트 내용</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/pageScrollDirectionStyle</TokenIdentifier>
+			<Abstract type="html">페이지 스크롤 방향.
+기본값 : EDPageScrollDirectionHorizontal</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *contents</Declaration>
+			<Declaration>@property (nonatomic, assign) EDPageScrollDirectionStyle pageScrollDirectionStyle</Declaration>
 			
 			
-			<Anchor>//api/name/contents</Anchor>
+			<Anchor>//api/name/pageScrollDirectionStyle</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDTextSelection/contents</TokenIdentifier>
-			<Abstract type="html">텍스트 내용</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/pageScrollDirectionStyle</TokenIdentifier>
+			<Abstract type="html">페이지 스크롤 방향.
+기본값 : EDPageScrollDirectionHorizontal</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *contents</Declaration>
+			<Declaration>@property (nonatomic, assign) EDPageScrollDirectionStyle pageScrollDirectionStyle</Declaration>
 			
 			
-			<Anchor>//api/name/contents</Anchor>
+			<Anchor>//api/name/pageScrollDirectionStyle</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/setColor:</TokenIdentifier>
-			<Abstract type="html">강조 색상</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setPageReadDirectionStyle:</TokenIdentifier>
+			<Abstract type="html">페이지 읽기 방향.
+기본값 : EDPageReadDirectionAuto</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) UIColor *color</Declaration>
+			<Declaration>@property (nonatomic, assign) EDPageReadDirectionStyle pageReadDirectionStyle</Declaration>
 			
 			
-			<Anchor>//api/name/color</Anchor>
+			<Anchor>//api/name/pageReadDirectionStyle</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/color</TokenIdentifier>
-			<Abstract type="html">강조 색상</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/pageReadDirectionStyle</TokenIdentifier>
+			<Abstract type="html">페이지 읽기 방향.
+기본값 : EDPageReadDirectionAuto</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) UIColor *color</Declaration>
+			<Declaration>@property (nonatomic, assign) EDPageReadDirectionStyle pageReadDirectionStyle</Declaration>
 			
 			
-			<Anchor>//api/name/color</Anchor>
+			<Anchor>//api/name/pageReadDirectionStyle</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDTextSelection/color</TokenIdentifier>
-			<Abstract type="html">강조 색상</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/pageReadDirectionStyle</TokenIdentifier>
+			<Abstract type="html">페이지 읽기 방향.
+기본값 : EDPageReadDirectionAuto</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) UIColor *color</Declaration>
+			<Declaration>@property (nonatomic, assign) EDPageReadDirectionStyle pageReadDirectionStyle</Declaration>
 			
 			
-			<Anchor>//api/name/color</Anchor>
+			<Anchor>//api/name/pageReadDirectionStyle</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/setFrame:</TokenIdentifier>
-			<Abstract type="html">위치 영역</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setPageFittingStyle:</TokenIdentifier>
+			<Abstract type="html">문서 페이지 화면 피팅 스타일.
+기본값 : EDPageFittingImageFull</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGRect frame</Declaration>
+			<Declaration>@property (nonatomic, assign) EDPageFittingStyle pageFittingStyle</Declaration>
 			
 			
-			<Anchor>//api/name/frame</Anchor>
+			<Anchor>//api/name/pageFittingStyle</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/frame</TokenIdentifier>
-			<Abstract type="html">위치 영역</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/pageFittingStyle</TokenIdentifier>
+			<Abstract type="html">문서 페이지 화면 피팅 스타일.
+기본값 : EDPageFittingImageFull</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGRect frame</Declaration>
+			<Declaration>@property (nonatomic, assign) EDPageFittingStyle pageFittingStyle</Declaration>
 			
 			
-			<Anchor>//api/name/frame</Anchor>
+			<Anchor>//api/name/pageFittingStyle</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDTextSelection/frame</TokenIdentifier>
-			<Abstract type="html">위치 영역</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/pageFittingStyle</TokenIdentifier>
+			<Abstract type="html">문서 페이지 화면 피팅 스타일.
+기본값 : EDPageFittingImageFull</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGRect frame</Declaration>
+			<Declaration>@property (nonatomic, assign) EDPageFittingStyle pageFittingStyle</Declaration>
 			
 			
-			<Anchor>//api/name/frame</Anchor>
+			<Anchor>//api/name/pageFittingStyle</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/setView:</TokenIdentifier>
-			<Abstract type="html">강조 표시 뷰어</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setDocumentPageLayout:</TokenIdentifier>
+			<Abstract type="html">문서에 설정한 Page Layout
+displayPageCount, blankPageCount, pagingEnabled 값을 문서에 정의한 설정을 합니다.
+기본값 : YES</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, weak) UIView *view</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL documentPageLayout</Declaration>
 			
 			
-			<Anchor>//api/name/view</Anchor>
+			<Anchor>//api/name/documentPageLayout</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/view</TokenIdentifier>
-			<Abstract type="html">강조 표시 뷰어</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/documentPageLayout</TokenIdentifier>
+			<Abstract type="html">문서에 설정한 Page Layout
+displayPageCount, blankPageCount, pagingEnabled 값을 문서에 정의한 설정을 합니다.
+기본값 : YES</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, weak) UIView *view</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL documentPageLayout</Declaration>
 			
 			
-			<Anchor>//api/name/view</Anchor>
+			<Anchor>//api/name/documentPageLayout</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDTextSelection/view</TokenIdentifier>
-			<Abstract type="html">강조 표시 뷰어</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/documentPageLayout</TokenIdentifier>
+			<Abstract type="html">문서에 설정한 Page Layout
+displayPageCount, blankPageCount, pagingEnabled 값을 문서에 정의한 설정을 합니다.
+기본값 : YES</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, weak) UIView *view</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL documentPageLayout</Declaration>
 			
 			
-			<Anchor>//api/name/view</Anchor>
+			<Anchor>//api/name/documentPageLayout</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/setSearch:</TokenIdentifier>
-			<Abstract type="html">검색할 단어 또는 문장</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setDisplayPageCount:</TokenIdentifier>
+			<Abstract type="html">화면에 표시하는 페이지 갯수.
+양면 보기시에 2로 설정 합니다.
+기본값 : 1</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *search</Declaration>
+			<Declaration>@property (nonatomic, assign) int displayPageCount</Declaration>
 			
 			
-			<Anchor>//api/name/search</Anchor>
+			<Anchor>//api/name/displayPageCount</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/search</TokenIdentifier>
-			<Abstract type="html">검색할 단어 또는 문장</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/displayPageCount</TokenIdentifier>
+			<Abstract type="html">화면에 표시하는 페이지 갯수.
+양면 보기시에 2로 설정 합니다.
+기본값 : 1</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *search</Declaration>
+			<Declaration>@property (nonatomic, assign) int displayPageCount</Declaration>
 			
 			
-			<Anchor>//api/name/search</Anchor>
+			<Anchor>//api/name/displayPageCount</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDTextSelection/search</TokenIdentifier>
-			<Abstract type="html">검색할 단어 또는 문장</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/displayPageCount</TokenIdentifier>
+			<Abstract type="html">화면에 표시하는 페이지 갯수.
+양면 보기시에 2로 설정 합니다.
+기본값 : 1</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *search</Declaration>
+			<Declaration>@property (nonatomic, assign) int displayPageCount</Declaration>
 			
 			
-			<Anchor>//api/name/search</Anchor>
+			<Anchor>//api/name/displayPageCount</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/setCaseSensitive:</TokenIdentifier>
-			<Abstract type="html">대소문자 구분 여부. 기본값 NO</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setBlankPageCount:</TokenIdentifier>
+			<Abstract type="html">displayPageCount가 2이상 일 경우 문서 첫 페이지 표시에서 빈 페이지 갯수.
+양면 보기시 표지 설정이 필요하다면 1로 설정 합니다.
+기본값 : 0</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL caseSensitive</Declaration>
+			<Declaration>@property (nonatomic, assign) int blankPageCount</Declaration>
 			
 			
-			<Anchor>//api/name/caseSensitive</Anchor>
+			<Anchor>//api/name/blankPageCount</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/caseSensitive</TokenIdentifier>
-			<Abstract type="html">대소문자 구분 여부. 기본값 NO</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/blankPageCount</TokenIdentifier>
+			<Abstract type="html">displayPageCount가 2이상 일 경우 문서 첫 페이지 표시에서 빈 페이지 갯수.
+양면 보기시 표지 설정이 필요하다면 1로 설정 합니다.
+기본값 : 0</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL caseSensitive</Declaration>
+			<Declaration>@property (nonatomic, assign) int blankPageCount</Declaration>
 			
 			
-			<Anchor>//api/name/caseSensitive</Anchor>
+			<Anchor>//api/name/blankPageCount</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDTextSelection/caseSensitive</TokenIdentifier>
-			<Abstract type="html">대소문자 구분 여부. 기본값 NO</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/blankPageCount</TokenIdentifier>
+			<Abstract type="html">displayPageCount가 2이상 일 경우 문서 첫 페이지 표시에서 빈 페이지 갯수.
+양면 보기시 표지 설정이 필요하다면 1로 설정 합니다.
+기본값 : 0</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL caseSensitive</Declaration>
+			<Declaration>@property (nonatomic, assign) int blankPageCount</Declaration>
 			
 			
-			<Anchor>//api/name/caseSensitive</Anchor>
+			<Anchor>//api/name/blankPageCount</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/setWholeWordOnly:</TokenIdentifier>
-			<Abstract type="html">전체단어 일치 여부. 기본값 NO</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setPagingEnabled:</TokenIdentifier>
+			<Abstract type="html">화면 페이징 표시 여부
+끊김 없이 페이지를 표시하려면 NO설정 합니다.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL wholeWordOnly</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL pagingEnabled</Declaration>
 			
 			
-			<Anchor>//api/name/wholeWordOnly</Anchor>
+			<Anchor>//api/name/pagingEnabled</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/wholeWordOnly</TokenIdentifier>
-			<Abstract type="html">전체단어 일치 여부. 기본값 NO</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/pagingEnabled</TokenIdentifier>
+			<Abstract type="html">화면 페이징 표시 여부
+끊김 없이 페이지를 표시하려면 NO설정 합니다.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL wholeWordOnly</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL pagingEnabled</Declaration>
 			
 			
-			<Anchor>//api/name/wholeWordOnly</Anchor>
+			<Anchor>//api/name/pagingEnabled</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDTextSelection/wholeWordOnly</TokenIdentifier>
-			<Abstract type="html">전체단어 일치 여부. 기본값 NO</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/pagingEnabled</TokenIdentifier>
+			<Abstract type="html">화면 페이징 표시 여부
+끊김 없이 페이지를 표시하려면 NO설정 합니다.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL wholeWordOnly</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL pagingEnabled</Declaration>
 			
 			
-			<Anchor>//api/name/wholeWordOnly</Anchor>
+			<Anchor>//api/name/pagingEnabled</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/setSearchOption:</TokenIdentifier>
-			<Abstract type="html">검색 옵션. 기본값 EDSearchExactWordOrPhrase</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setMaximumZoomScale:</TokenIdentifier>
+			<Abstract type="html">최대 확대 배율.
+기본값 : 256</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) EDSearchOption searchOption</Declaration>
+			<Declaration>@property (nonatomic, assign) CGFloat maximumZoomScale</Declaration>
 			
 			
-			<Anchor>//api/name/searchOption</Anchor>
+			<Anchor>//api/name/maximumZoomScale</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDTextSelection/searchOption</TokenIdentifier>
-			<Abstract type="html">검색 옵션. 기본값 EDSearchExactWordOrPhrase</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/maximumZoomScale</TokenIdentifier>
+			<Abstract type="html">최대 확대 배율.
+기본값 : 256</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) EDSearchOption searchOption</Declaration>
+			<Declaration>@property (nonatomic, assign) CGFloat maximumZoomScale</Declaration>
 			
 			
-			<Anchor>//api/name/searchOption</Anchor>
+			<Anchor>//api/name/maximumZoomScale</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDTextSelection/searchOption</TokenIdentifier>
-			<Abstract type="html">검색 옵션. 기본값 EDSearchExactWordOrPhrase</Abstract>
-			<DeclaredIn>EDTextSelection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/maximumZoomScale</TokenIdentifier>
+			<Abstract type="html">최대 확대 배율.
+기본값 : 256</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) EDSearchOption searchOption</Declaration>
+			<Declaration>@property (nonatomic, assign) CGFloat maximumZoomScale</Declaration>
 			
 			
-			<Anchor>//api/name/searchOption</Anchor>
+			<Anchor>//api/name/maximumZoomScale</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setMargin:</TokenIdentifier>
+			<Abstract type="html">pagingEnabled이 NO일 때 페이지와 페이지 사이 간격.
+기본값 : 1</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat margin</Declaration>
+			
+			
+			<Anchor>//api/name/margin</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/margin</TokenIdentifier>
+			<Abstract type="html">pagingEnabled이 NO일 때 페이지와 페이지 사이 간격.
+기본값 : 1</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat margin</Declaration>
+			
+			
+			<Anchor>//api/name/margin</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/margin</TokenIdentifier>
+			<Abstract type="html">pagingEnabled이 NO일 때 페이지와 페이지 사이 간격.
+기본값 : 1</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat margin</Declaration>
+			
+			
+			<Anchor>//api/name/margin</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setChangePageDistance:</TokenIdentifier>
+			<Abstract type="html">pagingEnabled이 YES일 때 페이지 이동에 필요한 드레그 크기.
+기본값 : 60</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat changePageDistance</Declaration>
+			
+			
+			<Anchor>//api/name/changePageDistance</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/changePageDistance</TokenIdentifier>
+			<Abstract type="html">pagingEnabled이 YES일 때 페이지 이동에 필요한 드레그 크기.
+기본값 : 60</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat changePageDistance</Declaration>
+			
+			
+			<Anchor>//api/name/changePageDistance</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/changePageDistance</TokenIdentifier>
+			<Abstract type="html">pagingEnabled이 YES일 때 페이지 이동에 필요한 드레그 크기.
+기본값 : 60</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat changePageDistance</Declaration>
+			
+			
+			<Anchor>//api/name/changePageDistance</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setReservePageCount:</TokenIdentifier>
+			<Abstract type="html">원활한 화면 표시를 위해 미리 준비하는 페이지 갯수.
+큰값을 설정할 경우 메모리 문제와 속도가 오히려 느려질 수 있습니다.
+기본값 : 2</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int reservePageCount</Declaration>
+			
+			
+			<Anchor>//api/name/reservePageCount</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/reservePageCount</TokenIdentifier>
+			<Abstract type="html">원활한 화면 표시를 위해 미리 준비하는 페이지 갯수.
+큰값을 설정할 경우 메모리 문제와 속도가 오히려 느려질 수 있습니다.
+기본값 : 2</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int reservePageCount</Declaration>
+			
+			
+			<Anchor>//api/name/reservePageCount</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/reservePageCount</TokenIdentifier>
+			<Abstract type="html">원활한 화면 표시를 위해 미리 준비하는 페이지 갯수.
+큰값을 설정할 경우 메모리 문제와 속도가 오히려 느려질 수 있습니다.
+기본값 : 2</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int reservePageCount</Declaration>
+			
+			
+			<Anchor>//api/name/reservePageCount</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setMaxScrollSize:</TokenIdentifier>
+			<Abstract type="html">최대 스크롤 크기
+문서가 최대 스크롤 크기를 넘는다면 충분한 값을 줘야 합니다.
+1000*1000 크기 페이지수가 10000이면 페이지 스크롤 크기는 100000000이어서 최대 스크롤 크기를 넘게 됩니다.
+기본값 : 9999999</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat maxScrollSize</Declaration>
+			
+			
+			<Anchor>//api/name/maxScrollSize</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/maxScrollSize</TokenIdentifier>
+			<Abstract type="html">최대 스크롤 크기
+문서가 최대 스크롤 크기를 넘는다면 충분한 값을 줘야 합니다.
+1000*1000 크기 페이지수가 10000이면 페이지 스크롤 크기는 100000000이어서 최대 스크롤 크기를 넘게 됩니다.
+기본값 : 9999999</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat maxScrollSize</Declaration>
+			
+			
+			<Anchor>//api/name/maxScrollSize</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/maxScrollSize</TokenIdentifier>
+			<Abstract type="html">최대 스크롤 크기
+문서가 최대 스크롤 크기를 넘는다면 충분한 값을 줘야 합니다.
+1000*1000 크기 페이지수가 10000이면 페이지 스크롤 크기는 100000000이어서 최대 스크롤 크기를 넘게 됩니다.
+기본값 : 9999999</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat maxScrollSize</Declaration>
+			
+			
+			<Anchor>//api/name/maxScrollSize</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setIsDismissOnTap:</TokenIdentifier>
+			<Abstract type="html">열람중에 화면을 탭하면 문서 보기 종료.
+잠시 열람하는 경우에만 YES를 주어서 바로 닫게 합니다.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isDismissOnTap</Declaration>
+			
+			
+			<Anchor>//api/name/isDismissOnTap</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/isDismissOnTap</TokenIdentifier>
+			<Abstract type="html">열람중에 화면을 탭하면 문서 보기 종료.
+잠시 열람하는 경우에만 YES를 주어서 바로 닫게 합니다.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isDismissOnTap</Declaration>
+			
+			
+			<Anchor>//api/name/isDismissOnTap</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/isDismissOnTap</TokenIdentifier>
+			<Abstract type="html">열람중에 화면을 탭하면 문서 보기 종료.
+잠시 열람하는 경우에만 YES를 주어서 바로 닫게 합니다.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isDismissOnTap</Declaration>
+			
+			
+			<Anchor>//api/name/isDismissOnTap</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setIndicatorHidden:</TokenIdentifier>
+			<Abstract type="html">로딩 표시 숨김 여부
+문서 열람시 로딩 표시를 숨깁니다.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL indicatorHidden</Declaration>
+			
+			
+			<Anchor>//api/name/indicatorHidden</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/indicatorHidden</TokenIdentifier>
+			<Abstract type="html">로딩 표시 숨김 여부
+문서 열람시 로딩 표시를 숨깁니다.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL indicatorHidden</Declaration>
+			
+			
+			<Anchor>//api/name/indicatorHidden</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/indicatorHidden</TokenIdentifier>
+			<Abstract type="html">로딩 표시 숨김 여부
+문서 열람시 로딩 표시를 숨깁니다.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL indicatorHidden</Declaration>
+			
+			
+			<Anchor>//api/name/indicatorHidden</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setCheckOnClick:</TokenIdentifier>
+			<Abstract type="html">문제풀이시 문제 영역을 클릭하면 정답 표시 여부.
+구현 필요.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL checkOnClick</Declaration>
+			
+			
+			<Anchor>//api/name/checkOnClick</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/checkOnClick</TokenIdentifier>
+			<Abstract type="html">문제풀이시 문제 영역을 클릭하면 정답 표시 여부.
+구현 필요.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL checkOnClick</Declaration>
+			
+			
+			<Anchor>//api/name/checkOnClick</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/checkOnClick</TokenIdentifier>
+			<Abstract type="html">문제풀이시 문제 영역을 클릭하면 정답 표시 여부.
+구현 필요.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL checkOnClick</Declaration>
+			
+			
+			<Anchor>//api/name/checkOnClick</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setSubtitleHighlightColor:</TokenIdentifier>
+			<Abstract type="html">자막 영역 강조 표시 색상.
+기본값 : RGBA(255, 255, 0, 64)</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *subtitleHighlightColor</Declaration>
+			
+			
+			<Anchor>//api/name/subtitleHighlightColor</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/subtitleHighlightColor</TokenIdentifier>
+			<Abstract type="html">자막 영역 강조 표시 색상.
+기본값 : RGBA(255, 255, 0, 64)</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *subtitleHighlightColor</Declaration>
+			
+			
+			<Anchor>//api/name/subtitleHighlightColor</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/subtitleHighlightColor</TokenIdentifier>
+			<Abstract type="html">자막 영역 강조 표시 색상.
+기본값 : RGBA(255, 255, 0, 64)</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *subtitleHighlightColor</Declaration>
+			
+			
+			<Anchor>//api/name/subtitleHighlightColor</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setBackgroundColor:</TokenIdentifier>
+			<Abstract type="html">페이지 배경 색상
+기본값 : whiteColor</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *backgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundColor</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/backgroundColor</TokenIdentifier>
+			<Abstract type="html">페이지 배경 색상
+기본값 : whiteColor</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *backgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundColor</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/backgroundColor</TokenIdentifier>
+			<Abstract type="html">페이지 배경 색상
+기본값 : whiteColor</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *backgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundColor</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setXpdfPageRenderingWithCoreGraphic:</TokenIdentifier>
+			<Abstract type="html">페이지 랜더링시 코어 그래픽 사용 여부.
+기본값 : YES</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL xpdfPageRenderingWithCoreGraphic</Declaration>
+			
+			
+			<Anchor>//api/name/xpdfPageRenderingWithCoreGraphic</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/xpdfPageRenderingWithCoreGraphic</TokenIdentifier>
+			<Abstract type="html">페이지 랜더링시 코어 그래픽 사용 여부.
+기본값 : YES</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL xpdfPageRenderingWithCoreGraphic</Declaration>
+			
+			
+			<Anchor>//api/name/xpdfPageRenderingWithCoreGraphic</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/xpdfPageRenderingWithCoreGraphic</TokenIdentifier>
+			<Abstract type="html">페이지 랜더링시 코어 그래픽 사용 여부.
+기본값 : YES</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL xpdfPageRenderingWithCoreGraphic</Declaration>
+			
+			
+			<Anchor>//api/name/xpdfPageRenderingWithCoreGraphic</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setCachePageThumbnails:</TokenIdentifier>
+			<Abstract type="html">페이지 섬네일 파일 캐쉬 여부.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL cachePageThumbnails</Declaration>
+			
+			
+			<Anchor>//api/name/cachePageThumbnails</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/cachePageThumbnails</TokenIdentifier>
+			<Abstract type="html">페이지 섬네일 파일 캐쉬 여부.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL cachePageThumbnails</Declaration>
+			
+			
+			<Anchor>//api/name/cachePageThumbnails</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/cachePageThumbnails</TokenIdentifier>
+			<Abstract type="html">페이지 섬네일 파일 캐쉬 여부.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL cachePageThumbnails</Declaration>
+			
+			
+			<Anchor>//api/name/cachePageThumbnails</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setFooter:</TokenIdentifier>
+			<Abstract type="html">하단 뷰어 설정.
+광고(Benner)와 같은 뷰를 설정 해야 할 때 사용합니다.
+기본값 : nil</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIView&lt;EDFooter&gt; *footer</Declaration>
+			
+			
+			<Anchor>//api/name/footer</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/footer</TokenIdentifier>
+			<Abstract type="html">하단 뷰어 설정.
+광고(Benner)와 같은 뷰를 설정 해야 할 때 사용합니다.
+기본값 : nil</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIView&lt;EDFooter&gt; *footer</Declaration>
+			
+			
+			<Anchor>//api/name/footer</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/footer</TokenIdentifier>
+			<Abstract type="html">하단 뷰어 설정.
+광고(Benner)와 같은 뷰를 설정 해야 할 때 사용합니다.
+기본값 : nil</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIView&lt;EDFooter&gt; *footer</Declaration>
+			
+			
+			<Anchor>//api/name/footer</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setEnableAudioesAutoPlay:</TokenIdentifier>
+			<Abstract type="html">오디오 자동 재생 설정.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL enableAudioesAutoPlay</Declaration>
+			
+			
+			<Anchor>//api/name/enableAudioesAutoPlay</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/enableAudioesAutoPlay</TokenIdentifier>
+			<Abstract type="html">오디오 자동 재생 설정.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL enableAudioesAutoPlay</Declaration>
+			
+			
+			<Anchor>//api/name/enableAudioesAutoPlay</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/enableAudioesAutoPlay</TokenIdentifier>
+			<Abstract type="html">오디오 자동 재생 설정.
+기본값 : NO</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL enableAudioesAutoPlay</Declaration>
+			
+			
+			<Anchor>//api/name/enableAudioesAutoPlay</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/setSiteID:</TokenIdentifier>
+			<Abstract type="html">DRM 문서 사이트별 식별자.
+기본값 : nil</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSString *siteID</Declaration>
+			
+			
+			<Anchor>//api/name/siteID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/siteID</TokenIdentifier>
+			<Abstract type="html">DRM 문서 사이트별 식별자.
+기본값 : nil</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSString *siteID</Declaration>
+			
+			
+			<Anchor>//api/name/siteID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDPageConfig/siteID</TokenIdentifier>
+			<Abstract type="html">DRM 문서 사이트별 식별자.
+기본값 : nil</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSString *siteID</Declaration>
+			
+			
+			<Anchor>//api/name/siteID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EDPageConfig/defaultConfig</TokenIdentifier>
+			<Abstract type="html">기본 설정.</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)defaultConfig</Declaration>
+			
+			<ReturnValue><Abstract type="html">기본 설정</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultConfig</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/minPageNo:</TokenIdentifier>
+			<Abstract type="html">표시 페이지들에서 최소 페이지 번호.</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>- (int)minPageNo:(int)pageNo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageNo</Name>
+					<Abstract type="html">해당 페이지 번호.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">표시 페이지들에서 페이지 최소 번호.</Abstract></ReturnValue>
+			<Anchor>//api/name/minPageNo:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDPageConfig/maxPageNo:pageCount:</TokenIdentifier>
+			<Abstract type="html">표시 페이지들에서 최대 페이지 번호.</Abstract>
+			<DeclaredIn>EDPageConfig.h</DeclaredIn>
+			
+			<Declaration>- (int)maxPageNo:(int)pageNo pageCount:(int)pageCount</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageNo</Name>
+					<Abstract type="html">해당 페이지 번호.</Abstract>
+				</Parameter><Parameter>
+					<Name>pageCount</Name>
+					<Abstract type="html">문서 페이지 전체 갯수.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">표시 페이지들에서 페이지 최대 번호.</Abstract></ReturnValue>
+			<Anchor>//api/name/maxPageNo:pageCount:</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		

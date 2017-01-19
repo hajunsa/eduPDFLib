@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/EDPageScrollDirectionStyle.html">
+	<File path="Constants/EDPageReadDirectionStyle.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/EDPageScrollDirectionStyle</TokenIdentifier>
-			<Abstract type="html">문서 스크롤 방향 설정</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/EDPageReadDirectionStyle</TokenIdentifier>
+			<Abstract type="html">문서 읽기 방향 설정</Abstract>
 			<DeclaredIn>EDPageEnums.h</DeclaredIn>
             
 			
@@ -14,10 +14,10 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPageScrollDirectionHorizontal</TokenIdentifier>
-            <Abstract type="html">문서를 가로로 스크롤.
+            <TokenIdentifier>//apple_ref/c/econst/EDPageReadDirectionAuto</TokenIdentifier>
+            <Abstract type="html">문서에서 정의한 방향.
      </Abstract>
-            <Declaration>EDPageScrollDirectionHorizontal</Declaration>
+            <Declaration>EDPageReadDirectionAuto</Declaration>
             
             <DeclaredIn>EDPageEnums.h</DeclaredIn>
             
@@ -25,10 +25,21 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EDPageScrollDirectionVertical</TokenIdentifier>
-            <Abstract type="html">문서를 세로로 스크롤.
+            <TokenIdentifier>//apple_ref/c/econst/EDPageReadDirectionRight</TokenIdentifier>
+            <Abstract type="html">문서를 왼쪽으로 읽음.
      </Abstract>
-            <Declaration>EDPageScrollDirectionVertical</Declaration>
+            <Declaration>EDPageReadDirectionRight</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPageReadDirectionLeft</TokenIdentifier>
+            <Abstract type="html">문서를 오른쪽으로 읽음.
+     </Abstract>
+            <Declaration>EDPageReadDirectionLeft</Declaration>
             
             <DeclaredIn>EDPageEnums.h</DeclaredIn>
             

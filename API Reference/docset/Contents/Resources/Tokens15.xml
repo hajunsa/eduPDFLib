@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/eduPDFPlayer.html">
+	<File path="Classes/EDXFDFParam.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/eduPDFPlayer</TokenIdentifier>
-			<Abstract type="html">eduPDFPlayer.
-PDF, Zipped-Image 열람 가능합니다.
-eduPDF 기능을 사용할 수 있습니다.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/EDXFDFParam</TokenIdentifier>
+			<Abstract type="html">XFDF 가져오기/내보내기 시 매개변수</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
             
 			
 			<NodeRef refid="15"/>
@@ -15,23 +13,11 @@ eduPDF 기능을 사용할 수 있습니다.</Abstract>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/setPath:</TokenIdentifier>
-			<Abstract type="html">문서 경로</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDXFDFParam/setPath:</TokenIdentifier>
+			<Abstract type="html">로컬 경로</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, weak, getter=getPath, readonly) NSString *path</Declaration>
-			
-			
-			<Anchor>//api/name/path</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/getPath</TokenIdentifier>
-			<Abstract type="html">문서 경로</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, weak, getter=getPath, readonly) NSString *path</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
 			
 			
 			<Anchor>//api/name/path</Anchor>
@@ -39,11 +25,11 @@ eduPDF 기능을 사용할 수 있습니다.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/eduPDFPlayer/path</TokenIdentifier>
-			<Abstract type="html">문서 경로</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDXFDFParam/path</TokenIdentifier>
+			<Abstract type="html">로컬 경로</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, weak, getter=getPath, readonly) NSString *path</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
 			
 			
 			<Anchor>//api/name/path</Anchor>
@@ -51,964 +37,173 @@ eduPDF 기능을 사용할 수 있습니다.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/setOpenedPath:</TokenIdentifier>
-			<Abstract type="html">열람이 됬을 때 문서 경로(URL 열람으로 다운로드 됬을 때 실제 로컬경로 값을 가집니다.)</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDXFDFParam/path</TokenIdentifier>
+			<Abstract type="html">로컬 경로</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, weak, getter=getOpenedPath, readonly) NSString *openedPath</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
 			
 			
-			<Anchor>//api/name/openedPath</Anchor>
+			<Anchor>//api/name/path</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/getOpenedPath</TokenIdentifier>
-			<Abstract type="html">열람이 됬을 때 문서 경로(URL 열람으로 다운로드 됬을 때 실제 로컬경로 값을 가집니다.)</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDXFDFParam/setData:</TokenIdentifier>
+			<Abstract type="html">XFDF 데이터</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, weak, getter=getOpenedPath, readonly) NSString *openedPath</Declaration>
+			<Declaration>@property (nonatomic, strong) NSData *data</Declaration>
 			
 			
-			<Anchor>//api/name/openedPath</Anchor>
+			<Anchor>//api/name/data</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/eduPDFPlayer/openedPath</TokenIdentifier>
-			<Abstract type="html">열람이 됬을 때 문서 경로(URL 열람으로 다운로드 됬을 때 실제 로컬경로 값을 가집니다.)</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDXFDFParam/data</TokenIdentifier>
+			<Abstract type="html">XFDF 데이터</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, weak, getter=getOpenedPath, readonly) NSString *openedPath</Declaration>
+			<Declaration>@property (nonatomic, strong) NSData *data</Declaration>
 			
 			
-			<Anchor>//api/name/openedPath</Anchor>
+			<Anchor>//api/name/data</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/setAnnotationInserting:</TokenIdentifier>
-			<Abstract type="html">주석을 추가 모드 설정
-주석을 입력 중 NO를 설정하면 입력 중 이던 주석은 문서에 추가 됩니다.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDXFDFParam/data</TokenIdentifier>
+			<Abstract type="html">XFDF 데이터</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, setter=setAnnotationInserting:, getter=getAnnotationInserting) BOOL annotationInserting</Declaration>
+			<Declaration>@property (nonatomic, strong) NSData *data</Declaration>
 			
 			
-			<Anchor>//api/name/annotationInserting</Anchor>
+			<Anchor>//api/name/data</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/getAnnotationInserting</TokenIdentifier>
-			<Abstract type="html">주석을 추가 모드 설정
-주석을 입력 중 NO를 설정하면 입력 중 이던 주석은 문서에 추가 됩니다.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDXFDFParam/setPageAccepts:</TokenIdentifier>
+			<Abstract type="html">대상 가능 페이지
+설정하지 않으면 모든 페이지가 대상입니다.
+NSNumber형으로 대상 페이지를 설정합니다.</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, setter=setAnnotationInserting:, getter=getAnnotationInserting) BOOL annotationInserting</Declaration>
+			<Declaration>@property (nonatomic, strong) NSArray *pageAccepts</Declaration>
 			
 			
-			<Anchor>//api/name/annotationInserting</Anchor>
+			<Anchor>//api/name/pageAccepts</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/eduPDFPlayer/annotationInserting</TokenIdentifier>
-			<Abstract type="html">주석을 추가 모드 설정
-주석을 입력 중 NO를 설정하면 입력 중 이던 주석은 문서에 추가 됩니다.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDXFDFParam/pageAccepts</TokenIdentifier>
+			<Abstract type="html">대상 가능 페이지
+설정하지 않으면 모든 페이지가 대상입니다.
+NSNumber형으로 대상 페이지를 설정합니다.</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, setter=setAnnotationInserting:, getter=getAnnotationInserting) BOOL annotationInserting</Declaration>
+			<Declaration>@property (nonatomic, strong) NSArray *pageAccepts</Declaration>
 			
 			
-			<Anchor>//api/name/annotationInserting</Anchor>
+			<Anchor>//api/name/pageAccepts</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/setPassword:</TokenIdentifier>
-			<Abstract type="html">열람시 필요한 패스워드.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDXFDFParam/pageAccepts</TokenIdentifier>
+			<Abstract type="html">대상 가능 페이지
+설정하지 않으면 모든 페이지가 대상입니다.
+NSNumber형으로 대상 페이지를 설정합니다.</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *password</Declaration>
+			<Declaration>@property (nonatomic, strong) NSArray *pageAccepts</Declaration>
 			
 			
-			<Anchor>//api/name/password</Anchor>
+			<Anchor>//api/name/pageAccepts</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/password</TokenIdentifier>
-			<Abstract type="html">열람시 필요한 패스워드.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDXFDFParam/setTypeAccepts:</TokenIdentifier>
+			<Abstract type="html">대상 가능 주석 종류
+설정하지 않으면 모든 주석이 대상입니다.
+&quot;Text&quot; &quot;Ink&quot; &quot;Line&quot; &quot;FreeText&quot; &quot;Circle&quot; &quot;Square&quot; &quot;Stamp&quot; &quot;StrikeOut&quot; &quot;Underline&quot; &quot;Highlight&quot;</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *password</Declaration>
+			<Declaration>@property (nonatomic, strong) NSArray *typeAccepts</Declaration>
 			
 			
-			<Anchor>//api/name/password</Anchor>
+			<Anchor>//api/name/typeAccepts</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/eduPDFPlayer/password</TokenIdentifier>
-			<Abstract type="html">열람시 필요한 패스워드.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDXFDFParam/typeAccepts</TokenIdentifier>
+			<Abstract type="html">대상 가능 주석 종류
+설정하지 않으면 모든 주석이 대상입니다.
+&quot;Text&quot; &quot;Ink&quot; &quot;Line&quot; &quot;FreeText&quot; &quot;Circle&quot; &quot;Square&quot; &quot;Stamp&quot; &quot;StrikeOut&quot; &quot;Underline&quot; &quot;Highlight&quot;</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *password</Declaration>
+			<Declaration>@property (nonatomic, strong) NSArray *typeAccepts</Declaration>
 			
 			
-			<Anchor>//api/name/password</Anchor>
+			<Anchor>//api/name/typeAccepts</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/setEnableAudioesAutoPlay:</TokenIdentifier>
-			<Abstract type="html">오디오 자동 재생 기능 활성화.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDXFDFParam/typeAccepts</TokenIdentifier>
+			<Abstract type="html">대상 가능 주석 종류
+설정하지 않으면 모든 주석이 대상입니다.
+&quot;Text&quot; &quot;Ink&quot; &quot;Line&quot; &quot;FreeText&quot; &quot;Circle&quot; &quot;Square&quot; &quot;Stamp&quot; &quot;StrikeOut&quot; &quot;Underline&quot; &quot;Highlight&quot;</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, getter=getEnableAudioesAutoPlay, setter=setEnableAudioesAutoPlay:) BOOL enableAudioesAutoPlay</Declaration>
+			<Declaration>@property (nonatomic, strong) NSArray *typeAccepts</Declaration>
 			
 			
-			<Anchor>//api/name/enableAudioesAutoPlay</Anchor>
+			<Anchor>//api/name/typeAccepts</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/getEnableAudioesAutoPlay</TokenIdentifier>
-			<Abstract type="html">오디오 자동 재생 기능 활성화.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDXFDFParam/setKindAccepts:</TokenIdentifier>
+			<Abstract type="html">대상 가능 범주
+설정하지 않으면 모든 범주(EDXFDFKindAll)가 대상입니다.</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, getter=getEnableAudioesAutoPlay, setter=setEnableAudioesAutoPlay:) BOOL enableAudioesAutoPlay</Declaration>
+			<Declaration>@property (nonatomic, assign) EDXFDFKindAccepts kindAccepts</Declaration>
 			
 			
-			<Anchor>//api/name/enableAudioesAutoPlay</Anchor>
+			<Anchor>//api/name/kindAccepts</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/eduPDFPlayer/enableAudioesAutoPlay</TokenIdentifier>
-			<Abstract type="html">오디오 자동 재생 기능 활성화.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDXFDFParam/kindAccepts</TokenIdentifier>
+			<Abstract type="html">대상 가능 범주
+설정하지 않으면 모든 범주(EDXFDFKindAll)가 대상입니다.</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, getter=getEnableAudioesAutoPlay, setter=setEnableAudioesAutoPlay:) BOOL enableAudioesAutoPlay</Declaration>
+			<Declaration>@property (nonatomic, assign) EDXFDFKindAccepts kindAccepts</Declaration>
 			
 			
-			<Anchor>//api/name/enableAudioesAutoPlay</Anchor>
+			<Anchor>//api/name/kindAccepts</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/setAudioPlayState:</TokenIdentifier>
-			<Abstract type="html">오디오 재생 상태.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/EDXFDFParam/kindAccepts</TokenIdentifier>
+			<Abstract type="html">대상 가능 범주
+설정하지 않으면 모든 범주(EDXFDFKindAll)가 대상입니다.</Abstract>
+			<DeclaredIn>EDXFDFParam.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, readonly, getter=getAudioPlayState) EDPlayStateType audioPlayState</Declaration>
+			<Declaration>@property (nonatomic, assign) EDXFDFKindAccepts kindAccepts</Declaration>
 			
 			
-			<Anchor>//api/name/audioPlayState</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/getAudioPlayState</TokenIdentifier>
-			<Abstract type="html">오디오 재생 상태.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign, readonly, getter=getAudioPlayState) EDPlayStateType audioPlayState</Declaration>
-			
-			
-			<Anchor>//api/name/audioPlayState</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/eduPDFPlayer/audioPlayState</TokenIdentifier>
-			<Abstract type="html">오디오 재생 상태.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign, readonly, getter=getAudioPlayState) EDPlayStateType audioPlayState</Declaration>
-			
-			
-			<Anchor>//api/name/audioPlayState</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/setAudioPlayFinished:</TokenIdentifier>
-			<Abstract type="html">오디오 재생이 끝났을 때 콜백.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, copy, setter=setAudioPlayFinished:) void ( ^ audioPlayFinished ) ( int pageNo ) __nullable</Declaration>
-			
-			
-			<Anchor>//api/name/__nullable</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/__nullable</TokenIdentifier>
-			<Abstract type="html">오디오 재생이 끝났을 때 콜백.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, copy, setter=setAudioPlayFinished:) void ( ^ audioPlayFinished ) ( int pageNo ) __nullable</Declaration>
-			
-			
-			<Anchor>//api/name/__nullable</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/eduPDFPlayer/__nullable</TokenIdentifier>
-			<Abstract type="html">오디오 재생이 끝났을 때 콜백.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, copy, setter=setAudioPlayFinished:) void ( ^ audioPlayFinished ) ( int pageNo ) __nullable</Declaration>
-			
-			
-			<Anchor>//api/name/__nullable</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/openWithPath:superview:completion:</TokenIdentifier>
-			<Abstract type="html">문서 열람.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)openWithPath:(nonnull NSString *)path superview:(nonnull UIView *)superview completion:(void ( ^ __nullable ) ( eduPDFPlayer *_Nonnull player , eduPDFOpenFinishedType finished ))completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>path</Name>
-					<Abstract type="html">문서 로컬 경로 또는 원격 경로(http, https).</Abstract>
-				</Parameter><Parameter>
-					<Name>superview</Name>
-					<Abstract type="html">화면 표시될 부모 뷰어.</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">열람 완료시 콜백 클로저.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/openWithPath:superview:completion:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/openWithPath:superview:config:completion:</TokenIdentifier>
-			<Abstract type="html">문서 열람.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)openWithPath:(nonnull NSString *)path superview:(nonnull UIView *)superview config:(nullable EDPageConfig *)config completion:(void ( ^ __nullable ) ( eduPDFPlayer *_Nonnull player , eduPDFOpenFinishedType finished ))completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>path</Name>
-					<Abstract type="html">문서 로컬 경로 또는 원격 경로(http, https).</Abstract>
-				</Parameter><Parameter>
-					<Name>superview</Name>
-					<Abstract type="html">화면 표시될 부모 뷰어.</Abstract>
-				</Parameter><Parameter>
-					<Name>config</Name>
-					<Abstract type="html">페이지 관련 설정.</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">열람 완료시 콜백 클로저.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/openWithPath:superview:config:completion:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/openWithDocProvider:completion:</TokenIdentifier>
-			<Abstract type="html">문서 열람.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)openWithDocProvider:(nonnull EDDocumentProvider *)documentProvider completion:(void ( ^ __nullable ) ( eduPDFPlayer *_Nonnull player , eduPDFOpenFinishedType finished ))completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>documentProvider</Name>
-					<Abstract type="html">문서 열람 제공자.</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">열람 완료시 콜백 클로저.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/openWithDocProvider:completion:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/openWithDataProvider:superview:config:completion:</TokenIdentifier>
-			<Abstract type="html">문서 열람.
-외부 DRM이나 데이터 변환이 필요한 경우에 사용합니다.
-EDDataProvider 상속받아 convertData 인터페이스를 직접 구현 합니다.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)openWithDataProvider:(nonnull EDDataProvider *)dataProvider superview:(nonnull UIView *)superview config:(nullable EDPageConfig *)config completion:(void ( ^ __nullable ) ( eduPDFPlayer *_Nonnull player , eduPDFOpenFinishedType finished ))completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>dataProvider</Name>
-					<Abstract type="html">문서 데이터 제공자.</Abstract>
-				</Parameter><Parameter>
-					<Name>superview</Name>
-					<Abstract type="html">화면 표시될 부모 뷰어.</Abstract>
-				</Parameter><Parameter>
-					<Name>config</Name>
-					<Abstract type="html">페이지 관련 설정.</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">열람 완료시 콜백 클로저.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/openWithDataProvider:superview:config:completion:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/close</TokenIdentifier>
-			<Abstract type="html">닫기.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)close</Declaration>
-			
-			
-			<Anchor>//api/name/close</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/closeDocument</TokenIdentifier>
-			<Abstract type="html">문서만 닫기.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)closeDocument</Declaration>
-			
-			
-			<Anchor>//api/name/closeDocument</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/viewWillTransitionToSize:withTransitionCoordinator:</TokenIdentifier>
-			<Abstract type="html">장치 회전 처리.
-장치 회전시 해당 값을 그대로 호출 합니다.
-iOS 8.0 이상</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(nonnull id&lt;UIViewControllerTransitionCoordinator&gt;)coordinator</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>size</Name>
-					<Abstract type="html">받은값 그대로 전달.</Abstract>
-				</Parameter><Parameter>
-					<Name>coordinator</Name>
-					<Abstract type="html">받은값 그대로 전달.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/viewWillTransitionToSize:withTransitionCoordinator:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/willRotateToInterfaceOrientation:duration:</TokenIdentifier>
-			<Abstract type="html">장치 회전 처리.
-장치 회전시 해당 값을 그대로 호출 합니다.
-iOS 8.0 미만</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>toInterfaceOrientation</Name>
-					<Abstract type="html">받은값 그대로 전달.</Abstract>
-				</Parameter><Parameter>
-					<Name>duration</Name>
-					<Abstract type="html">받은값 그대로 전달.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/willRotateToInterfaceOrientation:duration:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/didRotateFromInterfaceOrientation:</TokenIdentifier>
-			<Abstract type="html">장치 회전 처리.
-장치 회전시 해당 값을 그대로 호출 합니다.
-iOS 8.0 미만</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>fromInterfaceOrientation</Name>
-					<Abstract type="html">받은값 그대로 전달.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didRotateFromInterfaceOrientation:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/pageCount</TokenIdentifier>
-			<Abstract type="html">총 페이지 수.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (int)pageCount</Declaration>
-			
-			<ReturnValue><Abstract type="html">총 페이지 수.</Abstract></ReturnValue>
-			<Anchor>//api/name/pageCount</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/currentPageNo</TokenIdentifier>
-			<Abstract type="html">현재 페이지 번호.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (int)currentPageNo</Declaration>
-			
-			<ReturnValue><Abstract type="html">현재 페이지 번호.</Abstract></ReturnValue>
-			<Anchor>//api/name/currentPageNo</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/currentMaxPageNo</TokenIdentifier>
-			<Abstract type="html">현재 페이지 최대 번호.
-EDConfig displayPageCount가 2이상 일 때 currentPageNo와 다른 값을 돌려 줍니다.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (int)currentMaxPageNo</Declaration>
-			
-			<ReturnValue><Abstract type="html">현재 페이지 최대 번호.</Abstract></ReturnValue>
-			<Anchor>//api/name/currentMaxPageNo</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/minPageNo:</TokenIdentifier>
-			<Abstract type="html">표시 페이지들에서 최소 페이지 번호.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (int)minPageNo:(int)pageNo</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pageNo</Name>
-					<Abstract type="html">해당 페이지 번호.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">표시 페이지들에서 페이지 최소 번호.</Abstract></ReturnValue>
-			<Anchor>//api/name/minPageNo:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/maxPageNo:</TokenIdentifier>
-			<Abstract type="html">표시 페이지들에서 최대 페이지 번호.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (int)maxPageNo:(int)pageNo</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pageNo</Name>
-					<Abstract type="html">해당 페이지 번호.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">표시 페이지들에서 페이지 최대 번호.</Abstract></ReturnValue>
-			<Anchor>//api/name/maxPageNo:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/gotoPage:completion:</TokenIdentifier>
-			<Abstract type="html">특정 페이지 이동.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)gotoPage:(int)pageNo completion:(void ( ^ __nullable ) ( EDPageMoveFinishedType finished ))completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pageNo</Name>
-					<Abstract type="html">이동할 페이지 번호.</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">페이지 이동 완료시 콜백.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/gotoPage:completion:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/nextPage:</TokenIdentifier>
-			<Abstract type="html">다음 페이지 이동.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)nextPage:(void ( ^ __nullable ) ( EDPageMoveFinishedType finished ))completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">페이지 이동 완료시 콜백.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/nextPage:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/prevPage:</TokenIdentifier>
-			<Abstract type="html">이전 페이지 이동.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)prevPage:(void ( ^ __nullable ) ( EDPageMoveFinishedType finished ))completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">페이지 이동 완료시 콜백.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/prevPage:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/createPageThumbnailImage:completion:</TokenIdentifier>
-			<Abstract type="html">페이지 섬네일 이미지 생성하여 얻기.
-생성한 이미지는 가로 세로 비율이 유지합니다. 레티나 디스플레이 이면 배율 만큼 생성한 이미지가 큽니다.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)createPageThumbnailImage:(EDImage *__nullable)imageParam completion:(void ( ^ __nullable ) ( EDImage *__nullable image , int pageNo ))completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>imageParam</Name>
-					<Abstract type="html">생성할 이미지 매개변수</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">페이지 섬네일 이미지 생성 완료시 콜백.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/createPageThumbnailImage:completion:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/firstAudioPlay:completion:</TokenIdentifier>
-			<Abstract type="html">첫 오디오 재생 하기.
-해당 페이지 이후 첫번째 오디오를 재생 합니다.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)firstAudioPlay:(int)pageNo completion:(void ( ^ __nullable ) ( int pageNo , BOOL secuess ))completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pageNo</Name>
-					<Abstract type="html">시작 페이지 번호.</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">재생을 시작하면 콜백.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/firstAudioPlay:completion:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/isAudioPlaying</TokenIdentifier>
-			<Abstract type="html">오디오 재생 중 인지 여부.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)isAudioPlaying</Declaration>
-			
-			
-			<Anchor>//api/name/isAudioPlaying</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/isAudioPause</TokenIdentifier>
-			<Abstract type="html">오디오 일시중지 중 인지 여부.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)isAudioPause</Declaration>
-			
-			
-			<Anchor>//api/name/isAudioPause</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/audioPause</TokenIdentifier>
-			<Abstract type="html">재생중인 오디오 일시 중지.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)audioPause</Declaration>
-			
-			
-			<Anchor>//api/name/audioPause</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/audioStop</TokenIdentifier>
-			<Abstract type="html">재생중인 오디오 중지.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)audioStop</Declaration>
-			
-			
-			<Anchor>//api/name/audioStop</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/audioResume</TokenIdentifier>
-			<Abstract type="html">재생중인 오디오 다시 재생.</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)audioResume</Declaration>
-			
-			
-			<Anchor>//api/name/audioResume</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/markupAnnotationInsert:</TokenIdentifier>
-			<Abstract type="html">마크업 주석 추가하기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)markupAnnotationInsert:(EDMarkupAnnotationParam *__nullable)param</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>param</Name>
-					<Abstract type="html">마크업 주석 매개 변수들.</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">주석 추가 모드를 마치면 호출.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/markupAnnotationInsert:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/setBookmark:pageNo:</TokenIdentifier>
-			<Abstract type="html">페이지별 책갈피 추가/삭제/수정하기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)setBookmark:(EDBookmark *_Nullable)bookmark pageNo:(int)pageNo</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>bookmark</Name>
-					<Abstract type="html">해당 책갈피 객체. nil이면 삭제함.</Abstract>
-				</Parameter><Parameter>
-					<Name>pageNo</Name>
-					<Abstract type="html">해당 페이지 번호.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setBookmark:pageNo:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/getBookmark:</TokenIdentifier>
-			<Abstract type="html">페이지별 책갈피 가져오기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (EDBookmark *__nullable)getBookmark:(int)pageNo</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pageNo</Name>
-					<Abstract type="html">해당 페이지 번호.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">해당 페이지 책갈피 객체.</Abstract></ReturnValue>
-			<Anchor>//api/name/getBookmark:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/bookmarkCount</TokenIdentifier>
-			<Abstract type="html">책갈피 전체 갯수</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (int)bookmarkCount</Declaration>
-			
-			<ReturnValue><Abstract type="html">책갈피 전체 갯수.</Abstract></ReturnValue>
-			<Anchor>//api/name/bookmarkCount</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/searchText:searching:completion:</TokenIdentifier>
-			<Abstract type="html">텍스트 검색 하기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)searchText:(EDTextSelection *__nonnull)searchSelection searching:(void ( ^ __nullable ) ( NSArray *_Nullable searchedTextSelections , int pageNo ))searching completion:(void ( ^ __nullable ) ( BOOL cancel ))completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>searchSelection</Name>
-					<Abstract type="html">검색 요청 매개 변수.</Abstract>
-				</Parameter><Parameter>
-					<Name>searching</Name>
-					<Abstract type="html">검색중 찾은 객체들 콜백.</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">검색 완료.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/searchText:searching:completion:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/stopSearchText</TokenIdentifier>
-			<Abstract type="html">텍스트 검색 중지하기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)stopSearchText</Declaration>
-			
-			
-			<Anchor>//api/name/stopSearchText</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/reload</TokenIdentifier>
-			<Abstract type="html">화면을 갱신</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)reload</Declaration>
-			
-			
-			<Anchor>//api/name/reload</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/initialStateCurrentPage</TokenIdentifier>
-			<Abstract type="html">현재 페이지 객체들 초기화</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)initialStateCurrentPage</Declaration>
-			
-			
-			<Anchor>//api/name/initialStateCurrentPage</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/isOpened</TokenIdentifier>
-			<Abstract type="html">열람 여부</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)isOpened</Declaration>
-			
-			<ReturnValue><Abstract type="html">열람 여부.</Abstract></ReturnValue>
-			<Anchor>//api/name/isOpened</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/pageLabel:</TokenIdentifier>
-			<Abstract type="html">페이지 라벨 가져오기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (NSString *__nonnull)pageLabel:(int)pageNo</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pageNo</Name>
-					<Abstract type="html">페이지 번호.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">페이지 라벨.</Abstract></ReturnValue>
-			<Anchor>//api/name/pageLabel:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/hasPageLabel</TokenIdentifier>
-			<Abstract type="html">페이지 라벨 여부</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)hasPageLabel</Declaration>
-			
-			<ReturnValue><Abstract type="html">페이지 라벨 여부.</Abstract></ReturnValue>
-			<Anchor>//api/name/hasPageLabel</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/labelToPageNo:</TokenIdentifier>
-			<Abstract type="html">페이지 라벨로 페이지 번호 가져오기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (int)labelToPageNo:(NSString *__nullable)label</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>label</Name>
-					<Abstract type="html">페이지 라벨.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">페이지 번호.</Abstract></ReturnValue>
-			<Anchor>//api/name/labelToPageNo:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/outlines:maximumDepth:</TokenIdentifier>
-			<Abstract type="html">목차 가져오기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (EDOutlines *__nullable)outlines:(BOOL)flat maximumDepth:(int)maximumDepth</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>flat</Name>
-					<Abstract type="html">YES이면 계층에 상관업시 목록을 가져옵니다.</Abstract>
-				</Parameter><Parameter>
-					<Name>maximumDepth</Name>
-					<Abstract type="html">flat이 YES일 때 최대로 가져오는 깊이 계층.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">목차.</Abstract></ReturnValue>
-			<Anchor>//api/name/outlines:maximumDepth:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/outlineCount</TokenIdentifier>
-			<Abstract type="html">목차 갯수</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (int)outlineCount</Declaration>
-			
-			<ReturnValue><Abstract type="html">목차 갯수.</Abstract></ReturnValue>
-			<Anchor>//api/name/outlineCount</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/exportXFDF:</TokenIdentifier>
-			<Abstract type="html">주석 XFDF 내보내기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)exportXFDF:(EDXFDFParam *__nullable)param</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>param</Name>
-					<Abstract type="html">매개변수</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/exportXFDF:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/importXFDF:</TokenIdentifier>
-			<Abstract type="html">주석 XFDF 가져오기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)importXFDF:(EDXFDFParam *__nullable)param</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>param</Name>
-					<Abstract type="html">매개변수</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/importXFDF:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/clearSelection</TokenIdentifier>
-			<Abstract type="html">현재 선택 객체 표시 해제 하기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)clearSelection</Declaration>
-			
-			
-			<Anchor>//api/name/clearSelection</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/getAnnotations:</TokenIdentifier>
-			<Abstract type="html">목차 목록 가져오기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (NSArray&lt;EDAnnotation*&gt; *__nullable)getAnnotations:(int)pageNo</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pageNo</Name>
-					<Abstract type="html">페이지 번호.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">주석 목록.</Abstract></ReturnValue>
-			<Anchor>//api/name/getAnnotations:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/getTextParagraph:</TokenIdentifier>
-			<Abstract type="html">페이지 단락 가져오기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (NSArray&lt;EDTextSelection*&gt; *__nullable)getTextParagraph:(int)pageNo</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pageNo</Name>
-					<Abstract type="html">페이지 번호.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">페이지 단락(문장들).</Abstract></ReturnValue>
-			<Anchor>//api/name/getTextParagraph:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/showHighlight:</TokenIdentifier>
-			<Abstract type="html">해당 텍스트 영역 강조 표시 하기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)showHighlight:(EDTextSelection *__nullable)textSelection</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>textSelection</Name>
-					<Abstract type="html">텍스트 객체.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/showHighlight:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/eduPDFPlayer/hideHighlight:</TokenIdentifier>
-			<Abstract type="html">해당 텍스트 영역 강조 표시 해제 하기</Abstract>
-			<DeclaredIn>eduPDFPlayer_Public.h</DeclaredIn>
-			
-			<Declaration>- (void)hideHighlight:(EDTextSelection *__nullable)textSelection</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>textSelection</Name>
-					<Abstract type="html">텍스트 객체.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/hideHighlight:</Anchor>
+			<Anchor>//api/name/kindAccepts</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		

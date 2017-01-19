@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/EDDataProvider.html">
+	<File path="Classes/EDCrypto.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/EDDataProvider</TokenIdentifier>
-			<Abstract type="html">EDDataProvider.
-외부 DRM이나 데이터 변환이 필요한 경우에 사용합니다.
-기본로직은 일반 문서 파일 경로 열람과 동일합니다.
-상속 받아 DRM 걸린 문서에 대한 처리를 구현 해야합니다.</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/EDCrypto</TokenIdentifier>
+			<Abstract type="html">EDCrypto.
+DRM관련 암복호화 및 장치 고유키 기능을 제공 합니다.</Abstract>
+			<DeclaredIn>EDCrypto.h</DeclaredIn>
             
 			
 			<NodeRef refid="3"/>
@@ -16,117 +14,163 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/initWithPath:</TokenIdentifier>
-			<Abstract type="html">생성자</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/EDCrypto/setKey:</TokenIdentifier>
+			<Abstract type="html">장치 고유키값</Abstract>
+			<DeclaredIn>EDCrypto.h</DeclaredIn>
 			
-			<Declaration>- (instancetype)initWithPath:(NSString *)path</Declaration>
+			<Declaration>@property (nonatomic, strong, getter=getKey) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EDCrypto/getKey</TokenIdentifier>
+			<Abstract type="html">장치 고유키값</Abstract>
+			<DeclaredIn>EDCrypto.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, getter=getKey) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EDCrypto/key</TokenIdentifier>
+			<Abstract type="html">장치 고유키값</Abstract>
+			<DeclaredIn>EDCrypto.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, getter=getKey) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EDCrypto/uuid</TokenIdentifier>
+			<Abstract type="html">UUID 생성하여 가져오기</Abstract>
+			<DeclaredIn>EDCrypto.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)uuid</Declaration>
+			
+			<ReturnValue><Abstract type="html">UUID 문자열</Abstract></ReturnValue>
+			<Anchor>//api/name/uuid</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EDCrypto/deviceKey</TokenIdentifier>
+			<Abstract type="html">장치 고유키값 가져오기
+최초에 생성한 키값은 반영구적으로 보관합니다.</Abstract>
+			<DeclaredIn>EDCrypto.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)deviceKey</Declaration>
+			
+			<ReturnValue><Abstract type="html">deviceKey 문자열</Abstract></ReturnValue>
+			<Anchor>//api/name/deviceKey</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EDCrypto/stringAES128EncryptKey:contents:</TokenIdentifier>
+			<Abstract type="html">AES128로 암호화</Abstract>
+			<DeclaredIn>EDCrypto.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)stringAES128EncryptKey:(NSString *)key contents:(NSString *)contents</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>path</Name>
-					<Abstract type="html">문서 로컬 경로.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">키값</Abstract>
+				</Parameter><Parameter>
+					<Name>contents</Name>
+					<Abstract type="html">암호화할 대상</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/initWithPath:</Anchor>
+			<ReturnValue><Abstract type="html">암호화 16진수 문자열</Abstract></ReturnValue>
+			<Anchor>//api/name/stringAES128EncryptKey:contents:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/getBytes:offset:size:</TokenIdentifier>
-			<Abstract type="html">문서 데이터 가져오기.
-외부 암호화 모듈을 사용시 블럭 단위 암호화 데이터를 복호화할 때 사용합니다.
-복화된 문서 바이너리를 buff에 넣어야 합니다.</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/EDCrypto/stringAES128DecryptKey:contents:</TokenIdentifier>
+			<Abstract type="html">AES128로 복호화</Abstract>
+			<DeclaredIn>EDCrypto.h</DeclaredIn>
 			
-			<Declaration>- (int)getBytes:(char *)buff offset:(unsigned int)offset size:(int)size</Declaration>
+			<Declaration>+ (NSString *)stringAES128DecryptKey:(NSString *)key contents:(NSString *)contents</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>buff</Name>
-					<Abstract type="html">가져올 문서 데이터 버퍼.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">키값</Abstract>
 				</Parameter><Parameter>
-					<Name>offset</Name>
-					<Abstract type="html">가져올 문서 시작 오프셋.</Abstract>
-				</Parameter><Parameter>
-					<Name>size</Name>
-					<Abstract type="html">가져올 문서 데이터 크기.</Abstract>
+					<Name>contents</Name>
+					<Abstract type="html">암호화된 16진수 문자열</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">읽어들인 데이터 크기.</Abstract></ReturnValue>
-			<Anchor>//api/name/getBytes:offset:size:</Anchor>
+			<ReturnValue><Abstract type="html">복호화한 문자열</Abstract></ReturnValue>
+			<Anchor>//api/name/stringAES128DecryptKey:contents:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/size</TokenIdentifier>
-			<Abstract type="html">파일 크기
-문서 크기 입니다.</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/EDCrypto/stringRSAEncryptKey:contents:</TokenIdentifier>
+			<Abstract type="html">RSA로 암호화</Abstract>
+			<DeclaredIn>EDCrypto.h</DeclaredIn>
 			
-			<Declaration>- (unsigned int)size</Declaration>
-			
-			<ReturnValue><Abstract type="html">문서 크기.</Abstract></ReturnValue>
-			<Anchor>//api/name/size</Anchor>
+			<Declaration>+ (NSString *)stringRSAEncryptKey:(NSString *)key contents:(NSString *)contents</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">키값</Abstract>
+				</Parameter><Parameter>
+					<Name>contents</Name>
+					<Abstract type="html">암호화할 대상</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">암호화 16진수 문자열</Abstract></ReturnValue>
+			<Anchor>//api/name/stringRSAEncryptKey:contents:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/open</TokenIdentifier>
-			<Abstract type="html">문서 열기</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/EDCrypto/stringDESEncryptKey:contents:</TokenIdentifier>
+			<Abstract type="html">DES로 암호화</Abstract>
+			<DeclaredIn>EDCrypto.h</DeclaredIn>
 			
-			<Declaration>- (void)open</Declaration>
-			
-			
-			<Anchor>//api/name/open</Anchor>
+			<Declaration>+ (NSString *)stringDESEncryptKey:(NSString *)key contents:(NSString *)contents</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">키값</Abstract>
+				</Parameter><Parameter>
+					<Name>contents</Name>
+					<Abstract type="html">암호화할 대상</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">암호화 16진수 문자열</Abstract></ReturnValue>
+			<Anchor>//api/name/stringDESEncryptKey:contents:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/close</TokenIdentifier>
-			<Abstract type="html">문서 닫기</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/EDCrypto/stringDESDecryptKey:contents:</TokenIdentifier>
+			<Abstract type="html">DES로 복호화</Abstract>
+			<DeclaredIn>EDCrypto.h</DeclaredIn>
 			
-			<Declaration>- (void)close</Declaration>
-			
-			
-			<Anchor>//api/name/close</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/setPath:</TokenIdentifier>
-			<Abstract type="html">문서 로컬 경로.</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
-			
-			
-			<Anchor>//api/name/path</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/EDDataProvider/path</TokenIdentifier>
-			<Abstract type="html">문서 로컬 경로.</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
-			
-			
-			<Anchor>//api/name/path</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/EDDataProvider/path</TokenIdentifier>
-			<Abstract type="html">문서 로컬 경로.</Abstract>
-			<DeclaredIn>EDDataProvider.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *path</Declaration>
-			
-			
-			<Anchor>//api/name/path</Anchor>
+			<Declaration>+ (NSString *)stringDESDecryptKey:(NSString *)key contents:(NSString *)contents</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">키값</Abstract>
+				</Parameter><Parameter>
+					<Name>contents</Name>
+					<Abstract type="html">암호화된 16진수 문자열</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">복호화한 문자열</Abstract></ReturnValue>
+			<Anchor>//api/name/stringDESDecryptKey:contents:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
