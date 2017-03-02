@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/EDTouchActionType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/EDTouchActionType</TokenIdentifier>
+			<Abstract type="html">터치 입력 액션 종류</Abstract>
+			<DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDTouchActionNoting</TokenIdentifier>
+            <Abstract type="html">입력 없음
+     </Abstract>
+            <Declaration>EDTouchActionNoting</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDTouchActionAddBegan</TokenIdentifier>
+            <Abstract type="html">추가 입력 시작
+     </Abstract>
+            <Declaration>EDTouchActionAddBegan</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDTouchActionStrokeBegin</TokenIdentifier>
+            <Abstract type="html">획 그리기 시작
+     </Abstract>
+            <Declaration>EDTouchActionStrokeBegin</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDTouchActionStroking</TokenIdentifier>
+            <Abstract type="html">획 그리는 중
+     </Abstract>
+            <Declaration>EDTouchActionStroking</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDTouchActionStrokeEnd</TokenIdentifier>
+            <Abstract type="html">획 그리기 끝
+     </Abstract>
+            <Declaration>EDTouchActionStrokeEnd</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDTouchActionMoving</TokenIdentifier>
+            <Abstract type="html">객체 이동 중
+     </Abstract>
+            <Declaration>EDTouchActionMoving</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDTouchActionSizing</TokenIdentifier>
+            <Abstract type="html">객체 크기 변경 중
+     </Abstract>
+            <Declaration>EDTouchActionSizing</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDTouchActionRotating</TokenIdentifier>
+            <Abstract type="html">객체 회전 중
+     </Abstract>
+            <Declaration>EDTouchActionRotating</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDTouchActionRemoveStroke</TokenIdentifier>
+            <Abstract type="html">획 하나 삭제 함
+     </Abstract>
+            <Declaration>EDTouchActionRemoveStroke</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

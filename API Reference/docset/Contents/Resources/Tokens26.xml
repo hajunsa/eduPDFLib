@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/EDPageReadDirectionStyle.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/EDPageReadDirectionStyle</TokenIdentifier>
+			<Abstract type="html">문서 읽기 방향 설정</Abstract>
+			<DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPageReadDirectionAuto</TokenIdentifier>
+            <Abstract type="html">문서에서 정의한 방향.
+     </Abstract>
+            <Declaration>EDPageReadDirectionAuto</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPageReadDirectionRight</TokenIdentifier>
+            <Abstract type="html">문서를 온른쪽으로 읽음.
+     </Abstract>
+            <Declaration>EDPageReadDirectionRight</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPageReadDirectionLeft</TokenIdentifier>
+            <Abstract type="html">문서를 왼쪽으로 읽음.
+     </Abstract>
+            <Declaration>EDPageReadDirectionLeft</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

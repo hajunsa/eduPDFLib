@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/EDPlayStateType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/EDPlayStateType</TokenIdentifier>
+			<Abstract type="html">재생 상태</Abstract>
+			<DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPlayStateInit</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EDPlayStateInit</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPlayStateStop</TokenIdentifier>
+            <Abstract type="html">재생 중지 상태
+     </Abstract>
+            <Declaration>EDPlayStateStop</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPlayStatePlaying</TokenIdentifier>
+            <Abstract type="html">재생 중 상태
+     </Abstract>
+            <Declaration>EDPlayStatePlaying</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPlayStatePause</TokenIdentifier>
+            <Abstract type="html">재생 일시 중지 상태
+     </Abstract>
+            <Declaration>EDPlayStatePause</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EDPlayStateFinish</TokenIdentifier>
+            <Abstract type="html">재생 완료 상태
+     </Abstract>
+            <Declaration>EDPlayStateFinish</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

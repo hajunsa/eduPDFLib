@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52C299691E540CA20057D293 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C299681E540CA20057D293 /* main.m */; };
+		52C2996C1E540CA20057D293 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C2996B1E540CA20057D293 /* AppDelegate.m */; };
+		52C2996F1E540CA20057D293 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C2996E1E540CA20057D293 /* ViewController.m */; };
+		52C299721E540CA30057D293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C299701E540CA30057D293 /* Main.storyboard */; };
+		52C299741E540CA30057D293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C299731E540CA30057D293 /* Assets.xcassets */; };
+		52C299771E540CA30057D293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C299751E540CA30057D293 /* LaunchScreen.storyboard */; };
+		52C299821E540D110057D293 /* adobe_supplement_iso32000.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 52C299811E540D110057D293 /* adobe_supplement_iso32000.pdf */; };
+		52C299881E540D7A0057D293 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C299871E540D7A0057D293 /* libz.tbd */; };
+		52C2998A1E540D800057D293 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C299891E540D800057D293 /* libc++.tbd */; };
+		52C2998C1E540D860057D293 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C2998B1E540D860057D293 /* libxml2.tbd */; };
+		52FA76C41E67D7DA001DBBC4 /* eduPDFPlayerS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FA76C31E67D7DA001DBBC4 /* eduPDFPlayerS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52C299641E540CA20057D293 /* Coordination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordination.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C299681E540CA20057D293 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52C2996A1E540CA20057D293 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52C2996B1E540CA20057D293 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52C2996D1E540CA20057D293 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52C2996E1E540CA20057D293 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52C299711E540CA30057D293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52C299731E540CA30057D293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52C299761E540CA30057D293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52C299781E540CA30057D293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C299811E540D110057D293 /* adobe_supplement_iso32000.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = adobe_supplement_iso32000.pdf; sourceTree = "<group>"; };
+		52C299871E540D7A0057D293 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		52C299891E540D800057D293 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		52C2998B1E540D860057D293 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		52C2998D1E540D8A0057D293 /* eduPDFPlayerS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = eduPDFPlayerS.framework; path = "../../../build/Debug-iphoneos/eduPDFPlayerS.framework"; sourceTree = "<group>"; };
+		52FA76C31E67D7DA001DBBC4 /* eduPDFPlayerS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = eduPDFPlayerS.framework; path = ../../Pods/eduPDFLib/Frameworks/eduPDFPlayerS.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52C299611E540CA20057D293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FA76C41E67D7DA001DBBC4 /* eduPDFPlayerS.framework in Frameworks */,
+				52C2998C1E540D860057D293 /* libxml2.tbd in Frameworks */,
+				52C2998A1E540D800057D293 /* libc++.tbd in Frameworks */,
+				52C299881E540D7A0057D293 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52C2995B1E540CA20057D293 = {
+			isa = PBXGroup;
+			children = (
+				52C299661E540CA20057D293 /* Coordination */,
+				52C299651E540CA20057D293 /* Products */,
+				52C299861E540D7A0057D293 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52C299651E540CA20057D293 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52C299641E540CA20057D293 /* Coordination.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52C299661E540CA20057D293 /* Coordination */ = {
+			isa = PBXGroup;
+			children = (
+				52C299811E540D110057D293 /* adobe_supplement_iso32000.pdf */,
+				52C2996A1E540CA20057D293 /* AppDelegate.h */,
+				52C2996B1E540CA20057D293 /* AppDelegate.m */,
+				52C2996D1E540CA20057D293 /* ViewController.h */,
+				52C2996E1E540CA20057D293 /* ViewController.m */,
+				52C299701E540CA30057D293 /* Main.storyboard */,
+				52C299731E540CA30057D293 /* Assets.xcassets */,
+				52C299751E540CA30057D293 /* LaunchScreen.storyboard */,
+				52C299781E540CA30057D293 /* Info.plist */,
+				52C299671E540CA20057D293 /* Supporting Files */,
+			);
+			path = Coordination;
+			sourceTree = "<group>";
+		};
+		52C299671E540CA20057D293 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52C299681E540CA20057D293 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52C299861E540D7A0057D293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52FA76C31E67D7DA001DBBC4 /* eduPDFPlayerS.framework */,
+				52C2998D1E540D8A0057D293 /* eduPDFPlayerS.framework */,
+				52C2998B1E540D860057D293 /* libxml2.tbd */,
+				52C299891E540D800057D293 /* libc++.tbd */,
+				52C299871E540D7A0057D293 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52C299631E540CA20057D293 /* Coordination */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C2997B1E540CA30057D293 /* Build configuration list for PBXNativeTarget "Coordination" */;
+			buildPhases = (
+				52C299601E540CA20057D293 /* Sources */,
+				52C299611E540CA20057D293 /* Frameworks */,
+				52C299621E540CA20057D293 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coordination;
+			productName = Coordination;
+			productReference = 52C299641E540CA20057D293 /* Coordination.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52C2995C1E540CA20057D293 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Unidocs Inc";
+				TargetAttributes = {
+					52C299631E540CA20057D293 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D89HG2YBXS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 52C2995F1E540CA20057D293 /* Build configuration list for PBXProject "Coordination" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52C2995B1E540CA20057D293;
+			productRefGroup = 52C299651E540CA20057D293 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52C299631E540CA20057D293 /* Coordination */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52C299621E540CA20057D293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C299771E540CA30057D293 /* LaunchScreen.storyboard in Resources */,
+				52C299741E540CA30057D293 /* Assets.xcassets in Resources */,
+				52C299721E540CA30057D293 /* Main.storyboard in Resources */,
+				52C299821E540D110057D293 /* adobe_supplement_iso32000.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52C299601E540CA20057D293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C2996F1E540CA20057D293 /* ViewController.m in Sources */,
+				52C2996C1E540CA20057D293 /* AppDelegate.m in Sources */,
+				52C299691E540CA20057D293 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52C299701E540CA30057D293 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52C299711E540CA30057D293 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52C299751E540CA30057D293 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52C299761E540CA30057D293 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52C299791E540CA30057D293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52C2997A1E540CA30057D293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52C2997C1E540CA30057D293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D89HG2YBXS;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../Pods/eduPDFLib/Frameworks\"";
+				INFOPLIST_FILE = Coordination/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.unidocs.Coordination;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52C2997D1E540CA30057D293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D89HG2YBXS;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../Pods/eduPDFLib/Frameworks\"";
+				INFOPLIST_FILE = Coordination/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.unidocs.Coordination;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52C2995F1E540CA20057D293 /* Build configuration list for PBXProject "Coordination" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C299791E540CA30057D293 /* Debug */,
+				52C2997A1E540CA30057D293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C2997B1E540CA30057D293 /* Build configuration list for PBXNativeTarget "Coordination" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C2997C1E540CA30057D293 /* Debug */,
+				52C2997D1E540CA30057D293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52C2995C1E540CA20057D293 /* Project object */;
+}

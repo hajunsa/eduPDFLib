@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaV-SN-aaA">
+                                <rect key="frame" x="0.0" y="606" width="375" height="61"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCJ-Je-Yne">
+                                        <rect key="frame" x="8" y="15" width="69" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="69" id="6qi-qJ-cdz"/>
+                                            <constraint firstAttribute="height" constant="30" id="MMd-GW-avg"/>
+                                        </constraints>
+                                        <state key="normal" title="Auto"/>
+                                        <state key="selected" title="Menu"/>
+                                        <connections>
+                                            <action selector="autoPlayEnable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qvQ-3t-MCI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4G-ke-NwS">
+                                        <rect key="frame" x="85" y="15" width="75" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="He0-wH-6ab"/>
+                                        </constraints>
+                                        <state key="normal" title="Play"/>
+                                        <state key="selected" title="Pause"/>
+                                        <connections>
+                                            <action selector="firstAudioPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQr-A9-GA7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oye-29-gau">
+                                        <rect key="frame" x="168" y="15" width="75" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="HLQ-NB-kf2"/>
+                                        </constraints>
+                                        <state key="normal" title="List"/>
+                                        <connections>
+                                            <action selector="audioList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xmm-i8-Hza"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCc-73-lfU">
+                                        <rect key="frame" x="251" y="15" width="55" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="fjb-dW-SZi"/>
+                                        </constraints>
+                                        <state key="normal" title="Prev"/>
+                                        <connections>
+                                            <action selector="prevPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pC2-bF-ARu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8o7-FP-jQv">
+                                        <rect key="frame" x="312" y="15" width="55" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="WBL-cI-fG5"/>
+                                        </constraints>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <action selector="nextPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYY-Pr-mUV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Oye-29-gau" firstAttribute="leading" secondItem="i4G-ke-NwS" secondAttribute="trailing" constant="8" symbolic="YES" id="2bv-wx-3V1"/>
+                                    <constraint firstItem="Oye-29-gau" firstAttribute="centerY" secondItem="xaV-SN-aaA" secondAttribute="centerY" id="4F3-94-ZL6"/>
+                                    <constraint firstAttribute="height" constant="61" id="Fht-RE-RNV"/>
+                                    <constraint firstItem="8o7-FP-jQv" firstAttribute="baseline" secondItem="Oye-29-gau" secondAttribute="baseline" id="GV9-it-KXJ"/>
+                                    <constraint firstItem="8o7-FP-jQv" firstAttribute="trailing" secondItem="xaV-SN-aaA" secondAttribute="trailingMargin" id="NTr-Gr-oca"/>
+                                    <constraint firstItem="8o7-FP-jQv" firstAttribute="leading" secondItem="wCc-73-lfU" secondAttribute="trailing" constant="6" id="NcG-cW-XcN"/>
+                                    <constraint firstItem="Oye-29-gau" firstAttribute="leading" secondItem="xaV-SN-aaA" secondAttribute="leading" constant="168" id="Opg-Vf-oR4"/>
+                                    <constraint firstItem="Oye-29-gau" firstAttribute="baseline" secondItem="JCJ-Je-Yne" secondAttribute="baseline" id="RYx-Uc-gus"/>
+                                    <constraint firstItem="i4G-ke-NwS" firstAttribute="leading" secondItem="JCJ-Je-Yne" secondAttribute="trailing" constant="8" symbolic="YES" id="cbL-7i-83n"/>
+                                    <constraint firstItem="8o7-FP-jQv" firstAttribute="baseline" secondItem="wCc-73-lfU" secondAttribute="baseline" id="sb4-wn-CZz"/>
+                                    <constraint firstItem="Oye-29-gau" firstAttribute="baseline" secondItem="i4G-ke-NwS" secondAttribute="baseline" id="wS9-lO-mth"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wp-Id-tjI" customClass="TouchInputView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2wp-Id-tjI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4DB-aZ-Eyb"/>
+                            <constraint firstAttribute="trailing" secondItem="2wp-Id-tjI" secondAttribute="trailing" id="D0Z-vF-at6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2wp-Id-tjI" secondAttribute="bottom" constant="60" id="I0E-oj-VLm"/>
+                            <constraint firstAttribute="trailing" secondItem="xaV-SN-aaA" secondAttribute="trailing" id="bsH-N8-Sec"/>
+                            <constraint firstItem="xaV-SN-aaA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ePO-LO-fl8"/>
+                            <constraint firstItem="2wp-Id-tjI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hhH-9k-GPA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xaV-SN-aaA" secondAttribute="bottom" id="pCj-C9-FeC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputView" destination="2wp-Id-tjI" id="Dvu-41-Mq5"/>
+                        <outlet property="playButton" destination="i4G-ke-NwS" id="jNz-jh-3VV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

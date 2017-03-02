@@ -62,7 +62,7 @@
         }];
 
         NSLog(@"Open Finished code = %d", (int)finished);
-    }];
+    } delegate:nil];
 }
 
 @end

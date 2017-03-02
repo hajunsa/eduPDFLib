@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/eduPDFOpenFinishedType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/eduPDFOpenFinishedType</TokenIdentifier>
+			<Abstract type="html">문서 열람시 성공 또는 실패 종류.</Abstract>
+			<DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/eduPDFOpen_Success</TokenIdentifier>
+            <Abstract type="html">문서 열람 성공.
+     </Abstract>
+            <Declaration>eduPDFOpen_Success</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/eduPDFOpen_InvailedPath</TokenIdentifier>
+            <Abstract type="html">존재하지 않거나 형식이 유효하지 않은 경로.
+     </Abstract>
+            <Declaration>eduPDFOpen_InvailedPath</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/eduPDFOpen_InvailedFormat</TokenIdentifier>
+            <Abstract type="html">문서 형식이 명시한 형식과 일치 하지 않을 때.
+     </Abstract>
+            <Declaration>eduPDFOpen_InvailedFormat</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/eduPDFOpen_InvailedDRM</TokenIdentifier>
+            <Abstract type="html">DRM이 걸리 문서를 유효하지 않는 방법으로 열려고 할 때.
+     </Abstract>
+            <Declaration>eduPDFOpen_InvailedDRM</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/eduPDFOpen_InvailedPassword</TokenIdentifier>
+            <Abstract type="html">문서 열람 패스워드가 틀릴 때.
+     </Abstract>
+            <Declaration>eduPDFOpen_InvailedPassword</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/eduPDFOpen_RequiredPassword</TokenIdentifier>
+            <Abstract type="html">문서 열람시 패스워드 입력이 필요 할 때.
+     </Abstract>
+            <Declaration>eduPDFOpen_RequiredPassword</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/eduPDFOpen_InvailedNetwork</TokenIdentifier>
+            <Abstract type="html">네트웍 연결이 필요한 문서 열람시 연결에 문제가 있을 때.
+     </Abstract>
+            <Declaration>eduPDFOpen_InvailedNetwork</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/eduPDFOpen_InvailedLicenseCode</TokenIdentifier>
+            <Abstract type="html">라이센스 코드가 유효하지 않을 때.
+     </Abstract>
+            <Declaration>eduPDFOpen_InvailedLicenseCode</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/eduPDFOpen_InvailedParam</TokenIdentifier>
+            <Abstract type="html">전달 매개변수가 유효하지 않을 때.
+     </Abstract>
+            <Declaration>eduPDFOpen_InvailedParam</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/eduPDFOpen_Unknown</TokenIdentifier>
+            <Abstract type="html">알수 없는 오류가 났을 때.
+     </Abstract>
+            <Declaration>eduPDFOpen_Unknown</Declaration>
+            
+            <DeclaredIn>EDPageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>
